@@ -1,0 +1,724 @@
+INFO - 2023-11-16 08:07:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:07:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:07:29 --> CSRF token verified.
+ERROR - 2023-11-16 08:07:33 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\programmer\ciempatmonitoring\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 D:\programmer\ciempatmonitoring\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'monitoring_maha...', 3306, '', 0)
+#1 D:\programmer\ciempatmonitoring\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\programmer\ciempatmonitoring\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\programmer\ciempatmonitoring\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\programmer\ciempatmonitoring\app\Models\AuthModel.php(27): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\programmer\ciempatmonitoring\app\Controllers\Auth.php(52): App\Models\AuthModel->login('aprinaldo', 'aprinaldo')
+#6 D:\programmer\ciempatmonitoring\system\CodeIgniter.php(919): App\Controllers\Auth->loginProcess()
+#7 D:\programmer\ciempatmonitoring\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 D:\programmer\ciempatmonitoring\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\programmer\ciempatmonitoring\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\programmer\ciempatmonitoring\system\Commands\Server\rewrite.php(47): require_once('D:\\programmer\\c...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\programmer\ciempatmonitoring\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\programmer\ciempatmonitoring\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\programmer\ciempatmonitoring\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\programmer\ciempatmonitoring\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\programmer\ciempatmonitoring\app\Models\AuthModel.php(27): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\programmer\ciempatmonitoring\app\Controllers\Auth.php(52): App\Models\AuthModel->login('aprinaldo', 'aprinaldo')
+#5 D:\programmer\ciempatmonitoring\system\CodeIgniter.php(919): App\Controllers\Auth->loginProcess()
+#6 D:\programmer\ciempatmonitoring\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 D:\programmer\ciempatmonitoring\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\programmer\ciempatmonitoring\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 D:\programmer\ciempatmonitoring\system\Commands\Server\rewrite.php(47): require_once('D:\\programmer\\c...')
+#10 {main}
+CRITICAL - 2023-11-16 08:07:33 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `username` = :username:
+AND `password` = :password:', [...], false)
+ 3 APPPATH\Models\AuthModel.php(27): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Auth.php(52): App\Models\AuthModel->login('aprinaldo', 'aprinaldo')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Auth->loginProcess()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\programmer\\ciempatmonitoring\\public\\index.php')
+INFO - 2023-11-16 08:08:13 --> CSRF token verified.
+INFO - 2023-11-16 08:08:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:08:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:08:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-16 08:08:15 --> mysqli_sql_exception: Unknown column 'bimbingan.bb_skripsi_id' in 'on clause' in D:\programmer\ciempatmonitoring\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\programmer\ciempatmonitoring\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `bimbing...', 0)
+#1 D:\programmer\ciempatmonitoring\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `bimbing...')
+#2 D:\programmer\ciempatmonitoring\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `bimbing...')
+#3 D:\programmer\ciempatmonitoring\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `bimbing...', Array, false)
+#4 D:\programmer\ciempatmonitoring\app\Models\BimbinganModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\programmer\ciempatmonitoring\app\Controllers\Skripsi.php(32): App\Models\BimbinganModel->getAll('22321928')
+#6 D:\programmer\ciempatmonitoring\system\CodeIgniter.php(919): App\Controllers\Skripsi->index()
+#7 D:\programmer\ciempatmonitoring\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Skripsi))
+#8 D:\programmer\ciempatmonitoring\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\programmer\ciempatmonitoring\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\programmer\ciempatmonitoring\system\Commands\Server\rewrite.php(47): require_once('D:\\programmer\\c...')
+#11 {main}
+CRITICAL - 2023-11-16 08:08:15 --> Unknown column 'bimbingan.bb_skripsi_id' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `bimbingan`.*, `skripsi`.*
+FROM `bimbingan`
+JOIN `skripsi` ON `bimbingan`.`bb_skripsi_id` = `skripsi`.`skripsi_id`
+WHERE `nim_mahasiswa` = :nim_mahasiswa:', [...], false)
+ 2 APPPATH\Models\BimbinganModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Skripsi.php(32): App\Models\BimbinganModel->getAll('22321928')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Skripsi->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Skripsi))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\programmer\\ciempatmonitoring\\public\\index.php')
+INFO - 2023-11-16 08:08:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:08:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:08:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-16 08:08:34 --> mysqli_sql_exception: Unknown column 'bimbingan.bb_skripsi_id' in 'on clause' in D:\programmer\ciempatmonitoring\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\programmer\ciempatmonitoring\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `bimbing...', 0)
+#1 D:\programmer\ciempatmonitoring\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `bimbing...')
+#2 D:\programmer\ciempatmonitoring\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `bimbing...')
+#3 D:\programmer\ciempatmonitoring\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `bimbing...', Array, false)
+#4 D:\programmer\ciempatmonitoring\app\Models\BimbinganModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\programmer\ciempatmonitoring\app\Controllers\Skripsi.php(32): App\Models\BimbinganModel->getAll('22321928')
+#6 D:\programmer\ciempatmonitoring\system\CodeIgniter.php(919): App\Controllers\Skripsi->index()
+#7 D:\programmer\ciempatmonitoring\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Skripsi))
+#8 D:\programmer\ciempatmonitoring\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\programmer\ciempatmonitoring\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\programmer\ciempatmonitoring\system\Commands\Server\rewrite.php(47): require_once('D:\\programmer\\c...')
+#11 {main}
+CRITICAL - 2023-11-16 08:08:34 --> Unknown column 'bimbingan.bb_skripsi_id' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `bimbingan`.*, `skripsi`.*
+FROM `bimbingan`
+JOIN `skripsi` ON `bimbingan`.`bb_skripsi_id` = `skripsi`.`skripsi_id`
+WHERE `nim_mahasiswa` = :nim_mahasiswa:', [...], false)
+ 2 APPPATH\Models\BimbinganModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Skripsi.php(32): App\Models\BimbinganModel->getAll('22321928')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Skripsi->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Skripsi))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\programmer\\ciempatmonitoring\\public\\index.php')
+INFO - 2023-11-16 08:10:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-16 08:10:38 --> mysqli_sql_exception: Unknown column 'bimbingan.bb_skripsi_id' in 'on clause' in D:\programmer\ciempatmonitoring\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\programmer\ciempatmonitoring\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `bimbing...', 0)
+#1 D:\programmer\ciempatmonitoring\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `bimbing...')
+#2 D:\programmer\ciempatmonitoring\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `bimbing...')
+#3 D:\programmer\ciempatmonitoring\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `bimbing...', Array, false)
+#4 D:\programmer\ciempatmonitoring\app\Models\BimbinganModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\programmer\ciempatmonitoring\app\Controllers\Skripsi.php(32): App\Models\BimbinganModel->getAll('22321928')
+#6 D:\programmer\ciempatmonitoring\system\CodeIgniter.php(919): App\Controllers\Skripsi->index()
+#7 D:\programmer\ciempatmonitoring\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Skripsi))
+#8 D:\programmer\ciempatmonitoring\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\programmer\ciempatmonitoring\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\programmer\ciempatmonitoring\system\Commands\Server\rewrite.php(47): require_once('D:\\programmer\\c...')
+#11 {main}
+CRITICAL - 2023-11-16 08:10:38 --> Unknown column 'bimbingan.bb_skripsi_id' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `bimbingan`.*, `skripsi`.*
+FROM `bimbingan`
+JOIN `skripsi` ON `bimbingan`.`bb_skripsi_id` = `skripsi`.`skripsi_id`
+WHERE `nim_mahasiswa` = :nim_mahasiswa:', [...], false)
+ 2 APPPATH\Models\BimbinganModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Skripsi.php(32): App\Models\BimbinganModel->getAll('22321928')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Skripsi->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Skripsi))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\programmer\\ciempatmonitoring\\public\\index.php')
+INFO - 2023-11-16 08:10:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-16 08:10:39 --> mysqli_sql_exception: Unknown column 'bimbingan.bb_skripsi_id' in 'on clause' in D:\programmer\ciempatmonitoring\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\programmer\ciempatmonitoring\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `bimbing...', 0)
+#1 D:\programmer\ciempatmonitoring\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `bimbing...')
+#2 D:\programmer\ciempatmonitoring\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `bimbing...')
+#3 D:\programmer\ciempatmonitoring\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `bimbing...', Array, false)
+#4 D:\programmer\ciempatmonitoring\app\Models\BimbinganModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\programmer\ciempatmonitoring\app\Controllers\Skripsi.php(32): App\Models\BimbinganModel->getAll('22321928')
+#6 D:\programmer\ciempatmonitoring\system\CodeIgniter.php(919): App\Controllers\Skripsi->index()
+#7 D:\programmer\ciempatmonitoring\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Skripsi))
+#8 D:\programmer\ciempatmonitoring\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\programmer\ciempatmonitoring\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\programmer\ciempatmonitoring\system\Commands\Server\rewrite.php(47): require_once('D:\\programmer\\c...')
+#11 {main}
+CRITICAL - 2023-11-16 08:10:39 --> Unknown column 'bimbingan.bb_skripsi_id' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `bimbingan`.*, `skripsi`.*
+FROM `bimbingan`
+JOIN `skripsi` ON `bimbingan`.`bb_skripsi_id` = `skripsi`.`skripsi_id`
+WHERE `nim_mahasiswa` = :nim_mahasiswa:', [...], false)
+ 2 APPPATH\Models\BimbinganModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Skripsi.php(32): App\Models\BimbinganModel->getAll('22321928')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Skripsi->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Skripsi))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\programmer\\ciempatmonitoring\\public\\index.php')
+INFO - 2023-11-16 08:12:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-16 08:12:26 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\skripsi\v_skripsi.php on line 137.
+ 1 APPPATH\Views\skripsi\v_skripsi.php(137): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\programmer\\ciempatmonitoring\\app\\Views\\skripsi\\v_skripsi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('skripsi/v_skripsi', [], true)
+ 5 APPPATH\Controllers\Skripsi.php(55): view('skripsi/v_skripsi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Skripsi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Skripsi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\programmer\\ciempatmonitoring\\public\\index.php')
+CRITICAL - 2023-11-16 08:12:26 --> Undefined array key "data_dukung"
+in APPPATH\Views\skripsi\v_skripsi.php on line 185.
+ 1 APPPATH\Views\skripsi\v_skripsi.php(185): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "data_dukung"', 'D:\\programmer\\ciempatmonitoring\\app\\Views\\skripsi\\v_skripsi.php', 185)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\programmer\\ciempatmonitoring\\app\\Views\\skripsi\\v_skripsi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('skripsi/v_skripsi', [], true)
+ 5 APPPATH\Controllers\Skripsi.php(55): view('skripsi/v_skripsi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Skripsi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Skripsi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\programmer\\ciempatmonitoring\\public\\index.php')
+INFO - 2023-11-16 08:13:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:13:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-16 08:13:14 --> Undefined variable $semuaBimbingan
+in APPPATH\Controllers\Skripsi.php on line 32.
+ 1 APPPATH\Controllers\Skripsi.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $semuaBimbingan', 'D:\\programmer\\ciempatmonitoring\\app\\Controllers\\Skripsi.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Skripsi->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Skripsi))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\programmer\\ciempatmonitoring\\public\\index.php')
+INFO - 2023-11-16 08:13:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-16 08:13:21 --> mysqli_sql_exception: Unknown column 'bimbingan.bb_skripsi_id' in 'on clause' in D:\programmer\ciempatmonitoring\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\programmer\ciempatmonitoring\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `bimbing...', 0)
+#1 D:\programmer\ciempatmonitoring\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `bimbing...')
+#2 D:\programmer\ciempatmonitoring\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `bimbing...')
+#3 D:\programmer\ciempatmonitoring\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `bimbing...', Array, false)
+#4 D:\programmer\ciempatmonitoring\app\Models\BimbinganModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\programmer\ciempatmonitoring\app\Controllers\Skripsi.php(32): App\Models\BimbinganModel->getAll('22321928')
+#6 D:\programmer\ciempatmonitoring\system\CodeIgniter.php(919): App\Controllers\Skripsi->index()
+#7 D:\programmer\ciempatmonitoring\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Skripsi))
+#8 D:\programmer\ciempatmonitoring\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\programmer\ciempatmonitoring\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\programmer\ciempatmonitoring\system\Commands\Server\rewrite.php(47): require_once('D:\\programmer\\c...')
+#11 {main}
+CRITICAL - 2023-11-16 08:13:21 --> Unknown column 'bimbingan.bb_skripsi_id' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `bimbingan`.*, `skripsi`.*
+FROM `bimbingan`
+JOIN `skripsi` ON `bimbingan`.`bb_skripsi_id` = `skripsi`.`skripsi_id`
+WHERE `nim_mahasiswa` = :nim_mahasiswa:', [...], false)
+ 2 APPPATH\Models\BimbinganModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Skripsi.php(32): App\Models\BimbinganModel->getAll('22321928')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Skripsi->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Skripsi))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\programmer\\ciempatmonitoring\\public\\index.php')
+INFO - 2023-11-16 08:13:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-16 08:13:33 --> mysqli_sql_exception: Unknown column 'bimbingan.bb_skripsi_id' in 'on clause' in D:\programmer\ciempatmonitoring\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\programmer\ciempatmonitoring\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `bimbing...', 0)
+#1 D:\programmer\ciempatmonitoring\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `bimbing...')
+#2 D:\programmer\ciempatmonitoring\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `bimbing...')
+#3 D:\programmer\ciempatmonitoring\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `bimbing...', Array, false)
+#4 D:\programmer\ciempatmonitoring\app\Models\BimbinganModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\programmer\ciempatmonitoring\app\Controllers\Skripsi.php(32): App\Models\BimbinganModel->getAll('22321928')
+#6 D:\programmer\ciempatmonitoring\system\CodeIgniter.php(919): App\Controllers\Skripsi->index()
+#7 D:\programmer\ciempatmonitoring\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Skripsi))
+#8 D:\programmer\ciempatmonitoring\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\programmer\ciempatmonitoring\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\programmer\ciempatmonitoring\system\Commands\Server\rewrite.php(47): require_once('D:\\programmer\\c...')
+#11 {main}
+CRITICAL - 2023-11-16 08:13:33 --> Unknown column 'bimbingan.bb_skripsi_id' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `bimbingan`.*, `skripsi`.*
+FROM `bimbingan`
+JOIN `skripsi` ON `bimbingan`.`bb_skripsi_id` = `skripsi`.`skripsi_id`
+WHERE `nim_mahasiswa` = :nim_mahasiswa:', [...], false)
+ 2 APPPATH\Models\BimbinganModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Skripsi.php(32): App\Models\BimbinganModel->getAll('22321928')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Skripsi->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Skripsi))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\programmer\\ciempatmonitoring\\public\\index.php')
+INFO - 2023-11-16 08:15:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-16 08:15:06 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\skripsi\v_skripsi.php on line 137.
+ 1 APPPATH\Views\skripsi\v_skripsi.php(137): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\programmer\\ciempatmonitoring\\app\\Views\\skripsi\\v_skripsi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('skripsi/v_skripsi', [], true)
+ 5 APPPATH\Controllers\Skripsi.php(55): view('skripsi/v_skripsi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Skripsi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Skripsi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\programmer\\ciempatmonitoring\\public\\index.php')
+INFO - 2023-11-16 08:15:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:15:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-16 08:15:35 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\skripsi\v_skripsi.php on line 137.
+ 1 APPPATH\Views\skripsi\v_skripsi.php(137): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\programmer\\ciempatmonitoring\\app\\Views\\skripsi\\v_skripsi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('skripsi/v_skripsi', [], true)
+ 5 APPPATH\Controllers\Skripsi.php(55): view('skripsi/v_skripsi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Skripsi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Skripsi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\programmer\\ciempatmonitoring\\public\\index.php')
+INFO - 2023-11-16 08:15:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:17:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:17:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-16 08:17:34 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\skripsi\v_skripsi.php on line 137.
+ 1 APPPATH\Views\skripsi\v_skripsi.php(137): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\programmer\\ciempatmonitoring\\app\\Views\\skripsi\\v_skripsi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('skripsi/v_skripsi', [], true)
+ 5 APPPATH\Controllers\Skripsi.php(55): view('skripsi/v_skripsi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Skripsi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Skripsi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\programmer\\ciempatmonitoring\\public\\index.php')
+INFO - 2023-11-16 08:28:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:33:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:33:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-16 08:33:14 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\skripsi\v_skripsi.php on line 137.
+ 1 APPPATH\Views\skripsi\v_skripsi.php(137): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\programmer\\ciempatmonitoring\\app\\Views\\skripsi\\v_skripsi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('skripsi/v_skripsi', [], true)
+ 5 APPPATH\Controllers\Skripsi.php(55): view('skripsi/v_skripsi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Skripsi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Skripsi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\programmer\\ciempatmonitoring\\public\\index.php')
+INFO - 2023-11-16 08:33:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:33:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-16 08:33:17 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\skripsi\v_skripsi.php on line 137.
+ 1 APPPATH\Views\skripsi\v_skripsi.php(137): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\programmer\\ciempatmonitoring\\app\\Views\\skripsi\\v_skripsi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('skripsi/v_skripsi', [], true)
+ 5 APPPATH\Controllers\Skripsi.php(55): view('skripsi/v_skripsi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Skripsi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Skripsi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\programmer\\ciempatmonitoring\\public\\index.php')
+INFO - 2023-11-16 08:34:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-16 08:34:43 --> Call to undefined method App\Models\SkripsiModel::cekBisaBimbingan
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Skripsi.php(34): CodeIgniter\Model->__call('cekBisaBimbingan', [])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Skripsi->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Skripsi))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\programmer\\ciempatmonitoring\\public\\index.php')
+INFO - 2023-11-16 08:35:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-16 08:35:10 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\skripsi\v_skripsi.php on line 137.
+ 1 APPPATH\Views\skripsi\v_skripsi.php(137): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\programmer\\ciempatmonitoring\\app\\Views\\skripsi\\v_skripsi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('skripsi/v_skripsi', [], true)
+ 5 APPPATH\Controllers\Skripsi.php(55): view('skripsi/v_skripsi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Skripsi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Skripsi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\programmer\\ciempatmonitoring\\public\\index.php')
+INFO - 2023-11-16 08:35:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:42:29 --> CSRF token verified.
+INFO - 2023-11-16 08:42:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-16 08:42:29 --> Too few arguments to function App\Controllers\Bimbingan::simpan_bimbingan(), 0 passed in D:\programmer\ciempatmonitoring\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\Bimbingan.php on line 50.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Bimbingan->simpan_bimbingan()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bimbingan))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\programmer\\ciempatmonitoring\\public\\index.php')
+INFO - 2023-11-16 08:43:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:44:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:47:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:47:23 --> CSRF token verified.
+INFO - 2023-11-16 08:47:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:47:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-16 08:47:23 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\skripsi\v_skripsi.php on line 137.
+ 1 APPPATH\Views\skripsi\v_skripsi.php(137): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\programmer\\ciempatmonitoring\\app\\Views\\skripsi\\v_skripsi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('skripsi/v_skripsi', [], true)
+ 5 APPPATH\Controllers\Skripsi.php(55): view('skripsi/v_skripsi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Skripsi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Skripsi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\programmer\\ciempatmonitoring\\public\\index.php')
+INFO - 2023-11-16 08:48:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-16 08:48:00 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\skripsi\v_skripsi.php on line 137.
+ 1 APPPATH\Views\skripsi\v_skripsi.php(137): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\programmer\\ciempatmonitoring\\app\\Views\\skripsi\\v_skripsi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('skripsi/v_skripsi', [], true)
+ 5 APPPATH\Controllers\Skripsi.php(55): view('skripsi/v_skripsi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Skripsi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Skripsi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\programmer\\ciempatmonitoring\\public\\index.php')
+INFO - 2023-11-16 08:48:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:48:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-16 08:48:07 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\skripsi\v_skripsi.php on line 137.
+ 1 APPPATH\Views\skripsi\v_skripsi.php(137): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\programmer\\ciempatmonitoring\\app\\Views\\skripsi\\v_skripsi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('skripsi/v_skripsi', [], true)
+ 5 APPPATH\Controllers\Skripsi.php(55): view('skripsi/v_skripsi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Skripsi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Skripsi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\programmer\\ciempatmonitoring\\public\\index.php')
+INFO - 2023-11-16 08:48:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-16 08:48:54 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\skripsi\v_skripsi.php on line 137.
+ 1 APPPATH\Views\skripsi\v_skripsi.php(137): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\programmer\\ciempatmonitoring\\app\\Views\\skripsi\\v_skripsi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('skripsi/v_skripsi', [], true)
+ 5 APPPATH\Controllers\Skripsi.php(55): view('skripsi/v_skripsi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Skripsi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Skripsi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\programmer\\ciempatmonitoring\\public\\index.php')
+INFO - 2023-11-16 08:48:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:49:08 --> CSRF token verified.
+INFO - 2023-11-16 08:49:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:50:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:50:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-16 08:50:08 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\skripsi\v_skripsi.php on line 137.
+ 1 APPPATH\Views\skripsi\v_skripsi.php(137): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\programmer\\ciempatmonitoring\\app\\Views\\skripsi\\v_skripsi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('skripsi/v_skripsi', [], true)
+ 5 APPPATH\Controllers\Skripsi.php(55): view('skripsi/v_skripsi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Skripsi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Skripsi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\programmer\\ciempatmonitoring\\public\\index.php')
+INFO - 2023-11-16 08:50:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:50:34 --> CSRF token verified.
+INFO - 2023-11-16 08:50:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:50:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-16 08:50:34 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\skripsi\v_skripsi.php on line 137.
+ 1 APPPATH\Views\skripsi\v_skripsi.php(137): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\programmer\\ciempatmonitoring\\app\\Views\\skripsi\\v_skripsi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('skripsi/v_skripsi', [], true)
+ 5 APPPATH\Controllers\Skripsi.php(55): view('skripsi/v_skripsi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Skripsi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Skripsi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\programmer\\ciempatmonitoring\\public\\index.php')
+INFO - 2023-11-16 08:52:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-16 08:52:15 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\skripsi\v_skripsi.php on line 137.
+ 1 APPPATH\Views\skripsi\v_skripsi.php(137): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\programmer\\ciempatmonitoring\\app\\Views\\skripsi\\v_skripsi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('skripsi/v_skripsi', [], true)
+ 5 APPPATH\Controllers\Skripsi.php(55): view('skripsi/v_skripsi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Skripsi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Skripsi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\programmer\\ciempatmonitoring\\public\\index.php')
+INFO - 2023-11-16 08:52:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:52:35 --> CSRF token verified.
+INFO - 2023-11-16 08:52:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:52:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-16 08:52:35 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\skripsi\v_skripsi.php on line 137.
+ 1 APPPATH\Views\skripsi\v_skripsi.php(137): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\programmer\\ciempatmonitoring\\app\\Views\\skripsi\\v_skripsi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('skripsi/v_skripsi', [], true)
+ 5 APPPATH\Controllers\Skripsi.php(55): view('skripsi/v_skripsi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Skripsi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Skripsi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\programmer\\ciempatmonitoring\\public\\index.php')
+INFO - 2023-11-16 08:54:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:55:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 08:55:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-16 08:55:31 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\skripsi\v_skripsi.php on line 137.
+ 1 APPPATH\Views\skripsi\v_skripsi.php(137): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\programmer\\ciempatmonitoring\\app\\Views\\skripsi\\v_skripsi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('skripsi/v_skripsi', [], true)
+ 5 APPPATH\Controllers\Skripsi.php(55): view('skripsi/v_skripsi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Skripsi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Skripsi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\programmer\\ciempatmonitoring\\public\\index.php')
+WARNING - 2023-11-16 08:55:31 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\skripsi\v_skripsi.php on line 182.
+ 1 APPPATH\Views\skripsi\v_skripsi.php(182): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\programmer\\ciempatmonitoring\\app\\Views\\skripsi\\v_skripsi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('skripsi/v_skripsi', [], true)
+ 5 APPPATH\Controllers\Skripsi.php(55): view('skripsi/v_skripsi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Skripsi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Skripsi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\programmer\\ciempatmonitoring\\public\\index.php')
+INFO - 2023-11-16 08:56:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-16 08:56:45 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\skripsi\v_skripsi.php on line 137.
+ 1 APPPATH\Views\skripsi\v_skripsi.php(137): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\programmer\\ciempatmonitoring\\app\\Views\\skripsi\\v_skripsi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('skripsi/v_skripsi', [], true)
+ 5 APPPATH\Controllers\Skripsi.php(55): view('skripsi/v_skripsi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Skripsi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Skripsi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\programmer\\ciempatmonitoring\\public\\index.php')
+INFO - 2023-11-16 08:58:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-16 08:58:15 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\skripsi\v_skripsi.php on line 137.
+ 1 APPPATH\Views\skripsi\v_skripsi.php(137): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\programmer\\ciempatmonitoring\\app\\Views\\skripsi\\v_skripsi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('skripsi/v_skripsi', [], true)
+ 5 APPPATH\Controllers\Skripsi.php(55): view('skripsi/v_skripsi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Skripsi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Skripsi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\programmer\\ciempatmonitoring\\public\\index.php')
+CRITICAL - 2023-11-16 08:58:15 --> Undefined array key "is_verifikasi"
+in APPPATH\Views\skripsi\v_skripsi.php on line 186.
+ 1 APPPATH\Views\skripsi\v_skripsi.php(186): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "is_verifikasi"', 'D:\\programmer\\ciempatmonitoring\\app\\Views\\skripsi\\v_skripsi.php', 186)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\programmer\\ciempatmonitoring\\app\\Views\\skripsi\\v_skripsi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('skripsi/v_skripsi', [], true)
+ 5 APPPATH\Controllers\Skripsi.php(55): view('skripsi/v_skripsi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Skripsi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Skripsi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\programmer\\ciempatmonitoring\\public\\index.php')
+INFO - 2023-11-16 08:59:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-16 08:59:12 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\skripsi\v_skripsi.php on line 137.
+ 1 APPPATH\Views\skripsi\v_skripsi.php(137): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\programmer\\ciempatmonitoring\\app\\Views\\skripsi\\v_skripsi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('skripsi/v_skripsi', [], true)
+ 5 APPPATH\Controllers\Skripsi.php(55): view('skripsi/v_skripsi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Skripsi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Skripsi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\programmer\\ciempatmonitoring\\public\\index.php')
+INFO - 2023-11-16 08:59:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-16 08:59:33 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\skripsi\v_skripsi.php on line 137.
+ 1 APPPATH\Views\skripsi\v_skripsi.php(137): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\programmer\\ciempatmonitoring\\app\\Views\\skripsi\\v_skripsi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('skripsi/v_skripsi', [], true)
+ 5 APPPATH\Controllers\Skripsi.php(55): view('skripsi/v_skripsi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Skripsi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Skripsi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\programmer\\ciempatmonitoring\\public\\index.php')
+INFO - 2023-11-16 09:03:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 09:06:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 09:06:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 09:07:07 --> CSRF token verified.
+INFO - 2023-11-16 09:07:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 09:07:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-16 09:07:07 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\skripsi\v_skripsi.php on line 137.
+ 1 APPPATH\Views\skripsi\v_skripsi.php(137): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\programmer\\ciempatmonitoring\\app\\Views\\skripsi\\v_skripsi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('skripsi/v_skripsi', [], true)
+ 5 APPPATH\Controllers\Skripsi.php(55): view('skripsi/v_skripsi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Skripsi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Skripsi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\programmer\\ciempatmonitoring\\public\\index.php')
+INFO - 2023-11-16 09:12:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-16 09:12:57 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\skripsi\v_skripsi.php on line 137.
+ 1 APPPATH\Views\skripsi\v_skripsi.php(137): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\programmer\\ciempatmonitoring\\app\\Views\\skripsi\\v_skripsi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('skripsi/v_skripsi', [], true)
+ 5 APPPATH\Controllers\Skripsi.php(55): view('skripsi/v_skripsi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Skripsi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Skripsi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\programmer\\ciempatmonitoring\\public\\index.php')
+INFO - 2023-11-16 09:13:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-16 09:13:13 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\skripsi\v_skripsi.php on line 137.
+ 1 APPPATH\Views\skripsi\v_skripsi.php(137): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\programmer\\ciempatmonitoring\\app\\Views\\skripsi\\v_skripsi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('skripsi/v_skripsi', [], true)
+ 5 APPPATH\Controllers\Skripsi.php(55): view('skripsi/v_skripsi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Skripsi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Skripsi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\programmer\\ciempatmonitoring\\public\\index.php')
+INFO - 2023-11-16 09:13:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 09:13:33 --> CSRF token verified.
+INFO - 2023-11-16 09:13:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 09:13:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-16 09:13:33 --> [DEPRECATED] strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in APPPATH\Views\skripsi\v_skripsi.php on line 137.
+ 1 APPPATH\Views\skripsi\v_skripsi.php(137): strtotime(null)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\programmer\\ciempatmonitoring\\app\\Views\\skripsi\\v_skripsi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('skripsi/v_skripsi', [], true)
+ 5 APPPATH\Controllers\Skripsi.php(55): view('skripsi/v_skripsi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Skripsi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Skripsi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\programmer\\ciempatmonitoring\\public\\index.php')
+INFO - 2023-11-16 09:21:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 09:22:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 09:22:58 --> CSRF token verified.
+INFO - 2023-11-16 09:22:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 09:22:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 09:23:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 09:23:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 09:23:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 09:23:24 --> CSRF token verified.
+INFO - 2023-11-16 09:23:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 09:23:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 09:23:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 09:23:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 09:24:51 --> CSRF token verified.
+INFO - 2023-11-16 09:24:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 09:24:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 09:24:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 09:24:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 09:24:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 09:25:07 --> CSRF token verified.
+INFO - 2023-11-16 09:25:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 09:25:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 09:25:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 09:25:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 09:25:38 --> CSRF token verified.
+INFO - 2023-11-16 09:25:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 09:25:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:32:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:32:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:32:25 --> CSRF token verified.
+INFO - 2023-11-16 16:32:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:32:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:32:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:36:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:37:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:38:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:39:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:40:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:40:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:44:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:46:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:47:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:47:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:47:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:48:04 --> CSRF token verified.
+INFO - 2023-11-16 16:48:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:48:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:48:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 16:48:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:09:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:09:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:10:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:10:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:10:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:11:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:12:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:14:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:14:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:14:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:15:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:17:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:18:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:18:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:18:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:19:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:23:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:23:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:24:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:25:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:25:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:28:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:29:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:30:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:30:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:30:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:30:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:30:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:31:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:31:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:31:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:31:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:32:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:32:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:32:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:32:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:32:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:32:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:33:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:34:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:34:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:35:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:36:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:39:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:50:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:51:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:51:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:52:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:52:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:52:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 17:54:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 18:13:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 18:14:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 18:15:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 18:23:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-16 18:23:45 --> Call to undefined method App\Models\SkripsiModel::getStatusSkripsi
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Skripsi.php(36): CodeIgniter\Model->__call('getStatusSkripsi', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Skripsi->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Skripsi))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\programmer\\ciempatmonitoring\\public\\index.php')
+INFO - 2023-11-16 18:24:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 18:25:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 18:25:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 18:25:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 18:26:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 18:27:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 18:27:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 18:28:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 18:52:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

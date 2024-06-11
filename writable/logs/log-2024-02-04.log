@@ -1,0 +1,1413 @@
+INFO - 2024-02-04 11:24:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 11:26:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 11:26:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 11:26:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 11:26:41 --> CSRF token verified.
+INFO - 2024-02-04 11:26:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 11:26:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 11:26:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 11:26:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 11:35:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 11:35:03 --> CSRF token verified.
+ERROR - 2024-02-04 11:35:03 --> mysqli_sql_exception: Column 'berita_sampul' cannot be null in C:\laragon\www\direktoratkemahasiswaanci\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\direktoratkemahasiswaanci\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `be...', 0)
+#1 C:\laragon\www\direktoratkemahasiswaanci\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `be...')
+#2 C:\laragon\www\direktoratkemahasiswaanci\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `be...')
+#3 C:\laragon\www\direktoratkemahasiswaanci\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `be...', Array, false)
+#4 C:\laragon\www\direktoratkemahasiswaanci\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\direktoratkemahasiswaanci\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\direktoratkemahasiswaanci\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\direktoratkemahasiswaanci\app\Controllers\Berita.php(100): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\direktoratkemahasiswaanci\system\CodeIgniter.php(919): App\Controllers\Berita->simpan()
+#9 C:\laragon\www\direktoratkemahasiswaanci\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+#10 C:\laragon\www\direktoratkemahasiswaanci\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\direktoratkemahasiswaanci\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\direktoratkemahasiswaanci\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2024-02-04 11:35:03 --> Column 'berita_sampul' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `berita` (`berita_sampul`, `berita_judul`, `berita_isi`, `berita_kategori`, `berita_subkategori`, `berita_penulis`, `berita_tampil`, `created_at`, `updated_at`) VALUES (:berita_sampul:, :berita_judul:, :berita_isi:, :berita_kategori:, :berita_subkategori:, :berita_penulis:, :berita_tampil:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Berita.php(100): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Berita->simpan()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berita))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+INFO - 2024-02-04 11:35:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 11:36:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 11:36:04 --> CSRF token verified.
+INFO - 2024-02-04 11:36:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-04 13:39:34 --> Undefined array key "slug"
+in APPPATH\Views\front_end\v_template_front_end.php on line 526.
+ 1 APPPATH\Views\front_end\v_template_front_end.php(526): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "slug"', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\front_end\\v_template_front_end.php', 526)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\front_end\\v_template_front_end.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('front_end/v_template_front_end', [], true)
+ 5 APPPATH\Controllers\Home.php(22): view('front_end/v_template_front_end', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+INFO - 2024-02-04 13:43:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 13:43:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 13:43:32 --> CSRF token verified.
+INFO - 2024-02-04 13:43:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 13:43:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 13:52:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 13:52:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 13:53:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 13:54:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 13:54:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 13:55:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 13:56:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 13:57:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 13:57:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 13:57:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:02:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:03:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:03:21 --> CSRF token verified.
+INFO - 2024-02-04 14:03:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:03:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:03:23 --> CSRF token verified.
+INFO - 2024-02-04 14:03:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:04:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:04:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:04:06 --> CSRF token verified.
+INFO - 2024-02-04 14:04:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:04:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:04:16 --> CSRF token verified.
+INFO - 2024-02-04 14:04:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:10:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:10:15 --> CSRF token verified.
+CRITICAL - 2024-02-04 14:10:15 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 768.
+ 1 SYSTEMPATH\BaseModel.php(768): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\PenyimpananGambar.php(64): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PenyimpananGambar->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenyimpananGambar))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+INFO - 2024-02-04 14:11:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:11:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:11:50 --> CSRF token verified.
+INFO - 2024-02-04 14:12:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:12:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:12:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:12:13 --> CSRF token verified.
+CRITICAL - 2024-02-04 14:12:13 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 768.
+ 1 SYSTEMPATH\BaseModel.php(768): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\PenyimpananGambar.php(64): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PenyimpananGambar->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenyimpananGambar))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+INFO - 2024-02-04 14:12:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:12:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:12:27 --> CSRF token verified.
+INFO - 2024-02-04 14:13:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:13:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:13:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:13:21 --> CSRF token verified.
+INFO - 2024-02-04 14:13:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:13:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:13:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:13:28 --> CSRF token verified.
+INFO - 2024-02-04 14:13:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:13:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:13:31 --> CSRF token verified.
+INFO - 2024-02-04 14:13:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-04 14:13:32 --> Undefined array key "nama_gambar"
+in APPPATH\Views\penyimpanan_gambar\v_penyimpanan_gambar.php on line 52.
+ 1 APPPATH\Views\penyimpanan_gambar\v_penyimpanan_gambar.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_gambar"', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\penyimpanan_gambar\\v_penyimpanan_gambar.php', 52)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\penyimpanan_gambar\\v_penyimpanan_gambar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('penyimpanan_gambar/v_penyimpanan_gambar', [], true)
+ 5 APPPATH\Controllers\PenyimpananGambar.php(24): view('penyimpanan_gambar/v_penyimpanan_gambar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PenyimpananGambar->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenyimpananGambar))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+INFO - 2024-02-04 14:13:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-04 14:13:45 --> Undefined array key "berita_id"
+in APPPATH\Views\penyimpanan_gambar\v_penyimpanan_gambar.php on line 54.
+ 1 APPPATH\Views\penyimpanan_gambar\v_penyimpanan_gambar.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "berita_id"', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\penyimpanan_gambar\\v_penyimpanan_gambar.php', 54)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\penyimpanan_gambar\\v_penyimpanan_gambar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('penyimpanan_gambar/v_penyimpanan_gambar', [], true)
+ 5 APPPATH\Controllers\PenyimpananGambar.php(24): view('penyimpanan_gambar/v_penyimpanan_gambar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PenyimpananGambar->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenyimpananGambar))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+INFO - 2024-02-04 14:13:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:17:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:17:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:17:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:17:33 --> CSRF token verified.
+INFO - 2024-02-04 14:17:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:27:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:28:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:29:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:30:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:30:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:32:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:32:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:35:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:35:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:42:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:43:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:44:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:44:39 --> CSRF token verified.
+INFO - 2024-02-04 14:44:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:44:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:45:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:45:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:46:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:46:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:47:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:47:23 --> CSRF token verified.
+INFO - 2024-02-04 14:47:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 14:49:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 15:59:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 15:59:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 15:59:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 15:59:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 15:59:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 15:59:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 16:00:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-04 16:00:18 --> Undefined array key "berita_judul"
+in APPPATH\Views\home\v_detail_berita.php on line 38.
+ 1 APPPATH\Views\home\v_detail_berita.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "berita_judul"', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 38)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+INFO - 2024-02-04 16:01:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 16:01:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 16:01:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 16:01:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 16:01:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 16:02:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 16:02:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-04 16:02:04 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 38.
+ 1 APPPATH\Views\home\v_detail_berita.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 38)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '1500x700.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+INFO - 2024-02-04 16:02:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-04 16:02:04 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 38.
+ 1 APPPATH\Views\home\v_detail_berita.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 38)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '800x800.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+INFO - 2024-02-04 16:02:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-04 16:02:05 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 38.
+ 1 APPPATH\Views\home\v_detail_berita.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 38)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '100x100.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+INFO - 2024-02-04 16:02:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-04 16:02:05 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 38.
+ 1 APPPATH\Views\home\v_detail_berita.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 38)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '2440x1578.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+INFO - 2024-02-04 16:02:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-04 16:02:05 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 38.
+ 1 APPPATH\Views\home\v_detail_berita.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 38)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('images', 'favicon.ico')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+INFO - 2024-02-04 16:04:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-04 16:04:38 --> Too few arguments to function CodeIgniter\Database\BaseBuilder::when(), 1 passed in C:\laragon\www\direktoratkemahasiswaanci\system\Model.php on line 871 and at least 2 expected
+in SYSTEMPATH\Traits\ConditionalTrait.php on line 28.
+ 1 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->when([...])
+ 2 APPPATH\Models\BeritaModel.php(41): CodeIgniter\Model->__call('when', [...])
+ 3 APPPATH\Controllers\Home.php(27): App\Models\BeritaModel->getDetail('pengembalian-uktspp-bagi-penerima-kip-kuliah-tahun-masuk-2023-skema-1-dan-2-universitas-negeri-padang')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('pengembalian-uktspp-bagi-penerima-kip-kuliah-tahun-masuk-2023-skema-1-dan-2-universitas-negeri-padang')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+INFO - 2024-02-04 16:04:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 16:05:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 16:05:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-04 16:05:01 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 38.
+ 1 APPPATH\Views\home\v_detail_berita.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 38)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '1500x700.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+INFO - 2024-02-04 16:05:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-04 16:05:01 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 38.
+ 1 APPPATH\Views\home\v_detail_berita.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 38)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '800x800.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+INFO - 2024-02-04 16:05:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-04 16:05:02 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 38.
+ 1 APPPATH\Views\home\v_detail_berita.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 38)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '100x100.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+INFO - 2024-02-04 16:05:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-04 16:05:02 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 38.
+ 1 APPPATH\Views\home\v_detail_berita.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 38)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '2440x1578.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+INFO - 2024-02-04 16:05:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-04 16:05:02 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 38.
+ 1 APPPATH\Views\home\v_detail_berita.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 38)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('images', 'favicon.ico')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+INFO - 2024-02-04 16:06:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 16:06:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-04 16:06:05 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 38.
+ 1 APPPATH\Views\home\v_detail_berita.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 38)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '1500x700.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+INFO - 2024-02-04 16:06:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-04 16:06:05 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 38.
+ 1 APPPATH\Views\home\v_detail_berita.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 38)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '800x800.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+INFO - 2024-02-04 16:06:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-04 16:06:05 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 38.
+ 1 APPPATH\Views\home\v_detail_berita.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 38)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '100x100.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+INFO - 2024-02-04 16:06:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-04 16:06:06 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 38.
+ 1 APPPATH\Views\home\v_detail_berita.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 38)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '2440x1578.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+INFO - 2024-02-04 16:06:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-04 16:06:06 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 38.
+ 1 APPPATH\Views\home\v_detail_berita.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 38)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('images', 'favicon.ico')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+INFO - 2024-02-04 16:06:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 16:06:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-04 16:06:23 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 38.
+ 1 APPPATH\Views\home\v_detail_berita.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 38)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '1500x700.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+INFO - 2024-02-04 16:06:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-04 16:06:24 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 38.
+ 1 APPPATH\Views\home\v_detail_berita.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 38)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '800x800.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+INFO - 2024-02-04 16:06:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-04 16:06:24 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 38.
+ 1 APPPATH\Views\home\v_detail_berita.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 38)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '2440x1578.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+INFO - 2024-02-04 16:06:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-04 16:06:24 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 38.
+ 1 APPPATH\Views\home\v_detail_berita.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 38)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '100x100.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+INFO - 2024-02-04 16:06:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-04 16:06:25 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 38.
+ 1 APPPATH\Views\home\v_detail_berita.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 38)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('images', 'favicon.ico')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+INFO - 2024-02-04 16:06:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-04 16:06:40 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 38.
+ 1 APPPATH\Views\home\v_detail_berita.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 38)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('images', 'favicon.ico')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+INFO - 2024-02-04 16:07:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-04 16:07:31 --> Undefined array key "berita_gambar"
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "berita_gambar"', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('unp-kunjungi-kota-sungai-penuh-dan-kabupaten-kerinci-provinsi-jambi-untuk-sosialisasikan-snpmb-2024')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+INFO - 2024-02-04 16:07:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 16:07:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-04 16:07:57 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '800x800.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+INFO - 2024-02-04 16:07:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-04 16:07:57 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '2440x1578.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+INFO - 2024-02-04 16:07:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-04 16:07:58 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '100x100.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+INFO - 2024-02-04 16:07:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-04 16:07:58 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('images', 'favicon.ico')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+INFO - 2024-02-04 16:08:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-04 16:08:59 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('images', 'favicon.ico')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+INFO - 2024-02-04 16:09:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 16:09:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-04 16:09:04 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '800x800.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+INFO - 2024-02-04 16:09:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-04 16:09:04 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '100x100.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+INFO - 2024-02-04 16:09:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-04 16:09:04 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '2440x1578.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+INFO - 2024-02-04 16:09:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-04 16:09:04 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('images', 'favicon.ico')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+INFO - 2024-02-04 16:10:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-04 16:10:41 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('index.html')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+INFO - 2024-02-04 16:11:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 16:11:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-04 16:11:37 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '800x800.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+INFO - 2024-02-04 16:11:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-04 16:11:37 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '100x100.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+INFO - 2024-02-04 16:11:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-04 16:11:37 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '2440x1578.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+INFO - 2024-02-04 16:11:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-04 16:11:37 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('images', 'favicon.ico')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+INFO - 2024-02-04 21:17:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-04 21:17:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-04 21:18:47 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '800x800.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:18:47 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '100x100.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:18:47 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '2440x1578.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:18:48 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('images', 'favicon.ico')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:21:49 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '800x800.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:21:49 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '100x100.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:21:50 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '2440x1578.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:21:50 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('images', 'favicon.ico')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:22:11 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '800x800.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:22:11 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '100x100.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:22:11 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '2440x1578.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:22:12 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('images', 'favicon.ico')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:32:47 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '800x800.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:32:47 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '100x100.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:32:47 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '2440x1578.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:32:48 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('images', 'favicon.ico')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:34:56 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('images', 'favicon.ico')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:40:23 --> include(sidebar.php): Failed to open stream: No such file or directory
+in APPPATH\Views\home\v_detail_berita.php on line 161.
+ 1 APPPATH\Views\home\v_detail_berita.php(161): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(sidebar.php): Failed to open stream: No such file or directory', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 161)
+ 2 APPPATH\Views\home\v_detail_berita.php(161): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 6 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('pengembalian-uktspp-bagi-penerima-kip-kuliah-tahun-masuk-2023-skema-1-dan-2-universitas-negeri-padang')
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:41:13 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '800x800.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:41:13 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '100x100.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:41:13 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '2440x1578.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:41:13 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('images', 'favicon.ico')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:42:32 --> include(layout_front_end/berita_sidebar.php): Failed to open stream: No such file or directory
+in APPPATH\Views\home\v_detail_berita.php on line 161.
+ 1 APPPATH\Views\home\v_detail_berita.php(161): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(layout_front_end/berita_sidebar.php): Failed to open stream: No such file or directory', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 161)
+ 2 APPPATH\Views\home\v_detail_berita.php(161): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 6 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('pengembalian-uktspp-bagi-penerima-kip-kuliah-tahun-masuk-2023-skema-1-dan-2-universitas-negeri-padang')
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:42:53 --> include(layout_front_end/sidebar_front_end.php): Failed to open stream: No such file or directory
+in APPPATH\Views\home\v_detail_berita.php on line 161.
+ 1 APPPATH\Views\home\v_detail_berita.php(161): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(layout_front_end/sidebar_front_end.php): Failed to open stream: No such file or directory', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 161)
+ 2 APPPATH\Views\home\v_detail_berita.php(161): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 6 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('pengembalian-uktspp-bagi-penerima-kip-kuliah-tahun-masuk-2023-skema-1-dan-2-universitas-negeri-padang')
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:43:39 --> include(layout_front_end/sidebar_front_end.php): Failed to open stream: No such file or directory
+in APPPATH\Views\home\v_detail_berita.php on line 161.
+ 1 APPPATH\Views\home\v_detail_berita.php(161): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(layout_front_end/sidebar_front_end.php): Failed to open stream: No such file or directory', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 161)
+ 2 APPPATH\Views\home\v_detail_berita.php(161): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 6 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('pengembalian-uktspp-bagi-penerima-kip-kuliah-tahun-masuk-2023-skema-1-dan-2-universitas-negeri-padang')
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:43:40 --> include(layout_front_end/sidebar_front_end.php): Failed to open stream: No such file or directory
+in APPPATH\Views\home\v_detail_berita.php on line 161.
+ 1 APPPATH\Views\home\v_detail_berita.php(161): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(layout_front_end/sidebar_front_end.php): Failed to open stream: No such file or directory', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 161)
+ 2 APPPATH\Views\home\v_detail_berita.php(161): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 6 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('pengembalian-uktspp-bagi-penerima-kip-kuliah-tahun-masuk-2023-skema-1-dan-2-universitas-negeri-padang')
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:43:55 --> include(layout_front_end/sidebar_front_end.php): Failed to open stream: No such file or directory
+in APPPATH\Views\home\v_detail_berita.php on line 161.
+ 1 APPPATH\Views\home\v_detail_berita.php(161): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(layout_front_end/sidebar_front_end.php): Failed to open stream: No such file or directory', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 161)
+ 2 APPPATH\Views\home\v_detail_berita.php(161): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 6 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('pengembalian-uktspp-bagi-penerima-kip-kuliah-tahun-masuk-2023-skema-1-dan-2-universitas-negeri-padang')
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:45:07 --> include(layout_front_end/sidebar_front_end): Failed to open stream: No such file or directory
+in APPPATH\Views\home\v_detail_berita.php on line 161.
+ 1 APPPATH\Views\home\v_detail_berita.php(161): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(layout_front_end/sidebar_front_end): Failed to open stream: No such file or directory', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 161)
+ 2 APPPATH\Views\home\v_detail_berita.php(161): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 6 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('pengembalian-uktspp-bagi-penerima-kip-kuliah-tahun-masuk-2023-skema-1-dan-2-universitas-negeri-padang')
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:45:28 --> include(/layout_front_end/sidebar_front_end.php): Failed to open stream: No such file or directory
+in APPPATH\Views\home\v_detail_berita.php on line 161.
+ 1 APPPATH\Views\home\v_detail_berita.php(161): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(/layout_front_end/sidebar_front_end.php): Failed to open stream: No such file or directory', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 161)
+ 2 APPPATH\Views\home\v_detail_berita.php(161): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 6 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('pengembalian-uktspp-bagi-penerima-kip-kuliah-tahun-masuk-2023-skema-1-dan-2-universitas-negeri-padang')
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:45:38 --> include(layout_front_end/sidebar_front_end.php): Failed to open stream: No such file or directory
+in APPPATH\Views\home\v_detail_berita.php on line 161.
+ 1 APPPATH\Views\home\v_detail_berita.php(161): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(layout_front_end/sidebar_front_end.php): Failed to open stream: No such file or directory', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 161)
+ 2 APPPATH\Views\home\v_detail_berita.php(161): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 6 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('pengembalian-uktspp-bagi-penerima-kip-kuliah-tahun-masuk-2023-skema-1-dan-2-universitas-negeri-padang')
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:52:54 --> include(layout_front_end/sidebar_front_end.php): Failed to open stream: No such file or directory
+in APPPATH\Views\home\v_detail_berita.php on line 161.
+ 1 APPPATH\Views\home\v_detail_berita.php(161): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(layout_front_end/sidebar_front_end.php): Failed to open stream: No such file or directory', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 161)
+ 2 APPPATH\Views\home\v_detail_berita.php(161): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 6 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('pengembalian-uktspp-bagi-penerima-kip-kuliah-tahun-masuk-2023-skema-1-dan-2-universitas-negeri-padang')
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:54:58 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '800x800.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:54:58 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '100x100.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:54:58 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '2440x1578.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:54:58 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('images', 'favicon.ico')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:55:06 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '800x800.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:55:06 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '100x100.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:55:06 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '2440x1578.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:55:07 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('images', 'favicon.ico')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:57:20 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '800x800.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:57:20 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '100x100.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:57:21 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '2440x1578.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:57:21 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('images', 'favicon.ico')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:57:35 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '800x800.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:57:35 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '100x100.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:57:36 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '2440x1578.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:57:36 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('images', 'favicon.ico')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:57:55 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '800x800.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:57:55 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '100x100.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:57:55 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '2440x1578.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:57:56 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('images', 'favicon.ico')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:59:59 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '800x800.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:59:59 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '100x100.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 21:59:59 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '2440x1578.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 22:00:00 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('images', 'favicon.ico')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 22:00:12 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '800x800.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 22:00:12 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '2440x1578.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 22:00:12 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('assets', 'img', '100x100.png')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')
+CRITICAL - 2024-02-04 22:00:13 --> Trying to access array offset on value of type null
+in APPPATH\Views\home\v_detail_berita.php on line 31.
+ 1 APPPATH\Views\home\v_detail_berita.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php', 31)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\direktoratkemahasiswaanci\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\Home.php(33): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->detail('images', 'favicon.ico')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\direktoratkemahasiswaanci\\public\\index.php')

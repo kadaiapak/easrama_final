@@ -1,0 +1,334 @@
+INFO - 2024-04-20 18:02:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 18:02:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 18:02:21 --> CSRF token verified.
+INFO - 2024-04-20 18:02:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 18:02:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 18:02:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 18:02:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 20:18:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 20:18:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 20:18:11 --> CSRF token verified.
+INFO - 2024-04-20 20:18:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 20:18:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 20:18:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 20:18:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 20:19:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 20:20:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 21:27:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 21:31:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 21:32:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 21:36:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 21:38:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 22:08:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 22:14:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 22:14:06 --> CSRF token verified.
+INFO - 2024-04-20 22:14:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-20 22:14:06 --> Undefined array key "prestasi_tanggal_mulai_lomba"
+in APPPATH\Views\prestasi\v_prestasi.php on line 64.
+ 1 APPPATH\Views\prestasi\v_prestasi.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prestasi_tanggal_mulai_lomba"', 'C:\\laragon\\www\\pendidikannonformal\\app\\Views\\prestasi\\v_prestasi.php', 64)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\pendidikannonformal\\app\\Views\\prestasi\\v_prestasi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('prestasi/v_prestasi', [], true)
+ 5 APPPATH\Controllers\Prestasi.php(25): view('prestasi/v_prestasi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Prestasi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prestasi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pendidikannonformal\\public\\index.php')
+INFO - 2024-04-20 22:14:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-20 22:14:29 --> Undefined array key "berita_slug"
+in APPPATH\Views\prestasi\v_prestasi.php on line 72.
+ 1 APPPATH\Views\prestasi\v_prestasi.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "berita_slug"', 'C:\\laragon\\www\\pendidikannonformal\\app\\Views\\prestasi\\v_prestasi.php', 72)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\pendidikannonformal\\app\\Views\\prestasi\\v_prestasi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('prestasi/v_prestasi', [], true)
+ 5 APPPATH\Controllers\Prestasi.php(25): view('prestasi/v_prestasi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Prestasi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prestasi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pendidikannonformal\\public\\index.php')
+INFO - 2024-04-20 22:14:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-20 22:14:42 --> Undefined array key "berita_id"
+in APPPATH\Views\prestasi\v_prestasi.php on line 76.
+ 1 APPPATH\Views\prestasi\v_prestasi.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "berita_id"', 'C:\\laragon\\www\\pendidikannonformal\\app\\Views\\prestasi\\v_prestasi.php', 76)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\pendidikannonformal\\app\\Views\\prestasi\\v_prestasi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('prestasi/v_prestasi', [], true)
+ 5 APPPATH\Controllers\Prestasi.php(25): view('prestasi/v_prestasi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Prestasi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prestasi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pendidikannonformal\\public\\index.php')
+INFO - 2024-04-20 22:14:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 22:15:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 22:15:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 22:16:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 22:18:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-20 22:18:03 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 298.
+ 1 SYSTEMPATH\Security\Security.php(298): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(182): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\Filters\Filters->run('admin/prestasi/simpan', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pendidikannonformal\\public\\index.php')
+INFO - 2024-04-20 22:18:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 22:18:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 22:18:12 --> CSRF token verified.
+INFO - 2024-04-20 22:18:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 22:19:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 22:20:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 22:21:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 22:21:38 --> CSRF token verified.
+INFO - 2024-04-20 22:21:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 22:24:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 22:36:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 22:36:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-04-20 22:36:39 --> mysqli_sql_exception: Not unique table/alias: 'prestasi' in C:\laragon\www\pendidikannonformal\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pendidikannonformal\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `prestas...', 0)
+#1 C:\laragon\www\pendidikannonformal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `prestas...')
+#2 C:\laragon\www\pendidikannonformal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `prestas...')
+#3 C:\laragon\www\pendidikannonformal\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `prestas...', Array, false)
+#4 C:\laragon\www\pendidikannonformal\app\Models\PrestasiModel.php(91): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pendidikannonformal\app\Controllers\Prestasi.php(147): App\Models\PrestasiModel->getDetailForEdit('panca-lomba-fip...')
+#6 C:\laragon\www\pendidikannonformal\system\CodeIgniter.php(919): App\Controllers\Prestasi->edit('panca-lomba-fip...')
+#7 C:\laragon\www\pendidikannonformal\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prestasi))
+#8 C:\laragon\www\pendidikannonformal\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\pendidikannonformal\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\pendidikannonformal\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2024-04-20 22:36:39 --> Not unique table/alias: 'prestasi'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `prestasi`.*, `user`.`nama_asli` as `nama_user`
+FROM `prestasi`
+JOIN `prestasi` ON `prestasi`.`prestasi_penulis` = `user`.`user_id`
+WHERE `prestasi_slug` = :prestasi_slug:', [...], false)
+ 2 APPPATH\Models\PrestasiModel.php(91): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Prestasi.php(147): App\Models\PrestasiModel->getDetailForEdit('panca-lomba-fip-jip-2023')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Prestasi->edit('panca-lomba-fip-jip-2023')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prestasi))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pendidikannonformal\\public\\index.php')
+INFO - 2024-04-20 22:37:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-20 22:37:05 --> Undefined array key "berita_penulis"
+in APPPATH\Controllers\Prestasi.php on line 151.
+ 1 APPPATH\Controllers\Prestasi.php(151): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "berita_penulis"', 'C:\\laragon\\www\\pendidikannonformal\\app\\Controllers\\Prestasi.php', 151)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Prestasi->edit('panca-lomba-fip-jip-2023')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prestasi))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pendidikannonformal\\public\\index.php')
+INFO - 2024-04-20 22:37:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-20 22:37:16 --> Undefined variable $detailPrestasi
+in APPPATH\Views\prestasi\v_edit_prestasi.php on line 32.
+ 1 APPPATH\Views\prestasi\v_edit_prestasi.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $detailPrestasi', 'C:\\laragon\\www\\pendidikannonformal\\app\\Views\\prestasi\\v_edit_prestasi.php', 32)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\pendidikannonformal\\app\\Views\\prestasi\\v_edit_prestasi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('prestasi/v_edit_prestasi', [], true)
+ 5 APPPATH\Controllers\Prestasi.php(157): view('prestasi/v_edit_prestasi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Prestasi->edit('panca-lomba-fip-jip-2023')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prestasi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pendidikannonformal\\public\\index.php')
+INFO - 2024-04-20 22:37:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-20 22:37:32 --> Undefined variable $semuaDepartemen
+in APPPATH\Views\prestasi\v_edit_prestasi.php on line 143.
+ 1 APPPATH\Views\prestasi\v_edit_prestasi.php(143): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $semuaDepartemen', 'C:\\laragon\\www\\pendidikannonformal\\app\\Views\\prestasi\\v_edit_prestasi.php', 143)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\pendidikannonformal\\app\\Views\\prestasi\\v_edit_prestasi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('prestasi/v_edit_prestasi', [], true)
+ 5 APPPATH\Controllers\Prestasi.php(157): view('prestasi/v_edit_prestasi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Prestasi->edit('panca-lomba-fip-jip-2023')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prestasi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pendidikannonformal\\public\\index.php')
+INFO - 2024-04-20 22:38:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 22:38:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 22:38:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 22:38:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 22:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 22:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 22:39:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 22:39:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 22:39:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 22:39:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 22:39:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 22:39:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 22:54:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 22:54:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 22:54:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 22:55:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 22:55:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 22:55:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 22:55:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 22:57:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 22:57:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 22:57:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 22:57:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:08:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-20 23:08:05 --> "adminadminDanSuperAdminFilterFilter" filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 350.
+ 1 SYSTEMPATH\Filters\Filters.php(350): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('adminadminDanSuperAdminFilterFilter')
+ 2 SYSTEMPATH\Filters\Filters.php(405): CodeIgniter\Filters\Filters->enableFilter('adminadminDanSuperAdminFilterFilter', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\Filters\Filters->enableFilters([...], 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pendidikannonformal\\public\\index.php')
+INFO - 2024-04-20 23:08:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:09:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:09:23 --> CSRF token verified.
+INFO - 2024-04-20 23:09:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:09:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-20 23:09:33 --> Undefined array key "prestasi_slig"
+in APPPATH\Views\prestasi\v_edit_prestasi.php on line 23.
+ 1 APPPATH\Views\prestasi\v_edit_prestasi.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prestasi_slig"', 'C:\\laragon\\www\\pendidikannonformal\\app\\Views\\prestasi\\v_edit_prestasi.php', 23)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\pendidikannonformal\\app\\Views\\prestasi\\v_edit_prestasi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('prestasi/v_edit_prestasi', [], true)
+ 5 APPPATH\Controllers\Prestasi.php(159): view('prestasi/v_edit_prestasi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Prestasi->edit('panca-lomba-fip-jip-2023')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prestasi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pendidikannonformal\\public\\index.php')
+INFO - 2024-04-20 23:09:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:09:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:09:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:10:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:10:52 --> CSRF token verified.
+INFO - 2024-04-20 23:10:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:10:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:10:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:11:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:11:33 --> CSRF token verified.
+INFO - 2024-04-20 23:11:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:12:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:12:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:12:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:13:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:13:22 --> CSRF token verified.
+INFO - 2024-04-20 23:13:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:13:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:13:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:13:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:15:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:15:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:15:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:15:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:15:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:15:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:17:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:17:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:17:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:18:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:18:05 --> CSRF token verified.
+INFO - 2024-04-20 23:18:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:18:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:18:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:18:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:18:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:18:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:19:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:19:28 --> CSRF token verified.
+INFO - 2024-04-20 23:19:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:19:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:19:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:19:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:20:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-20 23:27:58 --> Array to string conversion
+in APPPATH\Views\home\v_home.php on line 416.
+ 1 APPPATH\Views\home\v_home.php(416): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\v_home.php', 416)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\v_home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_home', [], true)
+ 5 APPPATH\Controllers\Home.php(46): view('home/v_home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pendidikannonformal\\public\\index.php')
+INFO - 2024-04-20 23:30:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:31:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:31:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:37:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:41:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-20 23:41:26 --> Call to undefined method App\Models\PrestasiModel::getAllBeritaPengumuman
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\UserPrestasi.php(32): CodeIgniter\Model->__call('getAllBeritaPengumuman', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserPrestasi->detail_prestasi('panca-lomba-fip-jips-2022')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserPrestasi))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pendidikannonformal\\public\\index.php')
+INFO - 2024-04-20 23:41:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-20 23:41:48 --> Undefined property: App\Controllers\UserPrestasi::$beritaModel
+in APPPATH\Controllers\UserPrestasi.php on line 32.
+ 1 APPPATH\Controllers\UserPrestasi.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\UserPrestasi::$beritaModel', 'C:\\laragon\\www\\pendidikannonformal\\app\\Controllers\\UserPrestasi.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserPrestasi->detail_prestasi('panca-lomba-fip-jips-2022')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserPrestasi))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pendidikannonformal\\public\\index.php')
+INFO - 2024-04-20 23:42:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-20 23:42:45 --> Undefined variable $detail_berita
+in APPPATH\Views\home\v_detail_berita.php on line 33.
+ 1 APPPATH\Views\home\v_detail_berita.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $detail_berita', 'C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\v_detail_berita.php', 33)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\v_detail_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 5 APPPATH\Controllers\UserPrestasi.php(45): view('home/v_detail_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserPrestasi->detail_prestasi('panca-lomba-fip-jips-2022')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserPrestasi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pendidikannonformal\\public\\index.php')
+INFO - 2024-04-20 23:42:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-20 23:42:59 --> Invalid file: "home/v_detail_bprestasi.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home/v_detail_bprestasi.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_bprestasi', [], true)
+ 3 APPPATH\Controllers\UserPrestasi.php(45): view('home/v_detail_bprestasi', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserPrestasi->detail_prestasi('panca-lomba-fip-jips-2022')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserPrestasi))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pendidikannonformal\\public\\index.php')
+INFO - 2024-04-20 23:43:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-20 23:43:09 --> Undefined array key "rpestasi_judul"
+in APPPATH\Views\home\v_detail_prestasi.php on line 45.
+ 1 APPPATH\Views\home\v_detail_prestasi.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "rpestasi_judul"', 'C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\v_detail_prestasi.php', 45)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\v_detail_prestasi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_prestasi', [], true)
+ 5 APPPATH\Controllers\UserPrestasi.php(45): view('home/v_detail_prestasi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserPrestasi->detail_prestasi('panca-lomba-fip-jips-2022')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserPrestasi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pendidikannonformal\\public\\index.php')
+INFO - 2024-04-20 23:43:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-20 23:43:23 --> Undefined array key "pestasi_judul"
+in APPPATH\Views\home\v_detail_prestasi.php on line 45.
+ 1 APPPATH\Views\home\v_detail_prestasi.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pestasi_judul"', 'C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\v_detail_prestasi.php', 45)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\v_detail_prestasi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_prestasi', [], true)
+ 5 APPPATH\Controllers\UserPrestasi.php(45): view('home/v_detail_prestasi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserPrestasi->detail_prestasi('panca-lomba-fip-jips-2022')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserPrestasi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pendidikannonformal\\public\\index.php')
+INFO - 2024-04-20 23:43:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:43:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:43:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:43:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:43:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-20 23:43:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

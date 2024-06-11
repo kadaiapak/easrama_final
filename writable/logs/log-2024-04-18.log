@@ -1,0 +1,464 @@
+INFO - 2024-04-18 14:07:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 14:07:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 14:08:01 --> CSRF token verified.
+INFO - 2024-04-18 14:08:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 14:08:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 14:08:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 14:08:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 14:08:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 14:08:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 14:08:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 14:08:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 14:08:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 14:08:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 14:09:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 14:09:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 14:09:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 14:09:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 14:09:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 14:10:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 14:13:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 14:14:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 14:15:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 14:15:06 --> CSRF token verified.
+INFO - 2024-04-18 14:15:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 14:15:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 14:15:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 14:15:40 --> CSRF token verified.
+INFO - 2024-04-18 14:15:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 14:15:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 14:15:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 14:16:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 14:16:20 --> CSRF token verified.
+INFO - 2024-04-18 14:16:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 14:16:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 14:17:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 14:17:01 --> CSRF token verified.
+INFO - 2024-04-18 14:17:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 14:17:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 14:17:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 14:17:31 --> CSRF token verified.
+INFO - 2024-04-18 14:17:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-18 14:24:57 --> Call to undefined method App\Models\BeritaModel::getDetailForUser
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\UserBerita.php(75): CodeIgniter\Model->__call('getDetailForUser', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserBerita->detail('mencoba-menginput-berita-penting')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserBerita))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pendidikannonformal\\public\\index.php')
+CRITICAL - 2024-04-18 14:27:02 --> Call to undefined method App\Models\BeritaModel::getDetailForUser
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\UserBerita.php(75): CodeIgniter\Model->__call('getDetailForUser', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserBerita->detail('mencoba-menginput-berita-penting')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserBerita))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pendidikannonformal\\public\\index.php')
+CRITICAL - 2024-04-18 14:33:52 --> Call to undefined method App\Models\BeritaModel::getDetailForUser
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\UserBerita.php(90): CodeIgniter\Model->__call('getDetailForUser', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserBerita->detail('mencoba-menginput-berita-penting')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserBerita))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pendidikannonformal\\public\\index.php')
+CRITICAL - 2024-04-18 14:34:13 --> Undefined variable $home_berita
+in APPPATH\Views\home\berita_sidebar.php on line 47.
+ 1 APPPATH\Views\home\berita_sidebar.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $home_berita', 'C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\berita_sidebar.php', 47)
+ 2 APPPATH\Views\home\v_semua_berita.php(70): include('C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\berita_sidebar.php')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\v_semua_berita.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_semua_berita', [], true)
+ 6 APPPATH\Controllers\UserBerita.php(28): view('home/v_semua_berita', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserBerita->semua_berita()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserBerita))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pendidikannonformal\\public\\index.php')
+CRITICAL - 2024-04-18 14:36:48 --> Call to undefined method App\Models\BeritaModel::getDetailForUser
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\UserBerita.php(90): CodeIgniter\Model->__call('getDetailForUser', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserBerita->detail('mencoba-menginput-berita-penting')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserBerita))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pendidikannonformal\\public\\index.php')
+CRITICAL - 2024-04-18 14:41:08 --> Undefined variable $home_berita
+in APPPATH\Views\home\berita_sidebar.php on line 47.
+ 1 APPPATH\Views\home\berita_sidebar.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $home_berita', 'C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\berita_sidebar.php', 47)
+ 2 APPPATH\Views\home\v_semua_berita.php(70): include('C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\berita_sidebar.php')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\v_semua_berita.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_semua_berita', [], true)
+ 6 APPPATH\Controllers\UserBerita.php(28): view('home/v_semua_berita', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserBerita->semua_berita()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserBerita))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pendidikannonformal\\public\\index.php')
+CRITICAL - 2024-04-18 14:44:21 --> Undefined variable $home_berita
+in APPPATH\Views\home\berita_sidebar.php on line 47.
+ 1 APPPATH\Views\home\berita_sidebar.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $home_berita', 'C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\berita_sidebar.php', 47)
+ 2 APPPATH\Views\home\v_semua_berita.php(70): include('C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\berita_sidebar.php')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\v_semua_berita.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_semua_berita', [], true)
+ 6 APPPATH\Controllers\UserBerita.php(28): view('home/v_semua_berita', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserBerita->semua_berita()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserBerita))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pendidikannonformal\\public\\index.php')
+CRITICAL - 2024-04-18 14:46:36 --> Cannot access offset of type string on string
+in APPPATH\Views\home\berita_sidebar.php on line 51.
+ 1 APPPATH\Views\home\v_semua_berita.php(70): include()
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\v_semua_berita.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_semua_berita', [], true)
+ 5 APPPATH\Controllers\UserBerita.php(28): view('home/v_semua_berita', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserBerita->semua_berita()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserBerita))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pendidikannonformal\\public\\index.php')
+CRITICAL - 2024-04-18 14:46:50 --> syntax error, unexpected variable "$data"
+in APPPATH\Controllers\UserBerita.php on line 21.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\pendidikannonformal\\app\\Controllers\\UserBerita.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\UserBerita')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\UserBerita')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\UserBerita', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pendidikannonformal\\public\\index.php')
+CRITICAL - 2024-04-18 14:52:36 --> Undefined variable $pengumuman_berita
+in APPPATH\Views\home\berita_sidebar.php on line 47.
+ 1 APPPATH\Views\home\berita_sidebar.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pengumuman_berita', 'C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\berita_sidebar.php', 47)
+ 2 APPPATH\Views\home\v_detail_berita.php(168): include('C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\berita_sidebar.php')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\v_detail_berita.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 6 APPPATH\Controllers\UserBerita.php(104): view('home/v_detail_berita', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserBerita->detail('mencoba-menginput-berita-penting')
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserBerita))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pendidikannonformal\\public\\index.php')
+CRITICAL - 2024-04-18 14:52:51 --> Undefined variable $pengumuman_berita
+in APPPATH\Views\home\berita_sidebar.php on line 47.
+ 1 APPPATH\Views\home\berita_sidebar.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pengumuman_berita', 'C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\berita_sidebar.php', 47)
+ 2 APPPATH\Views\home\v_detail_berita.php(168): include('C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\berita_sidebar.php')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\v_detail_berita.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 6 APPPATH\Controllers\UserBerita.php(104): view('home/v_detail_berita', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserBerita->detail('mencoba-menginput-berita-penting')
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserBerita))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pendidikannonformal\\public\\index.php')
+CRITICAL - 2024-04-18 14:53:21 --> Undefined variable $pengumuman_berita
+in APPPATH\Views\home\berita_sidebar.php on line 47.
+ 1 APPPATH\Views\home\berita_sidebar.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pengumuman_berita', 'C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\berita_sidebar.php', 47)
+ 2 APPPATH\Views\home\v_detail_berita.php(168): include('C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\berita_sidebar.php')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\v_detail_berita.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 6 APPPATH\Controllers\UserBerita.php(104): view('home/v_detail_berita', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserBerita->detail('mencoba-menginput-berita-penting')
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserBerita))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pendidikannonformal\\public\\index.php')
+INFO - 2024-04-18 15:05:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-18 15:05:44 --> Undefined variable $pengumuman_berita
+in APPPATH\Views\home\berita_sidebar.php on line 47.
+ 1 APPPATH\Views\home\berita_sidebar.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pengumuman_berita', 'C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\berita_sidebar.php', 47)
+ 2 APPPATH\Views\home\v_semua_berita.php(69): include('C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\berita_sidebar.php')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\v_semua_berita.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_semua_berita', [], true)
+ 6 APPPATH\Controllers\UserBerita.php(43): view('home/v_semua_berita', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserBerita->semua_pengumuman()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserBerita))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pendidikannonformal\\public\\index.php')
+INFO - 2024-04-18 15:06:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-18 15:06:21 --> Undefined variable $pengumuman_berita
+in APPPATH\Views\home\berita_sidebar.php on line 47.
+ 1 APPPATH\Views\home\berita_sidebar.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pengumuman_berita', 'C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\berita_sidebar.php', 47)
+ 2 APPPATH\Views\home\v_semua_pengumuman.php(69): include('C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\berita_sidebar.php')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\v_semua_pengumuman.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_semua_pengumuman', [], true)
+ 6 APPPATH\Controllers\UserBerita.php(43): view('home/v_semua_pengumuman', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserBerita->semua_pengumuman()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserBerita))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pendidikannonformal\\public\\index.php')
+INFO - 2024-04-18 15:06:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-18 15:06:23 --> Undefined variable $pengumuman_berita
+in APPPATH\Views\home\berita_sidebar.php on line 47.
+ 1 APPPATH\Views\home\berita_sidebar.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pengumuman_berita', 'C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\berita_sidebar.php', 47)
+ 2 APPPATH\Views\home\v_semua_pengumuman.php(69): include('C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\berita_sidebar.php')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\v_semua_pengumuman.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_semua_pengumuman', [], true)
+ 6 APPPATH\Controllers\UserBerita.php(43): view('home/v_semua_pengumuman', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserBerita->semua_pengumuman()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserBerita))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pendidikannonformal\\public\\index.php')
+INFO - 2024-04-18 15:08:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 15:08:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 15:09:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 15:09:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-18 15:16:30 --> Undefined variable $berita_terbaru
+in APPPATH\Views\home\pengumuman_sidebar.php on line 47.
+ 1 APPPATH\Views\home\pengumuman_sidebar.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $berita_terbaru', 'C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\pengumuman_sidebar.php', 47)
+ 2 APPPATH\Views\home\v_semua_berita.php(69): include('C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\pengumuman_sidebar.php')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\v_semua_berita.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_semua_berita', [], true)
+ 6 APPPATH\Controllers\UserBerita.php(27): view('home/v_semua_berita', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserBerita->semua_berita()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserBerita))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pendidikannonformal\\public\\index.php')
+CRITICAL - 2024-04-18 15:17:16 --> Undefined variable $berita_terbaru
+in APPPATH\Views\home\berita_sidebar.php on line 47.
+ 1 APPPATH\Views\home\berita_sidebar.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $berita_terbaru', 'C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\berita_sidebar.php', 47)
+ 2 APPPATH\Views\home\v_detail_berita.php(168): include('C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\berita_sidebar.php')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\v_detail_berita.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 6 APPPATH\Controllers\UserBerita.php(55): view('home/v_detail_berita', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserBerita->detail('mencoba-menginput-berita-penting')
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserBerita))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pendidikannonformal\\public\\index.php')
+CRITICAL - 2024-04-18 15:19:44 --> Undefined variable $semuaPengumuman
+in APPPATH\Views\home\pengumuman_sidebar.php on line 47.
+ 1 APPPATH\Views\home\pengumuman_sidebar.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $semuaPengumuman', 'C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\pengumuman_sidebar.php', 47)
+ 2 APPPATH\Views\home\v_detail_berita.php(168): include('C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\pengumuman_sidebar.php')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\v_detail_berita.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 6 APPPATH\Controllers\UserBerita.php(55): view('home/v_detail_berita', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserBerita->detail('mencoba-menginput-berita-penting')
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserBerita))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pendidikannonformal\\public\\index.php')
+CRITICAL - 2024-04-18 15:19:55 --> Undefined variable $semuaPengumuman
+in APPPATH\Views\home\pengumuman_sidebar.php on line 47.
+ 1 APPPATH\Views\home\pengumuman_sidebar.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $semuaPengumuman', 'C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\pengumuman_sidebar.php', 47)
+ 2 APPPATH\Views\home\v_detail_berita.php(168): include('C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\pengumuman_sidebar.php')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\v_detail_berita.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_berita', [], true)
+ 6 APPPATH\Controllers\UserBerita.php(55): view('home/v_detail_berita', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserBerita->detail('mencoba-menginput-berita-penting')
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserBerita))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pendidikannonformal\\public\\index.php')
+INFO - 2024-04-18 15:21:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-18 15:21:03 --> Undefined variable $semuaBerita
+in APPPATH\Views\home\v_semua_pengumuman.php on line 25.
+ 1 APPPATH\Views\home\v_semua_pengumuman.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $semuaBerita', 'C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\v_semua_pengumuman.php', 25)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\v_semua_pengumuman.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_semua_pengumuman', [], true)
+ 5 APPPATH\Controllers\UserBerita.php(39): view('home/v_semua_pengumuman', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserBerita->semua_pengumuman()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserBerita))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pendidikannonformal\\public\\index.php')
+INFO - 2024-04-18 15:21:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-18 15:21:51 --> Undefined variable $semuaBerita
+in APPPATH\Views\home\v_semua_pengumuman.php on line 25.
+ 1 APPPATH\Views\home\v_semua_pengumuman.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $semuaBerita', 'C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\v_semua_pengumuman.php', 25)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\v_semua_pengumuman.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_semua_pengumuman', [], true)
+ 5 APPPATH\Controllers\UserBerita.php(40): view('home/v_semua_pengumuman', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserBerita->semua_pengumuman()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserBerita))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pendidikannonformal\\public\\index.php')
+INFO - 2024-04-18 15:21:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-18 15:21:53 --> Undefined variable $semuaBerita
+in APPPATH\Views\home\v_semua_pengumuman.php on line 25.
+ 1 APPPATH\Views\home\v_semua_pengumuman.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $semuaBerita', 'C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\v_semua_pengumuman.php', 25)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\v_semua_pengumuman.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_semua_pengumuman', [], true)
+ 5 APPPATH\Controllers\UserBerita.php(40): view('home/v_semua_pengumuman', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserBerita->semua_pengumuman()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserBerita))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pendidikannonformal\\public\\index.php')
+INFO - 2024-04-18 15:21:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-18 15:21:57 --> Undefined variable $semuaBerita
+in APPPATH\Views\home\v_semua_pengumuman.php on line 25.
+ 1 APPPATH\Views\home\v_semua_pengumuman.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $semuaBerita', 'C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\v_semua_pengumuman.php', 25)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\v_semua_pengumuman.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_semua_pengumuman', [], true)
+ 5 APPPATH\Controllers\UserBerita.php(40): view('home/v_semua_pengumuman', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserBerita->semua_pengumuman()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserBerita))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pendidikannonformal\\public\\index.php')
+INFO - 2024-04-18 15:22:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-18 15:22:32 --> Undefined variable $berita_terbaru
+in APPPATH\Views\home\berita_sidebar.php on line 47.
+ 1 APPPATH\Views\home\berita_sidebar.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $berita_terbaru', 'C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\berita_sidebar.php', 47)
+ 2 APPPATH\Views\home\v_semua_pengumuman.php(66): include('C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\berita_sidebar.php')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\v_semua_pengumuman.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_semua_pengumuman', [], true)
+ 6 APPPATH\Controllers\UserBerita.php(42): view('home/v_semua_pengumuman', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserBerita->semua_pengumuman()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserBerita))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pendidikannonformal\\public\\index.php')
+INFO - 2024-04-18 15:23:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 15:23:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 15:24:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 15:30:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 15:30:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 15:31:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 15:31:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 15:31:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-18 15:31:51 --> Undefined variable $semuaPengumuman
+in APPPATH\Views\home\pengumuman_sidebar.php on line 47.
+ 1 APPPATH\Views\home\pengumuman_sidebar.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $semuaPengumuman', 'C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\pengumuman_sidebar.php', 47)
+ 2 APPPATH\Views\home\v_detail_pengumuman.php(168): include('C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\pengumuman_sidebar.php')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\pendidikannonformal\\app\\Views\\home\\v_detail_pengumuman.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('home/v_detail_pengumuman', [], true)
+ 6 APPPATH\Controllers\UserBerita.php(73): view('home/v_detail_pengumuman', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserBerita->detail_pengumuman('pengumpulan-bahan-beasiswa-baznas')
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserBerita))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pendidikannonformal\\public\\index.php')
+INFO - 2024-04-18 15:33:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 15:33:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 15:33:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 15:33:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 15:33:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 15:33:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 15:36:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 15:36:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 15:39:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 15:39:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 15:39:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 15:39:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 15:39:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 15:39:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 15:40:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 15:40:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 15:40:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 15:40:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 15:40:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 15:40:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 15:40:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 15:40:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 15:40:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 15:41:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 15:41:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 21:22:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 21:22:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 21:22:33 --> CSRF token verified.
+INFO - 2024-04-18 21:22:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 21:22:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 21:25:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-04-18 21:25:08 --> mysqli_sql_exception: Unknown column 'departemen.nama_departemen' in 'field list' in C:\laragon\www\pendidikannonformal\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pendidikannonformal\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `prestas...', 0)
+#1 C:\laragon\www\pendidikannonformal\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `prestas...')
+#2 C:\laragon\www\pendidikannonformal\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `prestas...')
+#3 C:\laragon\www\pendidikannonformal\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `prestas...', Array, false)
+#4 C:\laragon\www\pendidikannonformal\app\Models\PrestasiModel.php(57): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pendidikannonformal\app\Controllers\Prestasi.php(17): App\Models\PrestasiModel->getAllByAdmin()
+#6 C:\laragon\www\pendidikannonformal\system\CodeIgniter.php(919): App\Controllers\Prestasi->index()
+#7 C:\laragon\www\pendidikannonformal\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prestasi))
+#8 C:\laragon\www\pendidikannonformal\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\pendidikannonformal\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\pendidikannonformal\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2024-04-18 21:25:08 --> Unknown column 'departemen.nama_departemen' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `prestasi`.*, `user`.`nama_asli` as `nama_user`, `departemen`.`nama_departemen` as `nama_departemen`
+FROM `prestasi`
+JOIN `user` ON `prestasi`.`prestasi_penulis` = `user`.`user_id`
+JOIN `departemen` ON `prestasi`.`prestasi_departemen` = `departemen`.`departemen_id`', [], false)
+ 2 APPPATH\Models\PrestasiModel.php(57): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Prestasi.php(17): App\Models\PrestasiModel->getAllByAdmin()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Prestasi->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prestasi))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pendidikannonformal\\public\\index.php')
+INFO - 2024-04-18 21:32:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 21:32:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 21:46:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 21:46:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-18 21:46:33 --> Undefined property: App\Controllers\Prestasi::$kategoriModel
+in APPPATH\Controllers\Prestasi.php on line 30.
+ 1 APPPATH\Controllers\Prestasi.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Prestasi::$kategoriModel', 'C:\\laragon\\www\\pendidikannonformal\\app\\Controllers\\Prestasi.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Prestasi->tambah()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prestasi))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pendidikannonformal\\public\\index.php')
+INFO - 2024-04-18 21:46:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 21:47:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 21:51:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-18 21:51:26 --> Undefined variable $semua_kategori
+in APPPATH\Views\prestasi\v_tambah_prestasi.php on line 82.
+ 1 APPPATH\Views\prestasi\v_tambah_prestasi.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $semua_kategori', 'C:\\laragon\\www\\pendidikannonformal\\app\\Views\\prestasi\\v_tambah_prestasi.php', 82)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\pendidikannonformal\\app\\Views\\prestasi\\v_tambah_prestasi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('prestasi/v_tambah_prestasi', [], true)
+ 5 APPPATH\Controllers\Prestasi.php(35): view('prestasi/v_tambah_prestasi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Prestasi->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prestasi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pendidikannonformal\\public\\index.php')
+INFO - 2024-04-18 21:52:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-04-18 21:52:59 --> Undefined array key "departeen_nama"
+in APPPATH\Views\prestasi\v_tambah_prestasi.php on line 72.
+ 1 APPPATH\Views\prestasi\v_tambah_prestasi.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "departeen_nama"', 'C:\\laragon\\www\\pendidikannonformal\\app\\Views\\prestasi\\v_tambah_prestasi.php', 72)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\pendidikannonformal\\app\\Views\\prestasi\\v_tambah_prestasi.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('prestasi/v_tambah_prestasi', [], true)
+ 5 APPPATH\Controllers\Prestasi.php(35): view('prestasi/v_tambah_prestasi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Prestasi->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prestasi))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pendidikannonformal\\public\\index.php')
+INFO - 2024-04-18 21:53:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 21:54:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 22:02:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 22:03:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 22:03:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 22:04:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 22:04:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-04-18 22:05:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
