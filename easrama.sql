@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jun 11, 2024 at 02:21 PM
+-- Generation Time: Jun 25, 2024 at 08:13 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -82,37 +82,6 @@ INSERT INTO `berita` (`berita_id`, `berita_sampul`, `berita_judul`, `berita_slug
 -- --------------------------------------------------------
 
 --
--- Table structure for table `departemen`
---
-
-CREATE TABLE `departemen` (
-  `departemen_id` int NOT NULL,
-  `departemen_nama` varchar(100) NOT NULL,
-  `departemen_alias` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `departemen_email` varchar(100) NOT NULL,
-  `departemen_website` varchar(100) NOT NULL,
-  `departemen_kd_surat` varchar(50) DEFAULT NULL,
-  `departemen_nm_kadep` varchar(100) NOT NULL,
-  `departemen_nip_kadep` varchar(255) NOT NULL,
-  `departemen_status` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
---
--- Dumping data for table `departemen`
---
-
-INSERT INTO `departemen` (`departemen_id`, `departemen_nama`, `departemen_alias`, `departemen_email`, `departemen_website`, `departemen_kd_surat`, `departemen_nm_kadep`, `departemen_nip_kadep`, `departemen_status`) VALUES
-(1, 'Administrasi Pendidikan', NULL, 'ap@fip.unp.ac.id', 'http://aip.fip.unp.ac.id', 'UN35.4.2/AK/', 'Dr. Sulastri, S.Pd, M.Pd', '198110012008122000', 1),
-(2, 'Bimbingan dan Konseling', NULL, 'bk@fip.unp.ac.id', 'http://bk.fip.unp.ac.id ', 'UN35.4.3/AK/', 'Dr. Zadrian ardi, S.Pd., M.Pd., Kons. ', '199006012015041000', 1),
-(3, 'Kurikulum dan Teknologi Pendidikan', NULL, 'tp@fip.unp.ac.id', 'http://ktp.fip.unp.ac.id', 'UN35.4.6/AK/', 'Prof. Dr. Abna hidayati, S.Pd, M.pd ', '198301262008122000', 1),
-(4, 'Pendidikan Guru Pendidikan Anak Usia Dini', NULL, 'pgpaud@fip.unp.ac.id', 'http://pgpaud.fip.unp.ac.id', 'UN35.4.8/AK/', 'Serli Marlina, S.Pd, M.Pd ', '198604162008122000', 1),
-(5, 'Pendidikan Guru Sekolah Dasar', NULL, 'pgsd@fip.unp.ac.id', 'http://pgsd.fip.unp.ac.id', 'UN35.4.7/AK/', 'Prof. Dr. Yanti Fitria, S.Pd., M.Pd', '197605202008012000', 1),
-(6, 'Pendidikan Khusus', NULL, 'plb@fip.unp.ac.id', 'http://plb.fipunp.ac.id', 'UN35.4.5/AK/', 'Elsa Efrina, S.Pd, M.Pd', '198208142008122000', 1),
-(7, 'Pendidikan Non Formal', NULL, 'plb@fip.unp.ac.id', 'http://pls.fip.unp.ac.id', 'UN35.4.4/AK/', 'Dr. Ismaniar, S.Pd, M.Pd', '197606232005012000', 1);
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `download`
 --
 
@@ -174,6 +143,30 @@ CREATE TABLE `halaman` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `hari`
+--
+
+CREATE TABLE `hari` (
+  `id` int NOT NULL,
+  `nama` varchar(15) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `hari`
+--
+
+INSERT INTO `hari` (`id`, `nama`) VALUES
+(1, 'Senin'),
+(2, 'Selasa'),
+(3, 'Rabu'),
+(4, 'Kamis'),
+(5, 'Jumat'),
+(6, 'Sabtu'),
+(7, 'Minggu');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `histori_kamar_siswa`
 --
 
@@ -191,16 +184,7 @@ CREATE TABLE `histori_kamar_siswa` (
 --
 
 INSERT INTO `histori_kamar_siswa` (`id`, `id_siswa`, `id_kamar`, `keterangan`, `created_at`, `updated_at`) VALUES
-(8, 12, 4, 'masuk', '2024-06-10 00:16:48', '2024-06-10 00:16:48'),
-(9, 6, 5, 'masuk', '2024-06-10 00:16:53', '2024-06-10 00:16:53'),
-(10, 4, 5, 'masuk', '2024-06-10 00:16:58', '2024-06-10 00:16:58'),
-(11, 12, 6, 'pindah', '2024-06-10 00:17:06', '2024-06-10 00:17:06'),
-(12, 12, NULL, 'hapus', '2024-06-11 10:23:57', '2024-06-11 10:23:57'),
-(13, 6, NULL, 'hapus', '2024-06-11 10:24:59', '2024-06-11 10:24:59'),
-(14, 4, NULL, 'hapus', '2024-06-11 16:25:24', '2024-06-11 16:25:24'),
-(15, 12, 4, 'masuk', '2024-06-11 20:42:53', '2024-06-11 20:42:53'),
-(16, 4, 4, 'masuk', '2024-06-11 20:43:15', '2024-06-11 20:43:15'),
-(17, 6, 4, 'masuk', '2024-06-11 20:43:32', '2024-06-11 20:43:32');
+(21, 17, 4, 'masuk', '2024-06-24 21:15:12', '2024-06-24 21:15:12');
 
 -- --------------------------------------------------------
 
@@ -222,14 +206,7 @@ CREATE TABLE `histori_kelas_siswa` (
 --
 
 INSERT INTO `histori_kelas_siswa` (`id`, `id_siswa`, `id_kelas`, `keterangan`, `created_at`, `updated_at`) VALUES
-(2, 12, 1, 'masuk', '2024-06-10 01:47:17', '2024-06-10 01:47:17'),
-(3, 4, 1, 'masuk', '2024-06-10 01:51:37', '2024-06-10 01:51:37'),
-(4, 6, 3, 'masuk', '2024-06-10 01:51:57', '2024-06-10 01:51:57'),
-(5, 12, 3, 'pindah', '2024-06-10 02:29:56', '2024-06-10 02:29:56'),
-(6, 12, 1, 'masuk', '2024-06-11 09:41:45', '2024-06-11 09:41:45'),
-(7, 12, NULL, 'hapus', '2024-06-11 09:42:16', '2024-06-11 09:42:16'),
-(8, 11, 1, 'masuk', '2024-06-11 09:58:51', '2024-06-11 09:58:51'),
-(9, 12, 4, 'masuk', '2024-06-11 15:45:10', '2024-06-11 15:45:10');
+(10, 17, 1, 'masuk', '2024-06-24 21:59:41', '2024-06-24 21:59:41');
 
 -- --------------------------------------------------------
 
@@ -324,7 +301,7 @@ CREATE TABLE `kelas` (
 --
 
 INSERT INTO `kelas` (`id`, `nama`, `slug`, `keterangan`, `kapasitas`, `status`, `created_at`, `updated_at`) VALUES
-(1, '1As', '1as', 'Kelas 1s', 22, 1, '2024-06-08 12:59:19', '2024-06-11 11:58:34'),
+(1, '1A', '1a', 'Kelas 1A', 22, 1, '2024-06-08 12:59:19', '2024-06-25 07:01:18'),
 (3, '2A', '2a', 'kelas 2A', 20, 1, '2024-06-09 17:07:28', '2024-06-09 17:07:28'),
 (4, '2B', '2b', 'kelas 2b', 20, 1, '2024-06-09 17:07:38', '2024-06-09 17:07:38');
 
@@ -873,7 +850,40 @@ INSERT INTO `kunjungan` (`kunjungan_id`, `kunjungan_nama`, `created_at`) VALUES
 (526, '2024-06-11 12:02:03', '2024-06-11 12:02:03'),
 (527, '2024-06-11 14:47:25', '2024-06-11 14:47:25'),
 (528, '2024-06-11 20:39:18', '2024-06-11 20:39:18'),
-(529, '2024-06-11 20:41:02', '2024-06-11 20:41:02');
+(529, '2024-06-11 20:41:02', '2024-06-11 20:41:02'),
+(530, '2024-06-11 22:05:26', '2024-06-11 22:05:26'),
+(531, '2024-06-11 22:06:32', '2024-06-11 22:06:32'),
+(532, '2024-06-11 22:06:40', '2024-06-11 22:06:40'),
+(533, '2024-06-11 22:06:57', '2024-06-11 22:06:57'),
+(534, '2024-06-11 22:07:07', '2024-06-11 22:07:07'),
+(535, '2024-06-15 15:43:48', '2024-06-15 15:43:48'),
+(536, '2024-06-23 16:12:35', '2024-06-23 16:12:35'),
+(537, '2024-06-23 16:45:20', '2024-06-23 16:45:20'),
+(538, '2024-06-23 17:32:56', '2024-06-23 17:32:56'),
+(539, '2024-06-23 17:33:45', '2024-06-23 17:33:45'),
+(540, '2024-06-23 17:38:28', '2024-06-23 17:38:28'),
+(541, '2024-06-23 17:38:44', '2024-06-23 17:38:44'),
+(542, '2024-06-23 17:49:44', '2024-06-23 17:49:45'),
+(543, '2024-06-23 17:50:22', '2024-06-23 17:50:22'),
+(544, '2024-06-24 21:04:01', '2024-06-24 21:04:01'),
+(545, '2024-06-25 06:17:03', '2024-06-25 06:17:03'),
+(546, '2024-06-25 06:18:27', '2024-06-25 06:18:27'),
+(547, '2024-06-25 06:43:31', '2024-06-25 06:43:31'),
+(548, '2024-06-25 08:26:01', '2024-06-25 08:26:01'),
+(549, '2024-06-25 08:50:54', '2024-06-25 08:50:54'),
+(550, '2024-06-25 13:49:11', '2024-06-25 13:49:11'),
+(551, '2024-06-25 13:49:11', '2024-06-25 13:49:11'),
+(552, '2024-06-25 14:41:53', '2024-06-25 14:41:53'),
+(553, '2024-06-25 14:42:42', '2024-06-25 14:42:42'),
+(554, '2024-06-25 14:42:58', '2024-06-25 14:42:58'),
+(555, '2024-06-25 14:43:39', '2024-06-25 14:43:39'),
+(556, '2024-06-25 14:44:34', '2024-06-25 14:44:34'),
+(557, '2024-06-25 14:46:36', '2024-06-25 14:46:36'),
+(558, '2024-06-25 14:49:08', '2024-06-25 14:49:08'),
+(559, '2024-06-25 15:01:42', '2024-06-25 15:01:42'),
+(560, '2024-06-25 15:03:17', '2024-06-25 15:03:17'),
+(561, '2024-06-25 15:03:27', '2024-06-25 15:03:27'),
+(562, '2024-06-25 15:03:50', '2024-06-25 15:03:50');
 
 -- --------------------------------------------------------
 
@@ -934,6 +944,7 @@ INSERT INTO `pelajaran` (`id`, `nama`, `slug`, `keterangan`, `status`, `created_
 
 CREATE TABLE `pelajaran_kelas` (
   `id` int NOT NULL,
+  `hari` int NOT NULL,
   `jam_pelajaran` varchar(50) NOT NULL,
   `id_kelas` int NOT NULL,
   `id_pelajaran` int NOT NULL,
@@ -946,10 +957,13 @@ CREATE TABLE `pelajaran_kelas` (
 -- Dumping data for table `pelajaran_kelas`
 --
 
-INSERT INTO `pelajaran_kelas` (`id`, `jam_pelajaran`, `id_kelas`, `id_pelajaran`, `guru`, `created_at`, `updated_at`) VALUES
-(6, '08.20 - 08.55', 1, 3, NULL, '2024-06-10 15:53:55', '2024-06-10 15:53:55'),
-(8, '10.00 - 10.35', 1, 1, NULL, '2024-06-10 15:54:50', '2024-06-10 15:54:50'),
-(12, '07.45 - 08.20', 3, 1, NULL, '2024-06-11 15:00:04', '2024-06-11 15:00:04');
+INSERT INTO `pelajaran_kelas` (`id`, `hari`, `jam_pelajaran`, `id_kelas`, `id_pelajaran`, `guru`, `created_at`, `updated_at`) VALUES
+(6, 1, '08.20 - 08.55', 1, 3, '51', '2024-06-10 15:53:55', '2024-06-25 07:07:45'),
+(8, 1, '10.00 - 10.35', 1, 1, '51', '2024-06-10 15:54:50', '2024-06-25 07:08:02'),
+(12, 1, '07.45 - 08.20', 3, 1, NULL, '2024-06-11 15:00:04', '2024-06-11 15:00:04'),
+(13, 1, '08.20 - 08.55', 3, 3, '51', '2024-06-24 23:18:13', '2024-06-24 23:18:13'),
+(14, 2, '07.45 - 08.20', 3, 5, '52', '2024-06-24 23:18:40', '2024-06-24 23:18:40'),
+(15, 2, '08.20 - 08.55', 3, 1, '51', '2024-06-25 07:09:01', '2024-06-25 07:09:01');
 
 -- --------------------------------------------------------
 
@@ -1045,7 +1059,6 @@ CREATE TABLE `prestasi` (
   `prestasi_peringkat` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `prestasi_nim` varchar(20) DEFAULT NULL,
   `prestasi_nama` varchar(100) DEFAULT NULL,
-  `prestasi_departemen` tinyint DEFAULT NULL,
   `prestasi_sertifikat` varchar(255) NOT NULL,
   `prestasi_penulis` int NOT NULL,
   `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -1056,9 +1069,9 @@ CREATE TABLE `prestasi` (
 -- Dumping data for table `prestasi`
 --
 
-INSERT INTO `prestasi` (`prestasi_id`, `prestasi_judul`, `prestasi_slug`, `prestasi_sampul`, `prestasi_deskripsi`, `prestasi_penyelenggara`, `prestasi_tahun`, `prestasi_tanggal_mulai`, `prestasi_tanggal_selesai`, `prestasi_tingkat`, `prestasi_peringkat`, `prestasi_nim`, `prestasi_nama`, `prestasi_departemen`, `prestasi_sertifikat`, `prestasi_penulis`, `created_at`, `updated_at`) VALUES
-(5, 'Panca Lomba FIP JIPs 2022', 'panca-lomba-fip-jips-2022', '1713629885_2f44e25e2e3ce02facbb.jpg', '<p>saya nurrahmi gussarsi dengan nim 22129337 pesan dan kesan saya dalam mengikuti perlombaan ini, dengan ikut lomba saya bisa pertemu dengan banyak orang baru dan tau dengan budaya lain , sehingga memacu saya untuk terus mengmbangkan diri saya semua yang saya lakukan di perlombaan fipjip 2023 adalah hal yang sangat berkesan sekali.</p>\r\n', 'Fakultas Ilmu Pendidikans', 2022, '2023-12-01', '2023-12-31', 3, 'Juara 2', '22123129', 'Nurrahmi Gussaris', 2, '1713629885_0c1d295c669d2e42f83f.jpg', 1, '2024-04-20 23:13:22', '2024-04-20 23:18:05'),
-(6, 'Panca Lomba FIP JIP 2023', 'panca-lomba-fip-jip-2023', '1713629968_ff7d8e10d1a8bba35508.png', '<p>saya nurrahmi gussarsi dengan nim 22129337 pesan dan kesan saya dalam mengikuti perlombaan ini, dengan ikut lomba saya bisa pertemu dengan banyak orang baru dan tau dengan budaya lain , sehingga memacu saya untuk terus mengmbangkan diri saya semua yang saya lakukan di perlombaan fipjip 2023 adalah hal yang sangat berkesan<br />\r\n&nbsp;</p>\r\n', 'Fakultas Ilmu Pendidikan', 2023, '2024-01-01', '2024-01-31', 2, '1', '22311230', 'Nurrahmi Gussari', 1, '1713629968_60e62251a3e4f8ee2ff1.jpg', 1, '2024-04-20 23:19:28', '2024-04-20 23:19:28');
+INSERT INTO `prestasi` (`prestasi_id`, `prestasi_judul`, `prestasi_slug`, `prestasi_sampul`, `prestasi_deskripsi`, `prestasi_penyelenggara`, `prestasi_tahun`, `prestasi_tanggal_mulai`, `prestasi_tanggal_selesai`, `prestasi_tingkat`, `prestasi_peringkat`, `prestasi_nim`, `prestasi_nama`, `prestasi_sertifikat`, `prestasi_penulis`, `created_at`, `updated_at`) VALUES
+(5, 'Panca Lomba FIP JIPs 2022', 'panca-lomba-fip-jips-2022', '1713629885_2f44e25e2e3ce02facbb.jpg', '<p>saya nurrahmi gussarsi dengan nim 22129337 pesan dan kesan saya dalam mengikuti perlombaan ini, dengan ikut lomba saya bisa pertemu dengan banyak orang baru dan tau dengan budaya lain , sehingga memacu saya untuk terus mengmbangkan diri saya semua yang saya lakukan di perlombaan fipjip 2023 adalah hal yang sangat berkesan sekali.</p>\r\n', 'Fakultas Ilmu Pendidikans', 2022, '2023-12-01', '2023-12-31', 3, 'Juara 2', '22123129', 'Nurrahmi Gussaris', '1713629885_0c1d295c669d2e42f83f.jpg', 1, '2024-04-20 23:13:22', '2024-04-20 23:18:05'),
+(6, 'Panca Lomba FIP JIP 2023', 'panca-lomba-fip-jip-2023', '1713629968_ff7d8e10d1a8bba35508.png', '<p>saya nurrahmi gussarsi dengan nim 22129337 pesan dan kesan saya dalam mengikuti perlombaan ini, dengan ikut lomba saya bisa pertemu dengan banyak orang baru dan tau dengan budaya lain , sehingga memacu saya untuk terus mengmbangkan diri saya semua yang saya lakukan di perlombaan fipjip 2023 adalah hal yang sangat berkesan<br />\r\n&nbsp;</p>\r\n', 'Fakultas Ilmu Pendidikan', 2023, '2024-01-01', '2024-01-31', 2, '1', '22311230', 'Nurrahmi Gussari', '1713629968_60e62251a3e4f8ee2ff1.jpg', 1, '2024-04-20 23:19:28', '2024-04-20 23:19:28');
 
 -- --------------------------------------------------------
 
@@ -1081,6 +1094,7 @@ CREATE TABLE `santri` (
 CREATE TABLE `siswa` (
   `id` int NOT NULL,
   `no_pendaftaran` varchar(255) NOT NULL,
+  `username` varchar(100) NOT NULL,
   `foto` varchar(255) DEFAULT NULL,
   `nama` varchar(100) NOT NULL,
   `jk` varchar(3) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
@@ -1105,20 +1119,8 @@ CREATE TABLE `siswa` (
 -- Dumping data for table `siswa`
 --
 
-INSERT INTO `siswa` (`id`, `no_pendaftaran`, `foto`, `nama`, `jk`, `no_hp`, `no_wa`, `id_kamar`, `id_kelas`, `alamat`, `kelurahan_desa`, `kecamatan`, `kabupaten_kota`, `provinsi`, `tanggal_pendaftaran`, `bulan_pendaftaran`, `tahun_pendaftaran`, `status`, `created_at`, `updated_at`) VALUES
-(2, '1052024', NULL, 'Deni Suardi', 'l', '082232088983', '082232088983', NULL, NULL, 'Komplek Parupuk Raya Blok D -14 RT 001 RW 003', 'Parupuk Tabing', 'Koto Tangah', 'Padang', 'Sumatera Barat', NULL, NULL, NULL, 1, '2024-05-30 23:43:42', '2024-05-30 23:43:42'),
-(3, '3052024', NULL, 'Deni Suardi', 'l', '082232088983', '082232088983', NULL, NULL, 'Komplek Parupuk Raya Blok D -14 RT 001 RW 003', 'Parupuk Tabing', 'Koto Tangah', 'Padang', 'Sumatera Barat', NULL, NULL, NULL, 1, '2024-05-30 23:43:42', '2024-05-30 23:43:42'),
-(4, '4052024', NULL, 'Deni Suardi Kedua', 'l', '082232088983', '082232088983', 4, 1, 'Komplek Parupuk Raya Blok D-14 RT 001 RW 013', 'Parupuk Tabing', 'Koto Tangah', 'Padang', 'Sumatera Barat', '31', '05', '2024', 3, '2024-05-30 23:54:33', '2024-06-11 13:43:15'),
-(5, '10293729', NULL, 'Reyhan Septian', 'l', '082232088983', '082232088983', NULL, NULL, 'Perumahan Anai Linduang Blok D-14 Rt 001 RW 013 Parak Kopi ', 'Parupuk Tabing', 'Koto Tangah', 'Padang', 'Sumatera Barat', '03', '06', '2023', 3, '2024-06-02 03:40:32', '2024-06-02 03:40:32'),
-(6, '2910', NULL, 'Konco Arek', 'l', '02019291023', '10230129291', 4, 3, 'Jalan Jakarta Komplek Palembang', 'Ikua Koto', 'Koto Tangah', 'Padang', 'Sumatera Barat', '01', '06', '2024', 3, '2024-06-02 03:41:57', '2024-06-11 13:43:32'),
-(7, '20102910', NULL, 'Rangkuti Melati', 'p', '012939182388', '012939182388', NULL, NULL, 'Jalan Bromo Gang Senggol', 'Singo Aren', 'Singo Sari', 'Brebes', 'Jawa Timur', '05', '06', '2023', 1, '2024-06-02 03:44:11', '2024-06-02 03:44:11'),
-(8, '201023001', '1717319855_6caeb1cc45932aa1e793.jpg', 'Syabila Tania', 'p', '0822320889831', '0822320889831', NULL, NULL, 'Jalan Jakarta Simpang Anggrek No D.141', 'Parupuk Tabings', 'Koto Tangahs', 'Padangs', 'Sumatera Barats', '02', '06', '2024', 1, '2024-06-02 03:47:22', '2024-06-02 09:44:31'),
-(9, '', NULL, 'Deni Suardi', 'l', '082232088983', '082232088983', NULL, NULL, '1', 'Parupuk Tabing', 'Koto Tangah', 'Padang', 'Sumatera Barat', '31', '05', '2024', 1, '2024-06-02 08:51:05', '2024-06-02 08:51:05'),
-(10, '102039218', '1717321625_76634dd72a0588ba2887.jpg', 'Kuntum Kasturi', 'p', '0928392019238', '0928392019238', NULL, NULL, 'Jalan Singgang Saleh Blok AA No 110 Rt 003 RW 012', 'Salampesi', 'Singa Sapih', 'Aceh', 'Aceh', '02', '06', '2024', 1, '2024-06-02 09:47:05', '2024-06-02 09:47:40'),
-(11, 'adfasfdas', NULL, 'asdfasfd', 'l', 'adsfasfda', 'adsfasfd', NULL, 1, 'assdfasf', 'adfasdf', 'adsfasdf', 'asdfasdf', 'asdfasfd', '20', '06', '2024', 3, '2024-06-02 09:47:28', '2024-06-11 02:58:51'),
-(12, '12062024', NULL, 'Bris Fernando', 'l', '089620633294', '089620633294', 4, 4, 'Jalan Anggrek 10 ', 'Dadok Tunggul Hitam', 'Koto Tangah', 'Padang', 'Sumatera Barat', '02', '06', '2024', 3, '2024-06-02 11:17:55', '2024-06-11 13:42:53'),
-(13, '13062024', NULL, 'Testing Daftar Jenis Kelamin', 'l', '010230102398', '010230102398', NULL, NULL, 'Alamat lengkap kasdkfasifoi', 'Kelurahan Desa kadsjfalsdkfj', 'Kecamatan akdjfaosdf', 'Kota Padang', 'Sumatera Barat', '02', '06', '2024', 1, '2024-06-02 11:35:42', '2024-06-02 11:35:42'),
-(14, '14062024', NULL, 'asdkfaslkdfkj', 'p', 'a123i1092308', '01928319028309', NULL, NULL, 'kahdsfjkasfhdo', 'aksdfhasdhfoui', 'ssldkfhasdjf', 'askjdashdfi', 'paosdufoaisdfa', '02', '06', '2024', 3, '2024-06-02 11:36:40', '2024-06-11 13:40:18');
+INSERT INTO `siswa` (`id`, `no_pendaftaran`, `username`, `foto`, `nama`, `jk`, `no_hp`, `no_wa`, `id_kamar`, `id_kelas`, `alamat`, `kelurahan_desa`, `kecamatan`, `kabupaten_kota`, `provinsi`, `tanggal_pendaftaran`, `bulan_pendaftaran`, `tahun_pendaftaran`, `status`, `created_at`, `updated_at`) VALUES
+(17, '15062024', 'rahmatzanova', NULL, 'Rahmat Zanova', 'l', '082232088983', '082232088983', 4, 3, 'Jalan Parak Kopi No 49 A', 'Parak Kopi', 'Alai Gadang', 'Padang', 'Sumatera Barat', '23', '06', '2024', 3, '2024-06-23 09:53:38', '2024-06-24 14:59:41');
 
 -- --------------------------------------------------------
 
@@ -1157,7 +1159,6 @@ CREATE TABLE `user` (
   `password` varchar(255) NOT NULL,
   `user_foto` varchar(255) DEFAULT NULL,
   `useruuid` varchar(255) NOT NULL,
-  `departemen` int DEFAULT NULL,
   `level` int NOT NULL,
   `is_aktif` int NOT NULL DEFAULT '1',
   `is_login` int NOT NULL DEFAULT '0',
@@ -1170,9 +1171,12 @@ CREATE TABLE `user` (
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`user_id`, `nama_asli`, `username`, `password`, `user_foto`, `useruuid`, `departemen`, `level`, `is_aktif`, `is_login`, `terakhir_login`, `created_at`, `updated_at`) VALUES
-(1, 'Akun Admin', 'admin', '$2y$10$.ESCY0gWV.rSKcJ9xLErye.nqXzuVlj.u4Y/Jpvietm9uFv.SjHOe', 'no-photo.jpg', '', 0, 2, 1, 0, '2024-06-10 09:45:16', '2023-10-19 22:33:12', NULL),
-(2, 'Akun Super Admin', 'superadmin', '$2y$10$44rT2KiimI28/uw3iOuQnu3lhgZv/aDYE8jlzv5iyV9dpLeQlbn5u', 'no-photo.jpg', '', 0, 1, 1, 0, '2024-06-11 09:29:33', '2023-10-19 22:33:40', NULL);
+INSERT INTO `user` (`user_id`, `nama_asli`, `username`, `password`, `user_foto`, `useruuid`, `level`, `is_aktif`, `is_login`, `terakhir_login`, `created_at`, `updated_at`) VALUES
+(1, 'Akun Admin', 'admin', '$2y$10$.ESCY0gWV.rSKcJ9xLErye.nqXzuVlj.u4Y/Jpvietm9uFv.SjHOe', 'no-photo.jpg', '', 2, 1, 0, '2024-06-25 15:10:01', '2023-10-19 22:33:12', NULL),
+(2, 'Akun Super Admin', 'superadmin', '$2y$10$44rT2KiimI28/uw3iOuQnu3lhgZv/aDYE8jlzv5iyV9dpLeQlbn5u', 'no-photo.jpg', '', 1, 1, 0, '2024-06-25 15:05:29', '2023-10-19 22:33:40', NULL),
+(50, 'Rahmat Zanova', 'rahmatzanova', '$2y$10$F8/UKmjr0O.95/BGW9/dceaICAwywX3pU30LtIt0urxu6hWvEHbCa', 'no-photo.jpg', '', 4, 0, 0, '2024-06-25 15:10:30', NULL, NULL),
+(51, 'Abdur Rohim', 'abdurrohim', '$2y$10$laH1g7bpE59Sw0S/s4UiIe65yYCgb1f2JEFqaRg/1r0NwdEmKXLrW', 'no-photo.jpg', '', 3, 1, 0, '2024-06-25 15:10:47', NULL, NULL),
+(52, 'Salsabila', 'salsabila', '$2y$10$IZksLuOFy8viNY7a5ivi/u7qpTWDE4CYcE4vz3HomvXiLwJSkioee', 'no-photo.jpg', '', 3, 1, 0, '2024-06-25 11:13:06', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -1198,7 +1202,9 @@ CREATE TABLE `user_level` (
 
 INSERT INTO `user_level` (`user_level_id`, `user_level_nama`, `user_level_alias`, `user_level_keterangan`, `user_level_status`, `is_deleted`, `created_at`, `updated_at`, `deleted_at`) VALUES
 (1, 'Super Admin', 'super_admin', 'Level Admin paling tinggi dan bisa mengakses semua routes', '1', 0, '2023-10-19 15:27:32', '2023-12-08 14:55:05', '2023-10-19 15:27:32'),
-(2, 'Admin', 'admin', 'Admin level 2 dibawah supper admin, route terbatas', '1', 0, '2023-10-19 15:28:05', '2023-10-19 15:28:05', '2023-10-19 15:28:05');
+(2, 'Admin', 'admin', 'Admin level 2 dibawah supper admin, route terbatas', '1', 0, '2023-10-19 15:28:05', '2023-10-19 15:28:05', '2023-10-19 15:28:05'),
+(3, 'Guru', 'guru', 'level untuk diakses guru', '1', 0, '2024-06-23 09:56:01', '2024-06-23 09:56:01', '2024-06-23 09:56:01'),
+(4, 'Santri', 'santri', 'level untuk di akses santri', '1', 0, '2024-06-23 09:56:37', '2024-06-23 09:56:37', '2024-06-23 09:56:37');
 
 -- --------------------------------------------------------
 
@@ -1244,12 +1250,6 @@ ALTER TABLE `berita`
   ADD KEY `berita_kategori` (`berita_kategori`);
 
 --
--- Indexes for table `departemen`
---
-ALTER TABLE `departemen`
-  ADD PRIMARY KEY (`departemen_id`);
-
---
 -- Indexes for table `download`
 --
 ALTER TABLE `download`
@@ -1267,6 +1267,12 @@ ALTER TABLE `guru`
 ALTER TABLE `halaman`
   ADD PRIMARY KEY (`halaman_id`),
   ADD KEY `halaman_menu` (`menu_id`);
+
+--
+-- Indexes for table `hari`
+--
+ALTER TABLE `hari`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `histori_kamar_siswa`
@@ -1412,12 +1418,6 @@ ALTER TABLE `berita`
   MODIFY `berita_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
--- AUTO_INCREMENT for table `departemen`
---
-ALTER TABLE `departemen`
-  MODIFY `departemen_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
-
---
 -- AUTO_INCREMENT for table `download`
 --
 ALTER TABLE `download`
@@ -1436,16 +1436,22 @@ ALTER TABLE `halaman`
   MODIFY `halaman_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
+-- AUTO_INCREMENT for table `hari`
+--
+ALTER TABLE `hari`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
 -- AUTO_INCREMENT for table `histori_kamar_siswa`
 --
 ALTER TABLE `histori_kamar_siswa`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `histori_kelas_siswa`
 --
 ALTER TABLE `histori_kelas_siswa`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `jadwal_belajar`
@@ -1475,7 +1481,7 @@ ALTER TABLE `kelas`
 -- AUTO_INCREMENT for table `kunjungan`
 --
 ALTER TABLE `kunjungan`
-  MODIFY `kunjungan_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=530;
+  MODIFY `kunjungan_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=563;
 
 --
 -- AUTO_INCREMENT for table `menu`
@@ -1493,7 +1499,7 @@ ALTER TABLE `pelajaran`
 -- AUTO_INCREMENT for table `pelajaran_kelas`
 --
 ALTER TABLE `pelajaran_kelas`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `pengaturan`
@@ -1529,7 +1535,7 @@ ALTER TABLE `santri`
 -- AUTO_INCREMENT for table `siswa`
 --
 ALTER TABLE `siswa`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `subkategori`
@@ -1541,13 +1547,13 @@ ALTER TABLE `subkategori`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `user_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
+  MODIFY `user_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
 
 --
 -- AUTO_INCREMENT for table `user_level`
 --
 ALTER TABLE `user_level`
-  MODIFY `user_level_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `user_level_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `video_profil`
