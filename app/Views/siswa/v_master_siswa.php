@@ -6,7 +6,7 @@
     <div class="">
         <div class="page-title">
             <div class="title_left">
-                <h3>Master Data Siswa</h3>
+                <h3>Master Data Santri</h3>
                 <div style="margin-bottom: 10px;">
                     <a href="<?= base_url("admin/siswa/tambah"); ?>" class="btn btn-success btn-sm"><i class="fa fa-plus-square" style="margin-right: 5px;"></i>Daftarkan Manual</a>
                 </div>
@@ -76,7 +76,7 @@
             <div class="col-lg-12 col-md-12 col-sm-12 ">
                 <div class="x_panel">
                     <div class="x_title">
-                        <h2>Semua Siswa Bintang Sekolah Al-Quran</h2>
+                        <h2>Semua Santri Bintang Sekolah Al-Quran</h2>
                         <div class="clearfix"></div>
                     </div>
                     <div class="x_content">

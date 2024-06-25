@@ -28,6 +28,34 @@ class Pelajaran extends BaseController
         ];
         return view('pelajaran/v_pelajaran', $data);
     }
+
+    public function siswa_index()
+    {
+        $username = session()->get('username');
+        $semuaPelajaran = $this->siswaModel->getDaftarPelajaranBySantri($username); 
+        foreach ($semuaPelajaran as $sp) {
+            $detailJadwalPelajaran[$sp['nama_hari']][] = $sp;
+        }
+        $data = [
+            'judul' => 'Pelajaran',
+            'detailJadwalPelajaran' => $detailJadwalPelajaran
+        ];
+        return view('pelajaran/v_siswa_pelajaran', $data);
+    }
+
+    public function guru_index()
+    {
+        $user_id = session()->get('user_id');
+        $jadwalMengajar = $this->pelajaranKelasModel->getJadwalMengajarByGuru($user_id); 
+        foreach ($jadwalMengajar as $jm) {
+            $detailJadwalMengajar[$jm['nama_hari']][] = $jm;
+        }
+        $data = [
+            'judul' => 'Pelajaran',
+            'detailJadwalMengajar' => $detailJadwalMengajar
+        ];
+        return view('pelajaran/v_guru_pelajaran', $data);
+    }
     
     public function tambah()
     {

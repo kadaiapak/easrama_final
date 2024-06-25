@@ -6,9 +6,9 @@
     <div class="">
 		<div class="page-title">
 			<div class="title_left">
-				<h3>Data Siswa Tiap Kelas</h3>
+				<h3>Data Santri Tiap Kelas</h3>
 				<div class="button_container">
-					<button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target=".tambah_pelajaran_kelas"><i class="fa fa-plus-square" style="margin-right: 5px;"></i>Input Kelas Siswa</button>
+					<button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target=".tambah_pelajaran_kelas"><i class="fa fa-plus-square" style="margin-right: 5px;"></i>Input Kelas Santri</button>
 				</div>
 			</div>
 		</div>
@@ -42,7 +42,7 @@
             <div class="col-md-7 col-sm-12">
                 <div class="x_panel">
                     <div class="x_title">
-                        <h2>Daftar Siswa Sudah Ada Kelas</h2>
+                        <h2>Daftar Santri Sudah Ada Kelas</h2>
                         <div class="clearfix"></div>
                     </div>
                     <div class="x_content">
@@ -68,7 +68,7 @@
 											<tr class="headings">
 												<th class="column-title">No</th>
 												<th class="column-title">Kelas</th>
-												<th class="column-title">Nama Siswa</th>
+												<th class="column-title">Nama Santri</th>
 												<th class="column-title no-link last"><span class="nobr">Aksi</span>
 												</th>
 											</tr>
@@ -102,7 +102,7 @@
 			<div class="col-md-5 col-sm-5">
                 <div class="x_panel">
                     <div class="x_title">
-                        <h2>Semua Siswa Belum Input Kelas</h2>
+                        <h2>Semua Santri Belum Input Kelas</h2>
                         <div class="clearfix"></div>
                     </div>
                     <div class="x_content">
@@ -113,7 +113,7 @@
 										<thead>
 											<tr class="headings">
 												<th class="column-title">No</th>
-												<th class="column-title">Nama Siswa</th>
+												<th class="column-title">Nama Santri</th>
 												<th class="column-title">Jenis Kelamin</th>
 											</tr>
 										</thead>
@@ -160,10 +160,10 @@
 						</div>
 					</div>
 					<div class="form-group row">
-						<label for="id_siswa" class="col-md-3 col-sm-3"><b>Siswa</b></label>
+						<label for="id_siswa" class="col-md-3 col-sm-3"><b>Santri</b></label>
 						<div class="col-md-9 col-sm-9">
 							<select name="id_siswa" id="id_siswa" class="form-control <?= validation_show_error('id_siswa') ? 'is-invalid' : null; ?>" required>
-								<option value="">-- Pilih Siswa --</option>
+								<option value="">-- Pilih Santri --</option>
 								<?php foreach ($semuaSiswaBelumAdaKelas as $ssbak) { ?>
 									<option value="<?= $ssbak['id']; ?>" <?= old('id_siswa') == $ssbak['id'] ? "selected" : null ; ?>><?= $ssbak['nama']; ?> / <?= $ssbak['jk'] == 'p' ? 'Perempuan' : ($ssbak['jk'] == 'l' ? 'Laki - laki' : null); ?></option>
 								<?php } ?>

@@ -115,14 +115,14 @@ hr{
 				<table style="width: 100%;">
 					<tr>
 						<td style="text-align: center;">
-							<h4>Laporan Histori Perpindahan Kamar Siswa <?= date('Y'); ?></h4>
+							<h4>Laporan Histori Perpindahan Kamar Santri <?= date('Y'); ?></h4>
 						</td>
 					</tr>
 				</table>
 				<table border="1" style="width: 100%; border-collapse:collapse;">
 					<tr>
 						<td width="25px" style="text-align: center;"><b>No</b></td>
-						<td width="150px" style="text-align: center;"><b>Nama Siswa</b></td>
+						<td width="150px" style="text-align: center;"><b>Nama Santri</b></td>
 						<td width="150px" style="text-align: center;"><b>Kamar</b></td>
 						<td width="100px" style="text-align: center;"><b>Keterangan</b></td>
 						<td width="100px" style="text-align: center;"><b>Tanggal</b></td>

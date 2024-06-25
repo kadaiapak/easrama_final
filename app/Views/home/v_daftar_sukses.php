@@ -12,7 +12,7 @@
                         </div>
                         <div class="info">
                             <h4>Sukses</h4>
-                            <span>Pendaftaran Sukses, untuk informasi selanjutnya saudara akan dihubungi oleh Admin melalui Whatsapp </span>
+                            <span>Pendaftaran Sukses, silahkan login untuk informasi selanjutnya </span>
                         </div>
                     </div>
                 </div>

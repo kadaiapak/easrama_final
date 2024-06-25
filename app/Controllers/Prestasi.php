@@ -2,19 +2,19 @@
 
 namespace App\Controllers;
 use App\Models\PrestasiModel;
-use App\Models\DepartemenModel;
+// use App\Models\DepartemenModel;
 use App\Models\PengaturanModel;
 
 class Prestasi extends BaseController
 {
     protected $prestasiModel;
-    protected $departemenModel;
+    // protected $departemenModel;
     protected $pengaturanModel;
     public function __construct()
     {
         helper('form');
         $this->prestasiModel = new PrestasiModel();
-        $this->departemenModel = new DepartemenModel();
+        // $this->departemenModel = new DepartemenModel();
         $this->pengaturanModel = new PengaturanModel();
     }
 

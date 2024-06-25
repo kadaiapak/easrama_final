@@ -13,6 +13,7 @@ class SiswaModel extends Model
     protected $allowedFields = [
     'id',
     'no_pendaftaran',
+    'username',
     'foto',
     'nama',
     'jk',
@@ -41,6 +42,15 @@ class SiswaModel extends Model
         $builder = $this->db->table('siswa');
         $builder->select('id');
         $builder->orderBy('id', 'DESC');
+        $result = $builder->get();
+        return $result->getRowArray();
+    }
+
+    public function cekVerifikasiSantri($username)
+    {       
+        $builder = $this->db->table('siswa');
+        $builder->select('status');
+        $builder->where('username', $username);
         $result = $builder->get();
         return $result->getRowArray();
     }
@@ -175,6 +185,31 @@ class SiswaModel extends Model
         $builder->orderBy('id_kelas', 'DESC');
         $result = $builder->get();
         return $result->getResultArray();
+    }
+
+    public function getDaftarPenghuniKamarBySantri($username = null)
+    {
+        $build = $this->db->query(
+            'SELECT siswa.nama as nama_siswa, siswa.no_wa as nowa_siswa
+            FROM siswa
+            WHERE id_kamar = (SELECT id_kamar FROM siswa WHERE username = "'.$username.'")');
+        $result = $build->getResultArray();
+        return $result;
+    }
+
+    public function getDaftarPelajaranBySantri($username = null)
+    {
+        $build = $this->db->query(
+            'SELECT pelajaran_kelas.*, pelajaran.nama as mata_pelajaran, hari.nama as nama_hari, user.nama_asli as nama_guru
+            FROM pelajaran_kelas
+            JOIN pelajaran ON pelajaran_kelas.id_pelajaran = pelajaran.id
+            JOIN hari ON pelajaran_kelas.hari = hari.id
+            LEFT JOIN user ON pelajaran_kelas.guru = user.user_id
+            WHERE id_kelas = (SELECT id_kelas FROM siswa WHERE username = "'.$username.'")
+            ORDER BY hari ASC,
+            jam_pelajaran ASC');
+        $result = $build->getResultArray();
+        return $result;
     }
 
     // untuk menampilkan semua berita

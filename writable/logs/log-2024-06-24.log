@@ -1,0 +1,1490 @@
+INFO - 2024-06-24 21:04:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:04:09 --> CSRF token verified.
+INFO - 2024-06-24 21:04:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:04:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:04:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-24 21:04:11 --> mysqli_sql_exception: Unknown column 'rahmatzanova' in 'where clause' in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\r\n     ...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\r\n     ...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\r\n     ...')
+#3 C:\laragon\www\easrama_final\app\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('SELECT *\r\n     ...')
+#4 C:\laragon\www\easrama_final\app\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+#5 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-06-24 21:04:11 --> Unknown column 'rahmatzanova' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('SELECT *
+            FROM siswa
+            WHERE username = rahmatzanova')
+ 2 APPPATH\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 21:04:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:07:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-24 21:07:02 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.rahmatzanova.'')' at line 3 in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT siswa.*\r...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT siswa.*\r...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT siswa.*\r...')
+#3 C:\laragon\www\easrama_final\app\Models\SiswaModel.php(195): CodeIgniter\Database\BaseConnection->query('SELECT siswa.*\r...')
+#4 C:\laragon\www\easrama_final\app\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+#5 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-06-24 21:07:02 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.rahmatzanova.'')' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\SiswaModel.php(195): CodeIgniter\Database\BaseConnection->query('SELECT siswa.*
+            FROM siswa
+            WHERE id_kamar = (SELECT id_kamar FROM siswa WHERE username = \'\'.rahmatzanova.\'\')')
+ 2 APPPATH\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 21:07:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-24 21:07:13 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.rahmatzanova.')' at line 3 in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT siswa.*\r...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT siswa.*\r...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT siswa.*\r...')
+#3 C:\laragon\www\easrama_final\app\Models\SiswaModel.php(195): CodeIgniter\Database\BaseConnection->query('SELECT siswa.*\r...')
+#4 C:\laragon\www\easrama_final\app\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+#5 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-06-24 21:07:13 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.rahmatzanova.')' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\SiswaModel.php(195): CodeIgniter\Database\BaseConnection->query('SELECT siswa.*
+            FROM siswa
+            WHERE id_kamar = (SELECT id_kamar FROM siswa WHERE username = \'\'.rahmatzanova.\')')
+ 2 APPPATH\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 21:07:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-24 21:07:35 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT id_kamar FROM siswa WHERE username = ''.rahmatzanova.'' at line 3 in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT siswa.*\r...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT siswa.*\r...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT siswa.*\r...')
+#3 C:\laragon\www\easrama_final\app\Models\SiswaModel.php(195): CodeIgniter\Database\BaseConnection->query('SELECT siswa.*\r...')
+#4 C:\laragon\www\easrama_final\app\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+#5 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-06-24 21:07:35 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT id_kamar FROM siswa WHERE username = ''.rahmatzanova.'' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\SiswaModel.php(195): CodeIgniter\Database\BaseConnection->query('SELECT siswa.*
+            FROM siswa
+            WHERE id_kamar = SELECT id_kamar FROM siswa WHERE username = \'\'.rahmatzanova.\'')
+ 2 APPPATH\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 21:07:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:08:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:08:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:13:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:13:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:13:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:13:51 --> CSRF token verified.
+INFO - 2024-06-24 21:13:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:13:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:13:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:14:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:14:53 --> CSRF token verified.
+INFO - 2024-06-24 21:14:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:15:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:15:01 --> CSRF token verified.
+INFO - 2024-06-24 21:15:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:15:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:15:12 --> CSRF token verified.
+INFO - 2024-06-24 21:15:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:15:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:15:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:15:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:16:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:17:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:17:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:18:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-24 21:18:56 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.rahmatzanova.'')' at line 3 in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT siswa.na...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT siswa.na...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT siswa.na...')
+#3 C:\laragon\www\easrama_final\app\Models\SiswaModel.php(196): CodeIgniter\Database\BaseConnection->query('SELECT siswa.na...')
+#4 C:\laragon\www\easrama_final\app\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+#5 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-06-24 21:18:56 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.rahmatzanova.'')' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\SiswaModel.php(196): CodeIgniter\Database\BaseConnection->query('SELECT siswa.nama as nama_siswa, siswa.no_wa as no_wa_siswa
+            FROM siswa
+            WHERE id_kamar = (SELECT id_kamar FROM siswa WHERE username = \'\'.rahmatzanova.\'\')')
+ 2 APPPATH\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 21:19:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:19:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:20:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:22:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:22:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:22:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:22:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:22:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:22:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-24 21:22:29 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''''.rahmatzanova.'')' at line 3 in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT siswa.na...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT siswa.na...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT siswa.na...')
+#3 C:\laragon\www\easrama_final\app\Models\SiswaModel.php(195): CodeIgniter\Database\BaseConnection->query('SELECT siswa.na...')
+#4 C:\laragon\www\easrama_final\app\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+#5 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-06-24 21:22:29 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''''.rahmatzanova.'')' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\SiswaModel.php(195): CodeIgniter\Database\BaseConnection->query('SELECT siswa.nama as nama_siswa, siswa.no_wa as no_wa_siswa
+            FROM siswa
+            WHERE id_kamar = (SELECT id_kamar FROM siswa WHERE username = \'\'\'.rahmatzanova.\'\')')
+ 2 APPPATH\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 21:22:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-24 21:22:37 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.rahmatzanova.'')' at line 3 in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT siswa.na...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT siswa.na...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT siswa.na...')
+#3 C:\laragon\www\easrama_final\app\Models\SiswaModel.php(195): CodeIgniter\Database\BaseConnection->query('SELECT siswa.na...')
+#4 C:\laragon\www\easrama_final\app\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+#5 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-06-24 21:22:37 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.rahmatzanova.'')' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\SiswaModel.php(195): CodeIgniter\Database\BaseConnection->query('SELECT siswa.nama as nama_siswa, siswa.no_wa as no_wa_siswa
+            FROM siswa
+            WHERE id_kamar = (SELECT id_kamar FROM siswa WHERE username = \'\'.rahmatzanova.\'\')')
+ 2 APPPATH\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 21:23:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:25:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:28:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-24 21:28:01 --> mysqli_sql_exception: Unknown column ''.rahmatzanova.'' in 'where clause' in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT siswa.na...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT siswa.na...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT siswa.na...')
+#3 C:\laragon\www\easrama_final\app\Models\SiswaModel.php(195): CodeIgniter\Database\BaseConnection->query('SELECT siswa.na...')
+#4 C:\laragon\www\easrama_final\app\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+#5 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-06-24 21:28:01 --> Unknown column ''.rahmatzanova.'' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\SiswaModel.php(195): CodeIgniter\Database\BaseConnection->query('SELECT siswa.nama as nama_siswa, siswa.no_wa as nowa_siswa
+            FROM siswa
+            WHERE id_kamar = (SELECT id_kamar FROM siswa WHERE username = `\'.rahmatzanova.\'`)')
+ 2 APPPATH\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 21:28:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-24 21:28:14 --> mysqli_sql_exception: Unknown column '.rahmatzanova.' in 'where clause' in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT siswa.na...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT siswa.na...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT siswa.na...')
+#3 C:\laragon\www\easrama_final\app\Models\SiswaModel.php(195): CodeIgniter\Database\BaseConnection->query('SELECT siswa.na...')
+#4 C:\laragon\www\easrama_final\app\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+#5 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-06-24 21:28:14 --> Unknown column '.rahmatzanova.' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\SiswaModel.php(195): CodeIgniter\Database\BaseConnection->query('SELECT siswa.nama as nama_siswa, siswa.no_wa as nowa_siswa
+            FROM siswa
+            WHERE id_kamar = (SELECT id_kamar FROM siswa WHERE username = `.rahmatzanova.`)')
+ 2 APPPATH\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 21:28:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-24 21:28:16 --> mysqli_sql_exception: Unknown column '.rahmatzanova.' in 'where clause' in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT siswa.na...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT siswa.na...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT siswa.na...')
+#3 C:\laragon\www\easrama_final\app\Models\SiswaModel.php(195): CodeIgniter\Database\BaseConnection->query('SELECT siswa.na...')
+#4 C:\laragon\www\easrama_final\app\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+#5 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-06-24 21:28:16 --> Unknown column '.rahmatzanova.' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\SiswaModel.php(195): CodeIgniter\Database\BaseConnection->query('SELECT siswa.nama as nama_siswa, siswa.no_wa as nowa_siswa
+            FROM siswa
+            WHERE id_kamar = (SELECT id_kamar FROM siswa WHERE username = `.rahmatzanova.`)')
+ 2 APPPATH\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 21:28:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-24 21:28:21 --> mysqli_sql_exception: Unknown column 'rahmatzanova' in 'where clause' in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT siswa.na...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT siswa.na...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT siswa.na...')
+#3 C:\laragon\www\easrama_final\app\Models\SiswaModel.php(195): CodeIgniter\Database\BaseConnection->query('SELECT siswa.na...')
+#4 C:\laragon\www\easrama_final\app\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+#5 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-06-24 21:28:21 --> Unknown column 'rahmatzanova' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\SiswaModel.php(195): CodeIgniter\Database\BaseConnection->query('SELECT siswa.nama as nama_siswa, siswa.no_wa as nowa_siswa
+            FROM siswa
+            WHERE id_kamar = (SELECT id_kamar FROM siswa WHERE username = `rahmatzanova`)')
+ 2 APPPATH\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 21:28:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-24 21:28:29 --> mysqli_sql_exception: Unknown column ''rahmatzanova'' in 'where clause' in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT siswa.na...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT siswa.na...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT siswa.na...')
+#3 C:\laragon\www\easrama_final\app\Models\SiswaModel.php(195): CodeIgniter\Database\BaseConnection->query('SELECT siswa.na...')
+#4 C:\laragon\www\easrama_final\app\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+#5 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-06-24 21:28:29 --> Unknown column ''rahmatzanova'' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\SiswaModel.php(195): CodeIgniter\Database\BaseConnection->query('SELECT siswa.nama as nama_siswa, siswa.no_wa as nowa_siswa
+            FROM siswa
+            WHERE id_kamar = (SELECT id_kamar FROM siswa WHERE username = `\'rahmatzanova\'`)')
+ 2 APPPATH\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 21:28:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:29:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-24 21:29:10 --> mysqli_sql_exception: Unknown column 'rahmatzanova' in 'where clause' in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT id_kamar...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id_kamar...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_kamar...')
+#3 C:\laragon\www\easrama_final\app\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('SELECT id_kamar...')
+#4 C:\laragon\www\easrama_final\app\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+#5 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-06-24 21:29:10 --> Unknown column 'rahmatzanova' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('SELECT id_kamar FROM siswa WHERE username = rahmatzanova')
+ 2 APPPATH\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 21:29:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:29:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:30:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-24 21:30:32 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BY 1' at line 1 in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT id_kamar...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id_kamar...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_kamar...')
+#3 C:\laragon\www\easrama_final\app\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('SELECT id_kamar...')
+#4 C:\laragon\www\easrama_final\app\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+#5 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-06-24 21:30:32 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BY 1' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('SELECT id_kamar FROM siswa WHERE username = \'rahmatzanova\' LIMIT BY 1')
+ 2 APPPATH\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 21:30:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:31:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-24 21:31:12 --> mysqli_sql_exception: Unknown column 'DISTINC' in 'field list' in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT DISTINC ...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DISTINC ...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINC ...')
+#3 C:\laragon\www\easrama_final\app\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('SELECT DISTINC ...')
+#4 C:\laragon\www\easrama_final\app\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+#5 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-06-24 21:31:12 --> Unknown column 'DISTINC' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('SELECT DISTINC id_kamar FROM siswa WHERE username = \'rahmatzanova\'')
+ 2 APPPATH\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 21:31:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:31:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:32:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:32:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:33:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:33:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-24 21:33:33 --> CodeIgniter\Database\BaseConnection::query(): Argument #1 ($sql) must be of type string, null given, called in C:\laragon\www\easrama_final\app\Models\SiswaModel.php on line 193
+in SYSTEMPATH\Database\BaseConnection.php on line 569.
+ 1 APPPATH\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query(null)
+ 2 APPPATH\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 21:33:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-24 21:33:50 --> mysqli_sql_exception: Unknown column ''.rahmatzanova.'' in 'where clause' in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT id_kamar...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id_kamar...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_kamar...')
+#3 C:\laragon\www\easrama_final\app\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('SELECT id_kamar...')
+#4 C:\laragon\www\easrama_final\app\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+#5 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-06-24 21:33:50 --> Unknown column ''.rahmatzanova.'' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('SELECT id_kamar FROM siswa WHERE username = `\'.rahmatzanova.\'`')
+ 2 APPPATH\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 21:34:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-24 21:34:01 --> mysqli_sql_exception: Unknown column ''rahmatzanova'' in 'where clause' in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT id_kamar...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id_kamar...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_kamar...')
+#3 C:\laragon\www\easrama_final\app\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('SELECT id_kamar...')
+#4 C:\laragon\www\easrama_final\app\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+#5 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-06-24 21:34:01 --> Unknown column ''rahmatzanova'' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('SELECT id_kamar FROM siswa WHERE username = `\'rahmatzanova\'`')
+ 2 APPPATH\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 21:34:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-24 21:34:07 --> mysqli_sql_exception: Unknown column 'rahmatzanova' in 'where clause' in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT id_kamar...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id_kamar...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_kamar...')
+#3 C:\laragon\www\easrama_final\app\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('SELECT id_kamar...')
+#4 C:\laragon\www\easrama_final\app\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+#5 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-06-24 21:34:07 --> Unknown column 'rahmatzanova' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('SELECT id_kamar FROM siswa WHERE username = `rahmatzanova`')
+ 2 APPPATH\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 21:34:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:34:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-24 21:34:32 --> mysqli_sql_exception: Unknown column 'rahmatzanova' in 'where clause' in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT id_kamar...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id_kamar...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_kamar...')
+#3 C:\laragon\www\easrama_final\app\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('SELECT id_kamar...')
+#4 C:\laragon\www\easrama_final\app\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+#5 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-06-24 21:34:32 --> Unknown column 'rahmatzanova' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('SELECT id_kamar FROM siswa WHERE username = `rahmatzanova`')
+ 2 APPPATH\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 21:35:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-24 21:35:07 --> mysqli_sql_exception: Unknown column 'rahmatzanova' in 'where clause' in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT id_kamar...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id_kamar...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_kamar...')
+#3 C:\laragon\www\easrama_final\app\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('SELECT id_kamar...')
+#4 C:\laragon\www\easrama_final\app\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+#5 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-06-24 21:35:07 --> Unknown column 'rahmatzanova' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('SELECT id_kamar FROM siswa WHERE username = `rahmatzanova`')
+ 2 APPPATH\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 21:35:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-24 21:35:08 --> mysqli_sql_exception: Unknown column 'rahmatzanova' in 'where clause' in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT id_kamar...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id_kamar...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_kamar...')
+#3 C:\laragon\www\easrama_final\app\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('SELECT id_kamar...')
+#4 C:\laragon\www\easrama_final\app\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+#5 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-06-24 21:35:08 --> Unknown column 'rahmatzanova' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('SELECT id_kamar FROM siswa WHERE username = `rahmatzanova`')
+ 2 APPPATH\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 21:35:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-24 21:35:08 --> mysqli_sql_exception: Unknown column 'rahmatzanova' in 'where clause' in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT id_kamar...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id_kamar...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_kamar...')
+#3 C:\laragon\www\easrama_final\app\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('SELECT id_kamar...')
+#4 C:\laragon\www\easrama_final\app\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+#5 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-06-24 21:35:08 --> Unknown column 'rahmatzanova' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('SELECT id_kamar FROM siswa WHERE username = `rahmatzanova`')
+ 2 APPPATH\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 21:35:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-24 21:35:16 --> mysqli_sql_exception: Unknown column ''rahmatzanova'' in 'where clause' in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT id_kamar...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id_kamar...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_kamar...')
+#3 C:\laragon\www\easrama_final\app\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('SELECT id_kamar...')
+#4 C:\laragon\www\easrama_final\app\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+#5 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-06-24 21:35:16 --> Unknown column ''rahmatzanova'' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('SELECT id_kamar FROM siswa WHERE username = `\'rahmatzanova\'`')
+ 2 APPPATH\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 21:35:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-24 21:35:22 --> mysqli_sql_exception: Unknown column 'rahmatzanova' in 'where clause' in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT id_kamar...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id_kamar...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_kamar...')
+#3 C:\laragon\www\easrama_final\app\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('SELECT id_kamar...')
+#4 C:\laragon\www\easrama_final\app\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+#5 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-06-24 21:35:22 --> Unknown column 'rahmatzanova' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('SELECT id_kamar FROM siswa WHERE username = `rahmatzanova`')
+ 2 APPPATH\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 21:35:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-24 21:35:23 --> mysqli_sql_exception: Unknown column 'rahmatzanova' in 'where clause' in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT id_kamar...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id_kamar...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_kamar...')
+#3 C:\laragon\www\easrama_final\app\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('SELECT id_kamar...')
+#4 C:\laragon\www\easrama_final\app\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+#5 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-06-24 21:35:23 --> Unknown column 'rahmatzanova' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('SELECT id_kamar FROM siswa WHERE username = `rahmatzanova`')
+ 2 APPPATH\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 21:35:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:35:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:35:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:35:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:35:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:35:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-24 21:35:49 --> mysqli_sql_exception: Unknown column 'asdfasdf' in 'where clause' in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT id_kamar...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id_kamar...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_kamar...')
+#3 C:\laragon\www\easrama_final\app\Models\SiswaModel.php(194): CodeIgniter\Database\BaseConnection->query('SELECT id_kamar...')
+#4 C:\laragon\www\easrama_final\app\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('asdfasdf')
+#5 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-06-24 21:35:49 --> Unknown column 'asdfasdf' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\SiswaModel.php(194): CodeIgniter\Database\BaseConnection->query('SELECT id_kamar FROM siswa WHERE username = `asdfasdf`')
+ 2 APPPATH\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('asdfasdf')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 21:36:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:37:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-24 21:37:25 --> mysqli_sql_exception: Unknown column 'rahmatzanova' in 'where clause' in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT id_kamar...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id_kamar...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_kamar...')
+#3 C:\laragon\www\easrama_final\app\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('SELECT id_kamar...')
+#4 C:\laragon\www\easrama_final\app\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+#5 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-06-24 21:37:25 --> Unknown column 'rahmatzanova' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('SELECT id_kamar FROM siswa WHERE username = `rahmatzanova`')
+ 2 APPPATH\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 21:37:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:37:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-24 21:37:52 --> syntax error, unexpected token "`", expecting ")"
+in APPPATH\Models\SiswaModel.php on line 193.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\easrama_final\\app\\Models\\SiswaModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SiswaModel')
+ 3 APPPATH\Controllers\Kamar.php(16): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SiswaModel')
+ 4 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Kamar->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 21:38:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-24 21:38:04 --> mysqli_sql_exception: Unknown column '$username' in 'where clause' in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT id_kamar...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id_kamar...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_kamar...')
+#3 C:\laragon\www\easrama_final\app\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('SELECT id_kamar...')
+#4 C:\laragon\www\easrama_final\app\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+#5 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-06-24 21:38:04 --> Unknown column '$username' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('SELECT id_kamar FROM siswa WHERE username = `$username`')
+ 2 APPPATH\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 21:38:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-24 21:38:11 --> mysqli_sql_exception: Unknown column '$username' in 'where clause' in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT id_kamar...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id_kamar...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_kamar...')
+#3 C:\laragon\www\easrama_final\app\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('SELECT id_kamar...')
+#4 C:\laragon\www\easrama_final\app\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+#5 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-06-24 21:38:11 --> Unknown column '$username' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('SELECT id_kamar FROM siswa WHERE username = $username')
+ 2 APPPATH\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 21:38:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-24 21:38:19 --> CodeIgniter\Database\BaseConnection::query(): Argument #1 ($sql) must be of type string, null given, called in C:\laragon\www\easrama_final\app\Models\SiswaModel.php on line 193
+in SYSTEMPATH\Database\BaseConnection.php on line 569.
+ 1 APPPATH\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query(null)
+ 2 APPPATH\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 21:38:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-24 21:38:26 --> mysqli_sql_exception: Unknown column '$username' in 'where clause' in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT id_kamar...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id_kamar...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_kamar...')
+#3 C:\laragon\www\easrama_final\app\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('SELECT id_kamar...')
+#4 C:\laragon\www\easrama_final\app\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+#5 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-06-24 21:38:26 --> Unknown column '$username' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('SELECT id_kamar FROM siswa WHERE username = $username')
+ 2 APPPATH\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 21:38:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-24 21:38:37 --> mysqli_sql_exception: Unknown column 'rahmatzanova' in 'where clause' in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT id_kamar...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id_kamar...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_kamar...')
+#3 C:\laragon\www\easrama_final\app\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('SELECT id_kamar...')
+#4 C:\laragon\www\easrama_final\app\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+#5 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-06-24 21:38:37 --> Unknown column 'rahmatzanova' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('SELECT id_kamar FROM siswa WHERE username = rahmatzanova')
+ 2 APPPATH\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 21:38:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-24 21:38:50 --> syntax error, unexpected single-quoted string ".$username.", expecting ")"
+in APPPATH\Models\SiswaModel.php on line 193.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\easrama_final\\app\\Models\\SiswaModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SiswaModel')
+ 3 APPPATH\Controllers\Kamar.php(16): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SiswaModel')
+ 4 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Kamar->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 21:38:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-24 21:38:56 --> mysqli_sql_exception: Unknown column 'rahmatzanova' in 'where clause' in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT id_kamar...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id_kamar...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_kamar...')
+#3 C:\laragon\www\easrama_final\app\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('SELECT id_kamar...')
+#4 C:\laragon\www\easrama_final\app\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+#5 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-06-24 21:38:56 --> Unknown column 'rahmatzanova' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('SELECT id_kamar FROM siswa WHERE username = rahmatzanova')
+ 2 APPPATH\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 21:44:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-24 21:44:14 --> mysqli_sql_exception: Unknown column 'rahmatzanova' in 'where clause' in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('\r\n            S...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n            S...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n            S...')
+#3 C:\laragon\www\easrama_final\app\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('\r\n            S...')
+#4 C:\laragon\www\easrama_final\app\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+#5 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-06-24 21:44:14 --> Unknown column 'rahmatzanova' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('
+            SELECT id_kamar FROM siswa WHERE username = rahmatzanova
+            ')
+ 2 APPPATH\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 21:44:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-24 21:44:15 --> mysqli_sql_exception: Unknown column 'rahmatzanova' in 'where clause' in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('\r\n            S...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('\r\n            S...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n            S...')
+#3 C:\laragon\www\easrama_final\app\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('\r\n            S...')
+#4 C:\laragon\www\easrama_final\app\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+#5 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-06-24 21:44:15 --> Unknown column 'rahmatzanova' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('
+            SELECT id_kamar FROM siswa WHERE username = rahmatzanova
+            ')
+ 2 APPPATH\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 21:44:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-24 21:44:29 --> syntax error, unexpected identifier "rahmatzanova", expecting ")"
+in APPPATH\Models\SiswaModel.php on line 193.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\easrama_final\\app\\Models\\SiswaModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SiswaModel')
+ 3 APPPATH\Controllers\Kamar.php(16): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SiswaModel')
+ 4 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Kamar->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 21:44:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-24 21:44:44 --> mysqli_sql_exception: Unknown column 'rahmatzanova' in 'where clause' in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT id_kamar...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id_kamar...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_kamar...')
+#3 C:\laragon\www\easrama_final\app\Models\SiswaModel.php(192): CodeIgniter\Database\BaseConnection->query('SELECT id_kamar...')
+#4 C:\laragon\www\easrama_final\app\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+#5 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-06-24 21:44:44 --> Unknown column 'rahmatzanova' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\SiswaModel.php(192): CodeIgniter\Database\BaseConnection->query('SELECT id_kamar FROM siswa WHERE username = rahmatzanova
+            ')
+ 2 APPPATH\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 21:44:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-24 21:44:51 --> syntax error, unexpected identifier "rahmatzanova", expecting ")"
+in APPPATH\Models\SiswaModel.php on line 192.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\easrama_final\\app\\Models\\SiswaModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SiswaModel')
+ 3 APPPATH\Controllers\Kamar.php(16): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SiswaModel')
+ 4 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Kamar->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 21:45:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-24 21:45:02 --> mysqli_sql_exception: Unknown column 'rahmatzanova' in 'where clause' in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT id_kamar...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id_kamar...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_kamar...')
+#3 C:\laragon\www\easrama_final\app\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('SELECT id_kamar...')
+#4 C:\laragon\www\easrama_final\app\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+#5 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-06-24 21:45:02 --> Unknown column 'rahmatzanova' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('SELECT id_kamar FROM siswa WHERE username = rahmatzanova
+            ')
+ 2 APPPATH\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 21:45:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-24 21:45:28 --> syntax error, unexpected single-quoted string "rahmatzanova", expecting ")"
+in APPPATH\Models\SiswaModel.php on line 193.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\easrama_final\\app\\Models\\SiswaModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SiswaModel')
+ 3 APPPATH\Controllers\Kamar.php(16): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SiswaModel')
+ 4 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Kamar->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 21:45:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-24 21:45:37 --> syntax error, unexpected single-quoted string "rahmatzanova", expecting ")"
+in APPPATH\Models\SiswaModel.php on line 193.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\easrama_final\\app\\Models\\SiswaModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SiswaModel')
+ 3 APPPATH\Controllers\Kamar.php(16): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SiswaModel')
+ 4 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\Kamar->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 21:45:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-24 21:45:42 --> mysqli_sql_exception: Unknown column 'rahmatzanova' in 'where clause' in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT id_kamar...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id_kamar...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_kamar...')
+#3 C:\laragon\www\easrama_final\app\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('SELECT id_kamar...')
+#4 C:\laragon\www\easrama_final\app\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+#5 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-06-24 21:45:42 --> Unknown column 'rahmatzanova' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('SELECT id_kamar FROM siswa WHERE username = rahmatzanova
+            ')
+ 2 APPPATH\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 21:45:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-24 21:45:51 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'rahmatzanova' at line 1 in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT id_kamar...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id_kamar...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_kamar...')
+#3 C:\laragon\www\easrama_final\app\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('SELECT id_kamar...')
+#4 C:\laragon\www\easrama_final\app\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+#5 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-06-24 21:45:51 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'rahmatzanova' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('SELECT id_kamar FROM siswa WHERE username IN rahmatzanova
+            ')
+ 2 APPPATH\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 21:46:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-24 21:46:05 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IN rahmatzanova' at line 1 in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT id_kamar...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id_kamar...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_kamar...')
+#3 C:\laragon\www\easrama_final\app\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('SELECT id_kamar...')
+#4 C:\laragon\www\easrama_final\app\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+#5 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-06-24 21:46:05 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IN rahmatzanova' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\SiswaModel.php(193): CodeIgniter\Database\BaseConnection->query('SELECT id_kamar FROM siswa WHERE username IS IN rahmatzanova
+            ')
+ 2 APPPATH\Controllers\Kamar.php(32): App\Models\SiswaModel->getDaftarPenghuniKamarBySantri('rahmatzanova')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kamar->siswa_index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kamar))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 21:49:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:50:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:50:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:50:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:50:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:51:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:51:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:51:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:51:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:51:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:52:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:54:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-24 21:54:22 --> Call to undefined method App\Models\SiswaModel::getDaftarPelajaranBySantri
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\Pelajaran.php(35): CodeIgniter\Model->__call('getDaftarPelajaranBySantri', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelajaran->siswa_index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelajaran))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 21:54:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-24 21:54:32 --> Undefined array key "nama"
+in APPPATH\Views\pelajaran\v_pelajaran.php on line 58.
+ 1 APPPATH\Views\pelajaran\v_pelajaran.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\laragon\\www\\easrama_final\\app\\Views\\pelajaran\\v_pelajaran.php', 58)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\easrama_final\\app\\Views\\pelajaran\\v_pelajaran.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pelajaran/v_pelajaran', [], true)
+ 5 APPPATH\Controllers\Pelajaran.php(40): view('pelajaran/v_pelajaran', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelajaran->siswa_index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelajaran))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 21:54:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:56:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:57:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:57:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:57:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:58:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:58:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:58:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:59:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:59:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:59:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:59:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:59:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:59:41 --> CSRF token verified.
+INFO - 2024-06-24 21:59:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 21:59:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-24 21:59:44 --> Undefined array key "nama_siswa"
+in APPPATH\Views\pelajaran\v_siswa_pelajaran.php on line 40.
+ 1 APPPATH\Views\pelajaran\v_siswa_pelajaran.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_siswa"', 'C:\\laragon\\www\\easrama_final\\app\\Views\\pelajaran\\v_siswa_pelajaran.php', 40)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\easrama_final\\app\\Views\\pelajaran\\v_siswa_pelajaran.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pelajaran/v_siswa_pelajaran', [], true)
+ 5 APPPATH\Controllers\Pelajaran.php(40): view('pelajaran/v_siswa_pelajaran', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelajaran->siswa_index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelajaran))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 22:00:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 22:03:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 22:10:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 22:11:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-24 22:11:15 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'easrama.pelajaran_kelas.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT pelajara...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT pelajara...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT pelajara...')
+#3 C:\laragon\www\easrama_final\app\Models\SiswaModel.php(207): CodeIgniter\Database\BaseConnection->query('SELECT pelajara...')
+#4 C:\laragon\www\easrama_final\app\Controllers\Pelajaran.php(35): App\Models\SiswaModel->getDaftarPelajaranBySantri('rahmatzanova')
+#5 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Pelajaran->siswa_index()
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelajaran))
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-06-24 22:11:15 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'easrama.pelajaran_kelas.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\SiswaModel.php(207): CodeIgniter\Database\BaseConnection->query('SELECT pelajaran_kelas.*, pelajaran.nama as mata_pelajaran, hari.nama as nama_hari
+            FROM pelajaran_kelas
+            JOIN pelajaran ON pelajaran_kelas.id_pelajaran = pelajaran.id
+            JOIN hari ON pelajaran_kelas.hari = hari.id
+            WHERE id_kelas = (SELECT id_kelas FROM siswa WHERE username = "rahmatzanova")
+            GROUP BY hari')
+ 2 APPPATH\Controllers\Pelajaran.php(35): App\Models\SiswaModel->getDaftarPelajaranBySantri('rahmatzanova')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelajaran->siswa_index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelajaran))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 22:11:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 22:12:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-24 22:12:03 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY jam_pelajaran ASC' at line 7 in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT pelajara...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT pelajara...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT pelajara...')
+#3 C:\laragon\www\easrama_final\app\Models\SiswaModel.php(207): CodeIgniter\Database\BaseConnection->query('SELECT pelajara...')
+#4 C:\laragon\www\easrama_final\app\Controllers\Pelajaran.php(35): App\Models\SiswaModel->getDaftarPelajaranBySantri('rahmatzanova')
+#5 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Pelajaran->siswa_index()
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelajaran))
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-06-24 22:12:03 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY jam_pelajaran ASC' at line 7
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\SiswaModel.php(207): CodeIgniter\Database\BaseConnection->query('SELECT pelajaran_kelas.*, pelajaran.nama as mata_pelajaran, hari.nama as nama_hari
+            FROM pelajaran_kelas
+            JOIN pelajaran ON pelajaran_kelas.id_pelajaran = pelajaran.id
+            JOIN hari ON pelajaran_kelas.hari = hari.id
+            WHERE id_kelas = (SELECT id_kelas FROM siswa WHERE username = "rahmatzanova")
+            ORDER BY hari 
+            ORDER BY jam_pelajaran ASC')
+ 2 APPPATH\Controllers\Pelajaran.php(35): App\Models\SiswaModel->getDaftarPelajaranBySantri('rahmatzanova')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelajaran->siswa_index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelajaran))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 22:12:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-24 22:12:16 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY jam_pelajaran DESC' at line 7 in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT pelajara...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT pelajara...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT pelajara...')
+#3 C:\laragon\www\easrama_final\app\Models\SiswaModel.php(207): CodeIgniter\Database\BaseConnection->query('SELECT pelajara...')
+#4 C:\laragon\www\easrama_final\app\Controllers\Pelajaran.php(35): App\Models\SiswaModel->getDaftarPelajaranBySantri('rahmatzanova')
+#5 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Pelajaran->siswa_index()
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelajaran))
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-06-24 22:12:16 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY jam_pelajaran DESC' at line 7
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\SiswaModel.php(207): CodeIgniter\Database\BaseConnection->query('SELECT pelajaran_kelas.*, pelajaran.nama as mata_pelajaran, hari.nama as nama_hari
+            FROM pelajaran_kelas
+            JOIN pelajaran ON pelajaran_kelas.id_pelajaran = pelajaran.id
+            JOIN hari ON pelajaran_kelas.hari = hari.id
+            WHERE id_kelas = (SELECT id_kelas FROM siswa WHERE username = "rahmatzanova")
+            ORDER BY hari 
+            ORDER BY jam_pelajaran DESC')
+ 2 APPPATH\Controllers\Pelajaran.php(35): App\Models\SiswaModel->getDaftarPelajaranBySantri('rahmatzanova')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelajaran->siswa_index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelajaran))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 22:12:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-24 22:12:22 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY jam_pelajaran DESC' at line 7 in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT pelajara...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT pelajara...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT pelajara...')
+#3 C:\laragon\www\easrama_final\app\Models\SiswaModel.php(207): CodeIgniter\Database\BaseConnection->query('SELECT pelajara...')
+#4 C:\laragon\www\easrama_final\app\Controllers\Pelajaran.php(35): App\Models\SiswaModel->getDaftarPelajaranBySantri('rahmatzanova')
+#5 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Pelajaran->siswa_index()
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelajaran))
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-06-24 22:12:22 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY jam_pelajaran DESC' at line 7
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\SiswaModel.php(207): CodeIgniter\Database\BaseConnection->query('SELECT pelajaran_kelas.*, pelajaran.nama as mata_pelajaran, hari.nama as nama_hari
+            FROM pelajaran_kelas
+            JOIN pelajaran ON pelajaran_kelas.id_pelajaran = pelajaran.id
+            JOIN hari ON pelajaran_kelas.hari = hari.id
+            WHERE id_kelas = (SELECT id_kelas FROM siswa WHERE username = "rahmatzanova")
+            ORDER BY hari ASC
+            ORDER BY jam_pelajaran DESC')
+ 2 APPPATH\Controllers\Pelajaran.php(35): App\Models\SiswaModel->getDaftarPelajaranBySantri('rahmatzanova')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelajaran->siswa_index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelajaran))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 22:12:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-24 22:12:23 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY jam_pelajaran DESC' at line 7 in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT pelajara...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT pelajara...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT pelajara...')
+#3 C:\laragon\www\easrama_final\app\Models\SiswaModel.php(207): CodeIgniter\Database\BaseConnection->query('SELECT pelajara...')
+#4 C:\laragon\www\easrama_final\app\Controllers\Pelajaran.php(35): App\Models\SiswaModel->getDaftarPelajaranBySantri('rahmatzanova')
+#5 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Pelajaran->siswa_index()
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelajaran))
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-06-24 22:12:23 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY jam_pelajaran DESC' at line 7
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\SiswaModel.php(207): CodeIgniter\Database\BaseConnection->query('SELECT pelajaran_kelas.*, pelajaran.nama as mata_pelajaran, hari.nama as nama_hari
+            FROM pelajaran_kelas
+            JOIN pelajaran ON pelajaran_kelas.id_pelajaran = pelajaran.id
+            JOIN hari ON pelajaran_kelas.hari = hari.id
+            WHERE id_kelas = (SELECT id_kelas FROM siswa WHERE username = "rahmatzanova")
+            ORDER BY hari ASC
+            ORDER BY jam_pelajaran DESC')
+ 2 APPPATH\Controllers\Pelajaran.php(35): App\Models\SiswaModel->getDaftarPelajaranBySantri('rahmatzanova')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelajaran->siswa_index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelajaran))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 22:12:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-24 22:12:27 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY jam_pelajaran DESC' at line 7 in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT pelajara...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT pelajara...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT pelajara...')
+#3 C:\laragon\www\easrama_final\app\Models\SiswaModel.php(207): CodeIgniter\Database\BaseConnection->query('SELECT pelajara...')
+#4 C:\laragon\www\easrama_final\app\Controllers\Pelajaran.php(35): App\Models\SiswaModel->getDaftarPelajaranBySantri('rahmatzanova')
+#5 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Pelajaran->siswa_index()
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelajaran))
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-06-24 22:12:27 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY jam_pelajaran DESC' at line 7
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\SiswaModel.php(207): CodeIgniter\Database\BaseConnection->query('SELECT pelajaran_kelas.*, pelajaran.nama as mata_pelajaran, hari.nama as nama_hari
+            FROM pelajaran_kelas
+            JOIN pelajaran ON pelajaran_kelas.id_pelajaran = pelajaran.id
+            JOIN hari ON pelajaran_kelas.hari = hari.id
+            WHERE id_kelas = (SELECT id_kelas FROM siswa WHERE username = "rahmatzanova")
+            ORDER BY hari ASC,
+            ORDER BY jam_pelajaran DESC')
+ 2 APPPATH\Controllers\Pelajaran.php(35): App\Models\SiswaModel->getDaftarPelajaranBySantri('rahmatzanova')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelajaran->siswa_index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelajaran))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 22:12:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-24 22:12:28 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY jam_pelajaran DESC' at line 7 in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT pelajara...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT pelajara...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT pelajara...')
+#3 C:\laragon\www\easrama_final\app\Models\SiswaModel.php(207): CodeIgniter\Database\BaseConnection->query('SELECT pelajara...')
+#4 C:\laragon\www\easrama_final\app\Controllers\Pelajaran.php(35): App\Models\SiswaModel->getDaftarPelajaranBySantri('rahmatzanova')
+#5 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Pelajaran->siswa_index()
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelajaran))
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-06-24 22:12:28 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY jam_pelajaran DESC' at line 7
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\SiswaModel.php(207): CodeIgniter\Database\BaseConnection->query('SELECT pelajaran_kelas.*, pelajaran.nama as mata_pelajaran, hari.nama as nama_hari
+            FROM pelajaran_kelas
+            JOIN pelajaran ON pelajaran_kelas.id_pelajaran = pelajaran.id
+            JOIN hari ON pelajaran_kelas.hari = hari.id
+            WHERE id_kelas = (SELECT id_kelas FROM siswa WHERE username = "rahmatzanova")
+            ORDER BY hari ASC,
+            ORDER BY jam_pelajaran DESC')
+ 2 APPPATH\Controllers\Pelajaran.php(35): App\Models\SiswaModel->getDaftarPelajaranBySantri('rahmatzanova')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelajaran->siswa_index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelajaran))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 22:12:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-24 22:12:29 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY jam_pelajaran DESC' at line 7 in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT pelajara...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT pelajara...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT pelajara...')
+#3 C:\laragon\www\easrama_final\app\Models\SiswaModel.php(207): CodeIgniter\Database\BaseConnection->query('SELECT pelajara...')
+#4 C:\laragon\www\easrama_final\app\Controllers\Pelajaran.php(35): App\Models\SiswaModel->getDaftarPelajaranBySantri('rahmatzanova')
+#5 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Pelajaran->siswa_index()
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelajaran))
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-06-24 22:12:29 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY jam_pelajaran DESC' at line 7
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\SiswaModel.php(207): CodeIgniter\Database\BaseConnection->query('SELECT pelajaran_kelas.*, pelajaran.nama as mata_pelajaran, hari.nama as nama_hari
+            FROM pelajaran_kelas
+            JOIN pelajaran ON pelajaran_kelas.id_pelajaran = pelajaran.id
+            JOIN hari ON pelajaran_kelas.hari = hari.id
+            WHERE id_kelas = (SELECT id_kelas FROM siswa WHERE username = "rahmatzanova")
+            ORDER BY hari ASC,
+            ORDER BY jam_pelajaran DESC')
+ 2 APPPATH\Controllers\Pelajaran.php(35): App\Models\SiswaModel->getDaftarPelajaranBySantri('rahmatzanova')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelajaran->siswa_index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelajaran))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 22:13:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 22:13:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 22:13:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 22:14:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-24 22:14:45 --> Undefined array key "nama_siswa"
+in APPPATH\Views\pelajaran\v_siswa_pelajaran.php on line 41.
+ 1 APPPATH\Views\pelajaran\v_siswa_pelajaran.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_siswa"', 'C:\\laragon\\www\\easrama_final\\app\\Views\\pelajaran\\v_siswa_pelajaran.php', 41)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\easrama_final\\app\\Views\\pelajaran\\v_siswa_pelajaran.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pelajaran/v_siswa_pelajaran', [], true)
+ 5 APPPATH\Controllers\Pelajaran.php(40): view('pelajaran/v_siswa_pelajaran', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelajaran->siswa_index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelajaran))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 22:14:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 22:15:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 22:15:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 22:21:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 22:21:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 22:22:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 22:22:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 22:42:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 22:42:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 22:42:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 22:46:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 22:47:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 22:48:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 22:48:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 22:48:56 --> CSRF token verified.
+INFO - 2024-06-24 22:48:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 22:48:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 22:49:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 22:49:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-24 22:49:06 --> Undefined array key "is_aktiv"
+in APPPATH\Views\user\v_user.php on line 82.
+ 1 APPPATH\Views\user\v_user.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "is_aktiv"', 'C:\\laragon\\www\\easrama_final\\app\\Views\\user\\v_user.php', 82)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\easrama_final\\app\\Views\\user\\v_user.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('user/v_user', [], true)
+ 5 APPPATH\Controllers\User.php(33): view('user/v_user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 22:49:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 22:49:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-24 22:49:18 --> Undefined array key "is_aktiv"
+in APPPATH\Views\user\v_user.php on line 82.
+ 1 APPPATH\Views\user\v_user.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "is_aktiv"', 'C:\\laragon\\www\\easrama_final\\app\\Views\\user\\v_user.php', 82)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\easrama_final\\app\\Views\\user\\v_user.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('user/v_user', [], true)
+ 5 APPPATH\Controllers\User.php(33): view('user/v_user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 22:49:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 22:50:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 22:50:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 22:50:39 --> CSRF token verified.
+INFO - 2024-06-24 22:50:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 22:50:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 22:51:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 22:51:09 --> CSRF token verified.
+INFO - 2024-06-24 22:51:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 22:51:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 22:51:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 22:59:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 22:59:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 22:59:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 23:04:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 23:05:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-24 23:05:00 --> Undefined variable $semuaGuru
+in APPPATH\Views\pelajaran_kelas\v_pelajaran_kelas.php on line 176.
+ 1 APPPATH\Views\pelajaran_kelas\v_pelajaran_kelas.php(176): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $semuaGuru', 'C:\\laragon\\www\\easrama_final\\app\\Views\\pelajaran_kelas\\v_pelajaran_kelas.php', 176)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\easrama_final\\app\\Views\\pelajaran_kelas\\v_pelajaran_kelas.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pelajaran_kelas/v_pelajaran_kelas', [], true)
+ 5 APPPATH\Controllers\PelajaranKelas.php(43): view('pelajaran_kelas/v_pelajaran_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PelajaranKelas->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PelajaranKelas))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-24 23:05:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 23:06:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 23:06:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 23:07:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 23:07:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 23:09:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 23:09:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 23:09:54 --> CSRF token verified.
+INFO - 2024-06-24 23:09:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 23:11:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 23:11:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 23:11:47 --> CSRF token verified.
+INFO - 2024-06-24 23:11:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 23:12:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 23:12:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 23:16:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 23:17:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 23:17:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 23:18:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 23:18:13 --> CSRF token verified.
+INFO - 2024-06-24 23:18:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 23:18:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 23:18:40 --> CSRF token verified.
+INFO - 2024-06-24 23:18:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 23:18:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 23:20:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 23:22:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 23:22:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 23:23:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 23:23:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 23:23:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-24 23:23:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -25,7 +25,19 @@ class Kamar extends BaseController
         ];
         return view('kamar/v_kamar', $data);
     }
+
+    public function siswa_index()
+    {
+        $username = session()->get('username');
+        $semuaTemanSatuKamar = $this->siswaModel->getDaftarPenghuniKamarBySantri($username); 
+        $data = [
+            'judul' => 'Kamar',
+            'semuaTemanSatuKamar' => $semuaTemanSatuKamar
+        ];
+        return view('kamar/v_siswa_kamar', $data);
+    }
     
+
     public function tambah()
     {
         $data = [

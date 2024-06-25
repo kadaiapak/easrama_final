@@ -26,7 +26,7 @@ class Siswa extends BaseController
         $tahun = session()->get('tahun');
         $semuaSiswa = $this->siswaModel->getAllPendaftarByAdmin($tahun);
         $data = [
-            'judul' => 'Siswa',
+            'judul' => 'Santri',
             'semuaSiswa' => $semuaSiswa,
         ];
         return view('siswa/v_siswa', $data);
@@ -38,7 +38,7 @@ class Siswa extends BaseController
         $tahun = session()->get('tahun');
         $semuaSiswa = $this->siswaModel->getAllSiswaTerdaftarByAdmin($tahun);
         $data = [
-            'judul' => 'Siswa',
+            'judul' => 'Santri',
             'semuaSiswa' => $semuaSiswa,
         ];
         return view('siswa/v_siswa_terdaftar', $data);
@@ -47,7 +47,7 @@ class Siswa extends BaseController
     public function tambah()
     {   
         $data = [
-            'judul' => 'Tambah Siswa',
+            'judul' => 'Tambah Santri',
         ];
         return view('siswa/v_tambah_siswa', $data);
     }
@@ -172,7 +172,7 @@ class Siswa extends BaseController
             throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
         }
         $data = [
-            'judul' => 'Detail Siswa',
+            'judul' => 'Detail Santri',
             'detailSiswa' => $this->siswaModel->find($id)
         ];
         return view('siswa/v_detail_siswa', $data);
@@ -184,7 +184,7 @@ class Siswa extends BaseController
             throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
         }
         $data = [
-            'judul' => 'Edit Siswa',
+            'judul' => 'Edit Santri',
             'detailSiswa' => $this->siswaModel->getForEdit($id)
         ];
         return view('siswa/v_edit_siswa', $data);
@@ -413,7 +413,7 @@ class Siswa extends BaseController
         $status = session()->get('status');
         $semuaSiswa = $this->siswaModel->getAllMasterSiswa($tahun, $status);
         $data = [
-            'judul' => 'Maste Data Siswa',
+            'judul' => 'Master Data Santri',
             'semuaSiswa' => $semuaSiswa,
         ];
         return view('siswa/v_master_siswa', $data);
@@ -425,7 +425,7 @@ class Siswa extends BaseController
             throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
         }
         $data = [
-            'judul' => 'Detail Siswa',
+            'judul' => 'Detail Santri',
             'detailSiswa' => $this->siswaModel->find($id)
         ];
         return view('siswa/v_detail_master_siswa', $data);
@@ -438,7 +438,7 @@ class Siswa extends BaseController
         $semuaSiswa = $this->siswaModel->getAllMasterSiswa($tahun, $status);
         $spreadsheet = new Spreadsheet();
         $activeWorksheet = $spreadsheet->getActiveSheet();
-        $activeWorksheet->setCellValue('A1', "Rekap Semua Siswa Sekolah Bintang Al-Quran ".$tahun);
+        $activeWorksheet->setCellValue('A1', "Rekap Semua Santri Sekolah Bintang Al-Quran ".$tahun);
         $activeWorksheet->mergeCells('A1:L1');
         $activeWorksheet->getStyle('A1')->getFont()->setBold(true);
         $activeWorksheet->setCellValue('A3', 'No');
@@ -506,7 +506,7 @@ class Siswa extends BaseController
 
         $writer = new Xlsx($spreadsheet);
         header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
-        header('Content-Disposition: attachment;filename=Rekap_Semua_Siswa_Sekolah_Bintang_AlQuran.xlsx');
+        header('Content-Disposition: attachment;filename=Rekap_Semua_Santri_Sekolah_Bintang_AlQuran.xlsx');
         header('Cache-Control: max-age=0');
         $writer->save('php://output');
         exit();
@@ -529,10 +529,10 @@ class Siswa extends BaseController
         $options = new Options();
         $dompdf = new Dompdf($options);
         $data = array(
-            'title_pdf' => 'Rekap Semua Siswa Sekolah Bintang Al-Quran',
+            'title_pdf' => 'Rekap Semua Santri Sekolah Bintang Al-Quran',
             'semuaSiswa' => $semuaSiswa,
         );
-        $filename = 'Rekap_Semua_Siswa_Sekolah_Bintang_AlQuran';
+        $filename = 'Rekap_Semua_Santri_Sekolah_Bintang_AlQuran';
         $html = view('siswa/v_cetak_rekap_master_siswa', $data);
         $dompdf->loadHtml($html);
         $dompdf->setPaper('A4','portrait');

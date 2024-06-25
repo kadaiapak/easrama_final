@@ -90,7 +90,6 @@
 												<td class=" "><?= $sp['prestasi_peringkat']; ?></td>
 												<td class=" "><?= $sp['prestasi_nim']; ?></td>
 												<td class=" "><?= $sp['prestasi_nama']; ?></td>
-												<td class=" "><?= $sp['nama_departemen']; ?></td>
 												<td class="">
 													<a href="<?= base_url('/admin/prestasi/edit/'.$sp['prestasi_slug']); ?>" class="btn btn-warning">Ubah</a>
 													<?php if(session()->get('level') == 1) { ?>

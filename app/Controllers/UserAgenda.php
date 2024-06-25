@@ -13,7 +13,6 @@ class UserAgenda extends BaseController
         helper('form');
         $this->agendaModel = new AgendaModel();
         $this->beritaModel = new BeritaModel();
-        // $this->departemenModel = new DepartemenModel();
     }
 
     public function semua_agenda()

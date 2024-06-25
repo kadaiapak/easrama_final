@@ -11,7 +11,7 @@ $routes->get('/', 'Home::index');
 $routes->get('/semua-prestasi', 'Home::semuaPrestasi');
 $routes->get('/pendidikan-non-formal-s2', 'Home::s_dua');
 
-$routes->get('/dashboard', 'Dashboard::index', ['filter' => 'adminDanSuperAdminFilter']);
+$routes->get('/dashboard', 'Dashboard::index');
 
 // ROUTE UNTUK DAFTAR 
 $routes->get('/daftar', 'UserDaftar::index');
@@ -43,13 +43,21 @@ $routes->post('admin/siswa/excel', 'Siswa::excel',['filter' => 'adminDanSuperAdm
 // AKHIR DARI ROUTE UNTUK SISWA
 
 // ROUTE UNTUK KAMAR
+// akses oleh admin dan super admin
 $routes->get('admin/kamar', 'Kamar::index',['filter' => 'adminDanSuperAdminFilter']);
 $routes->get('admin/kamar/tambah', 'Kamar::tambah',['filter' => 'adminDanSuperAdminFilter']);
 $routes->post('admin/kamar/simpan', 'Kamar::simpan',['filter' => 'adminDanSuperAdminFilter']);
 $routes->get('admin/kamar/edit/(:any)', 'Kamar::edit/$1' ,['filter' => 'adminDanSuperAdminFilter']);
 $routes->post('admin/kamar/update/(:any)', 'Kamar::update/$1' ,['filter' => 'adminDanSuperAdminFilter']);
 $routes->delete('admin/kamar/hapus/(:num)', 'Kamar::hapus/$1' ,['filter' => 'adminDanSuperAdminFilter']);
+
+// akses oleh siswa
+$routes->get('siswa/kamar', 'Kamar::siswa_index');
+
 // AKHIR ROUTE UNTUK KAMAR
+
+
+
 
 // ROUTE UNTUK KELAS
 $routes->get('admin/kelas', 'Kelas::index',['filter' => 'adminDanSuperAdminFilter']);
@@ -67,6 +75,12 @@ $routes->post('admin/pelajaran/simpan', 'Pelajaran::simpan',['filter' => 'adminD
 $routes->get('admin/pelajaran/edit/(:any)', 'Pelajaran::edit/$1' ,['filter' => 'adminDanSuperAdminFilter']);
 $routes->post('admin/pelajaran/update/(:any)', 'Pelajaran::update/$1' ,['filter' => 'adminDanSuperAdminFilter']);
 $routes->delete('admin/pelajaran/hapus/(:num)', 'Pelajaran::hapus/$1' ,['filter' => 'adminDanSuperAdminFilter']);
+
+// akses oleh siswa
+$routes->get('siswa/pelajaran', 'Pelajaran::siswa_index');
+
+// akses oleh guru
+$routes->get('guru/pelajaran', 'Pelajaran::guru_index');
 // AKHIR ROUTE UNTUK KELAS
 
 // ROUTE UNTUK PENGHUNI KELAS

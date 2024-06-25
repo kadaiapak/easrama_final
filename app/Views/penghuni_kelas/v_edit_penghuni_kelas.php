@@ -4,7 +4,7 @@
     <div class="">
         <div class="page-title">
 			<div class="title_left">
-				<h3>Data Siswa Tiap Kelas</h3>
+				<h3>Data Santri Tiap Kelas</h3>
 			</div>
 		</div>
         <div class="clearfix"></div>
@@ -12,7 +12,7 @@
             <div class="col-md-12 col-sm-12">
                 <div class="x_panel">
                     <div class="x_title">
-                        <h2>Edit Kelas Siswa</h2>
+                        <h2>Edit Kelas Santri</h2>
                         <div class="clearfix"></div>
                     </div>
                     <div class="x_content">

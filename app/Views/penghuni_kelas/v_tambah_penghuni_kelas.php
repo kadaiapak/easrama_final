@@ -4,7 +4,7 @@
     <div class="">
         <div class="page-title">
             <div class="title_left">
-                <h3>Data Siswa Tiap Kelas</h3>
+                <h3>Data Santri Tiap Kelas</h3>
             </div>
         </div>
         <div class="clearfix"></div>

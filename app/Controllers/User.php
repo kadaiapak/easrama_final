@@ -6,11 +6,13 @@ use App\Models\UserLevelModel;
 use App\Models\AuthModel;
 
 
+
 class User extends BaseController
 {
     protected $userModel;
     protected $userLevelModel;
     protected $authModel;
+
     public function __construct()
     {
         helper('form');

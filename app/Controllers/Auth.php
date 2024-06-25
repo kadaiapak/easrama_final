@@ -2,15 +2,19 @@
 
 namespace App\Controllers;
 use App\Models\AuthModel;
+use App\Models\SiswaModel;
 
 
 class Auth extends BaseController
 {
     protected $authModel;
+    protected $siswaModel;
+
     public function __construct()
     {
         helper('form');
         $this->authModel = new AuthModel();
+        $this->siswaModel = new SiswaModel();
     }
     public function index()
     {
@@ -53,14 +57,30 @@ class Auth extends BaseController
         if($cek){
             $password = $this->request->getVar('password');
             if(password_verify($password, $cek['password'])){
-                session()->set('user_id', $cek['user_id']);
-                session()->set('log', true);
-                session()->set('nama_asli', $cek['nama_asli']);
-                session()->set('username', $cek['username']);
-                session()->set('level', $cek['level']);
-                session()->set('user_foto', $cek['user_foto']);
-                session()->set('user_level_nama', $cek['user_level_nama']);
-                return redirect()->to('/dashboard')->with('sukses','Login berhasil!');
+                if($cek['level'] == 4){
+                    $cekVerifikasi = $this->siswaModel->cekVerifikasiSantri($username);
+                    if($cekVerifikasi['status'] == 1){
+                        return redirect()->to('/login')->with('gagal', 'Pendaftaran Anda Belum diverifikasi!');   
+                    }else {
+                        session()->set('user_id', $cek['user_id']);
+                        session()->set('log', true);
+                        session()->set('nama_asli', $cek['nama_asli']);
+                        session()->set('username', $cek['username']);
+                        session()->set('level', $cek['level']);
+                        session()->set('user_foto', $cek['user_foto']);
+                        session()->set('user_level_nama', $cek['user_level_nama']); 
+                        return redirect()->to('/dashboard')->with('sukses','Login berhasil!'); 
+                    }
+                }else {
+                    session()->set('user_id', $cek['user_id']);
+                    session()->set('log', true);
+                    session()->set('nama_asli', $cek['nama_asli']);
+                    session()->set('username', $cek['username']);
+                    session()->set('level', $cek['level']);
+                    session()->set('user_foto', $cek['user_foto']);
+                    session()->set('user_level_nama', $cek['user_level_nama']);
+                    return redirect()->to('/dashboard')->with('sukses','Login berhasil!');
+                }
             }else {
                 return redirect()->back()->with('gagal', 'Username atau Password salah!');   
             }

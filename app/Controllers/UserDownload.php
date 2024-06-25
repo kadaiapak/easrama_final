@@ -13,7 +13,6 @@ class UserDownload extends BaseController
         helper('form');
         $this->downloadModel = new DownloadModel();
         $this->beritaModel = new BeritaModel();
-        // $this->departemenModel = new DepartemenModel();
     }
 
     public function semua_download()

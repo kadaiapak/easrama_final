@@ -79,7 +79,7 @@
                                                 <td><?= $sd['nama_asli']; ?></td>
                                                 <td><?= $sd['username']; ?></td>
                                                 <td><?= $sd['user_level_nama']; ?></td>
-                                                <td><?= $sd['is_aktif'] == 1 ? "<span class='badge badge-success'>Aktif</span>" : ($sd['is_aktiv'] ==  0 ? "<span class='badge badge-warning'>Tidak Aktif</span>" : null)  ?></td>
+                                                <td><?= $sd['is_aktif'] == 1 ? "<span class='badge badge-success'>Aktif</span>" : ($sd['is_aktif'] ==  0 ? "<span class='badge badge-warning'>Tidak Aktif</span>" : null)  ?></td>
                                                 <td><?= $sd['terakhir_login']; ?></td>
                                                 <td>
                                                     <a href="<?= base_url('/user/detail/'.$sd['user_id']); ?>" class="btn btn-primary btn-sm"><i class="fa fa-file-text-o" style="margin-right: 5px;"></i>Detail</a>

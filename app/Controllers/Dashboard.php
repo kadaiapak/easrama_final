@@ -35,6 +35,24 @@ class Dashboard extends BaseController
                 'totalAgenda' => $totalAgenda,
             ];
         }
+        if(session()->get('level') == '3'){
+            $view = 'dashboard/v_guru_dashboard';
+            $data = [
+                'judul' => 'Dashboard Guru',
+                'pengunjungHariIni' => $pengunjungHariIni,
+                'totalBerita' => $totalBerita,
+                'totalAgenda' => $totalAgenda,
+            ];
+        }
+        if(session()->get('level') == '4'){
+            $view = 'dashboard/v_santri_dashboard';
+            $data = [
+                'judul' => 'Dashboard Santri',
+                'pengunjungHariIni' => $pengunjungHariIni,
+                'totalBerita' => $totalBerita,
+                'totalAgenda' => $totalAgenda,
+            ];
+        }
         return view($view, $data);
     }
 }

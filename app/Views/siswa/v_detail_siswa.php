@@ -6,7 +6,7 @@
     <div class>
         <div class="page-title">
             <div class="title_left">
-                <h3>Siswa</h3>
+                <h3>Santri</h3>
             </div>
         </div>
         <div class="clearfix"></div>
@@ -46,7 +46,7 @@
                                     <td><?= $detailSiswa['no_pendaftaran']; ?></td>
                                 </tr>
                                 <tr>
-                                    <td class="font-weight-bold">Nama Siswa</td>
+                                    <td class="font-weight-bold">Nama Santri</td>
                                     <td><?= $detailSiswa['nama']; ?></td>
                                 </tr>
                                 <tr>

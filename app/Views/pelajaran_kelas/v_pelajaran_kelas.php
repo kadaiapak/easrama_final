@@ -68,8 +68,10 @@
 											<tr class="headings">
 												<th class="column-title">No</th>
 												<th class="column-title">Kelas</th>
+												<th class="column-title">Hari</th>
 												<th class="column-title">Jam</th>
 												<th class="column-title">Pelajaran</th>
+												<th class="column-title">Guru</th>
 												<th class="column-title no-link last"><span class="nobr">Aksi</span>
 												</th>
 											</tr>
@@ -80,8 +82,10 @@
 											<tr>
 												<td class=" "><?= $no; ?></td>
 												<td class=" "><?= $spk['nama_kelas']; ?></td>
+												<td class=" "><?= $spk['nama_hari']; ?></td>
 												<td class=" "><?= $spk['jam_pelajaran']; ?></td>
 												<td class=" "><?= $spk['nama_pelajaran']; ?></td>
+												<td class=" "><?= $spk['nama_guru']; ?></td>
 												<td class="">
 													<a href="<?= base_url('/admin/pelajaran-kelas/edit/'.$spk['id']); ?>" class="btn btn-warning"><i class="fa fa-edit" style="margin-right: 5px;"></i>Edit</a>
 													<?php if(session()->get('level') == 1) { ?>
@@ -116,7 +120,7 @@
 					<div class="form-group row">
 						<label for="id_kelas" class="col-md-3 col-sm-3">Kelas</label>
 						<div class="col-md-9 col-sm-9">
-							<select name="id_kelas" id="id_kelas" class="form-control <?= validation_show_error('id_kelas') ? 'is-invalid' : null; ?>" required>
+							<select required name="id_kelas" id="id_kelas" class="form-control <?= validation_show_error('id_kelas') ? 'is-invalid' : null; ?>">
 								<option value="">-- Pilih Kelas --</option>
 								<?php foreach ($semuaKelas as $sk) { ?>
 									<option value="<?= $sk['id']; ?>" <?= old('id_kelas') == $sk['id'] ? "selected" : null ; ?>><?= $sk['nama']; ?></option>
@@ -124,6 +128,23 @@
 							</select>
 							<div class="invalid-feedback" style="text-align: left;">
 								<?= validation_show_error('id_kelas'); ?>
+							</div>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="hari" class="col-md-3 col-sm-3">Hari</label>
+						<div class="col-md-9 col-sm-9">
+							<select required name="hari" id="hari" class="form-control <?= validation_show_error('hari') ? 'is-invalid' : null; ?>">
+								<option value="">-- Pilih Hari --</option>
+								<option value="1" <?= old('hari') == 1 ? "selected" : null ; ?>>Senin</option>
+								<option value="2" <?= old('hari') == 2 ? "selected" : null ; ?>>Selasa</option>
+								<option value="3" <?= old('hari') == 3 ? "selected" : null ; ?>>Rabu</option>
+								<option value="4" <?= old('hari') == 4 ? "selected" : null ; ?>>Kamis</option>
+								<option value="5" <?= old('hari') == 5 ? "selected" : null ; ?>>Jumat</option>
+								<option value="6" <?= old('hari') == 6 ? "selected" : null ; ?>>Sabtu</option>
+							</select>
+							<div class="invalid-feedback" style="text-align: left;">
+								<?= validation_show_error('hari'); ?>
 							</div>
 						</div>
 					</div>
@@ -139,7 +160,7 @@
 					<div class="form-group row">
 						<label for="id_pelajaran" class="col-md-3 col-sm-3">Pelajaran</label>
 						<div class="col-md-9 col-sm-9">
-							<select name="id_pelajaran" id="id_pelajaran" class="form-control <?= validation_show_error('id_pelajaran') ? 'is-invalid' : null; ?>" required>
+							<select required name="id_pelajaran" id="id_pelajaran" class="form-control <?= validation_show_error('id_pelajaran') ? 'is-invalid' : null; ?>">
 								<option value="">-- Pilih Pelajaran --</option>
 								<?php foreach ($semuaPelajaran as $sp) { ?>
 									<option value="<?= $sp['id']; ?>" <?= old('id_pelajaran') == $sp['id'] ? "selected" : null ; ?>><?= $sp['nama']; ?></option>
@@ -150,7 +171,21 @@
 							</div>
 						</div>
 					</div>
-                </div>
+					<div class="form-group row">
+						<label for="guru" class="col-md-3 col-sm-3">Guru</label>
+						<div class="col-md-9 col-sm-9">
+							<select required name="guru" id="guru" class="form-control <?= validation_show_error('guru') ? 'is-invalid' : null; ?>">
+								<option value="">-- Pilih Guru --</option>
+								<?php foreach ($semuaGuru as $sg) { ?>
+									<option value="<?= $sg['user_id']; ?>" <?= old('guru') == $sg['user_id'] ? "selected" : null ; ?>><?= $sg['nama_asli']; ?></option>
+								<?php } ?>
+							</select>
+							<div class="invalid-feedback" style="text-align: left;">
+								<?= validation_show_error('guru'); ?>
+							</div>
+						</div>
+					</div>
+				</div>
                 <div class="modal-footer" style="border: none; justify-content: center;">
                     <button type="button" class="btn btn-warning btn-sm" data-dismiss="modal"><i class="fa fa-chevron-circle-left" style="margin-right: 5px;"></i> Kembali</button>
                     <button type="submit" name="action" class="btn btn-primary btn-sm"><i class="fa fa-save" style="margin-right: 5px;"></i>Simpan</button>

@@ -4,6 +4,7 @@ namespace App\Controllers;
 use App\Models\KelasModel;
 use App\Models\PelajaranModel;
 use App\Models\PelajaranKelasModel;
+use App\Models\UserModel;
 
 // library untuk export excel
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
@@ -17,12 +18,14 @@ class PelajaranKelas extends BaseController
     protected $kelasModel;
     protected $pelajaranModel;
     protected $pelajaranKelasModel;
+    protected $userModel;
     public function __construct()
     {
         helper('form');
         $this->kelasModel = new KelasModel();
         $this->pelajaranModel = new PelajaranModel();
         $this->pelajaranKelasModel = new PelajaranKelasModel();
+        $this->userModel = new UserModel();
     }
 
     public function index()
@@ -31,11 +34,14 @@ class PelajaranKelas extends BaseController
         $semuaPelajaranKelas = $this->pelajaranKelasModel->getAllPelajaranKelasByAdmin($id_kelas);
         $semuaKelas = $this->kelasModel->getAllByAdmin();
         $semuaPelajaran = $this->pelajaranModel->getAllByAdmin();
+        $semuaGuru = $this->userModel->getAllGuru();
+
         $data = [
             'judul' => 'Pelajaran Kelas',
             'semuaKelas' => $semuaKelas,
             'semuaPelajaran' => $semuaPelajaran,
-            'semuaPelajaranKelas' => $semuaPelajaranKelas
+            'semuaPelajaranKelas' => $semuaPelajaranKelas,
+            'semuaGuru' => $semuaGuru
         ];
         return view('pelajaran_kelas/v_pelajaran_kelas', $data);
     }
@@ -47,7 +53,7 @@ class PelajaranKelas extends BaseController
         $data = [
             'judul' => 'Tambah Pelajaran Pada Kelas',
             'semuaKelas' => $semuaKelas,
-            'semuaPelajaran' => $semuaPelajaran
+            'semuaPelajaran' => $semuaPelajaran,
         ];
         return view('pelajaran_kelas/v_tambah_pelajaran_kelas', $data);
     }
@@ -61,6 +67,12 @@ class PelajaranKelas extends BaseController
                     'required' => 'Pilih Mata Pelajaran !',
                 ]
             ],
+            'hari' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Pilih Hari !',
+                ]
+            ],
             'id_kelas' => [
                 'rules' => 'required',
                 'errors' => [
@@ -70,7 +82,13 @@ class PelajaranKelas extends BaseController
             'jam_pelajaran' => [
                 'rules' => 'required',
                 'errors' => [
-                    'required' => 'Pilih Jam Pelajaran !'
+                    'required' => 'Isi Jam Pelajaran !'
+                ]
+            ],
+            'guru' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Pilih Guru !'
                 ]
             ],
         ])){
@@ -78,9 +96,11 @@ class PelajaranKelas extends BaseController
         }
     
         $data = array(
+            'hari' => $this->request->getVar('hari'),
             'jam_pelajaran' => $this->request->getVar('jam_pelajaran'),
             'id_kelas' => $this->request->getVar('id_kelas'),
             'id_pelajaran' => $this->request->getVar('id_pelajaran'),
+            'guru' => $this->request->getVar('guru'),
         );
 
         $this->pelajaranKelasModel->insert($data);
@@ -98,11 +118,13 @@ class PelajaranKelas extends BaseController
         }
         $semuaKelas = $this->kelasModel->getAllByAdmin();
         $semuaPelajaran = $this->pelajaranModel->getAllByAdmin();
+        $semuaGuru = $this->userModel->getAllGuru();
         $data = [
             'judul' => 'Edit Pelajaran Tiap Kelas',
             'detailPelajaranKelas' => $detailPelajaranKelas,
             'semuaKelas' => $semuaKelas,
             'semuaPelajaran' => $semuaPelajaran,
+            'semuaGuru' => $semuaGuru 
         ];
         return view('pelajaran_kelas/v_edit_pelajaran_kelas', $data);
     }
@@ -118,6 +140,12 @@ class PelajaranKelas extends BaseController
                     'required' => 'Pilih kelas, tidak boleh kosong',
                 ]
             ],
+            'hari' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Pilih Hari !',
+                ]
+            ],
             'id_pelajaran' => [
                 'rules' => 'required',
                 'errors' => [
@@ -130,13 +158,22 @@ class PelajaranKelas extends BaseController
                     'required' => 'Isikan jam pelajaran',
                 ]
             ],
+            'guru' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Pilih Guru !'
+                ]
+            ],
         ])){
             return redirect()->back()->withInput();
         }
         $data = array(
+
+            'hari' => $this->request->getVar('hari'),
             'id_pelajaran' => $this->request->getVar('id_pelajaran'),
             'jam_pelajaran' => $this->request->getVar('jam_pelajaran'),
             'id_kelas' => $this->request->getVar('id_kelas'),
+            'guru' => $this->request->getVar('guru'),
         );
         $this->pelajaranKelasModel->where('id', $id)->set($data)->update();
         return redirect()->to('/admin/pelajaran-kelas')->with('sukses','Data berhasil diubah!');

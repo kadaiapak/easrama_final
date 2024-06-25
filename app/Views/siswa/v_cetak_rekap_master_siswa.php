@@ -115,7 +115,7 @@ hr{
 				<table style="width: 100%;">
 					<tr>
 						<td style="text-align: center;">
-							<h4>Rekap Semua Siswa Sekolah Bintang Al-Quran tahun <?= session()->get('tahun'); ?></h4>
+							<h4>Rekap Semua Santri Sekolah Bintang Al-Quran tahun <?= session()->get('tahun'); ?></h4>
 						</td>
 					</tr>
 				</table>

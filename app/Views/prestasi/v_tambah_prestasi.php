@@ -137,18 +137,6 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="prestasi_departemen"><b>Departemen * :</b></label>
-                            <select name="prestasi_departemen" id="prestasi_departemen" class="form-control <?= validation_show_error('prestasi_departemen') ? 'is-invalid' : null; ?>" required>
-                                <option value="">-- Pilih Departemen --</option>
-                                <?php foreach ($semuaDepartemen as $sd) { ?>
-                                    <option value="<?= $sd['departemen_id']; ?>" <?= old('prestasi_departemen') == $sd['departemen_id'] ? "selected" : null ; ?>><?= $sd['departemen_nama']; ?></option>
-                                <?php } ?>
-                            </select>
-                            <div class="invalid-feedback" style="text-align: left;">
-                                <?= validation_show_error('prestasi_departemen'); ?>
-                            </div>
-                        </div>
-                        <div class="form-group">
                             <label for="prestasi_sertifikat" class="file-label">Sertifikat<b>(ukuran sampul dibawah 1MB / 1024KB)</b></label>
                             <input accept="image/*" class="form-control <?= validation_show_error('prestasi_sertifikat') ? 'is-invalid' : null; ?>" type="file" id="prestasi_sertifikat" name="prestasi_sertifikat">
                             <div class="invalid-feedback" style="text-align: left;">

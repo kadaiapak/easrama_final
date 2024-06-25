@@ -91,7 +91,7 @@ class PenghuniKelas extends BaseController
         }
         $semuaKelas = $this->kelasModel->getAllByAdmin();
         $data = [
-            'judul' => 'Edit Kelas Siswa',
+            'judul' => 'Edit Kelas Santri',
             'semuaKelas' => $semuaKelas,
             'detailSiswa' => $detailSiswa 
         ];

@@ -25,7 +25,6 @@ class PrestasiModel extends Model
     'prestasi_juara',
     'prestasi_nim',
     'prestasi_nama',
-    'prestasi_departemen',
     'prestasi_sertifikat',
     'prestasi_penulis'
     ];
@@ -53,9 +52,8 @@ class PrestasiModel extends Model
     public function getAllByAdmin()
     {
         $builder = $this->db->table('prestasi');
-        $builder->select('prestasi.*, user.nama_asli as nama_user, departemen.departemen_nama as nama_departemen');
+        $builder->select('prestasi.*, user.nama_asli as nama_user');
         $builder->join('user', 'prestasi.prestasi_penulis = user.user_id');
-        $builder->join('departemen', 'prestasi.prestasi_departemen = departemen.departemen_id');
         $result = $builder->get();
         return $result->getResultArray();
     }
@@ -63,9 +61,8 @@ class PrestasiModel extends Model
     public function getAll($limit = '')
     {
         $builder = $this->db->table('prestasi');
-        $builder->select('prestasi.*, user.nama_asli as nama_user, departemen.departemen_nama as nama_departemen');
+        $builder->select('prestasi.*, user.nama_asli as nama_user');
         $builder->join('user', 'prestasi.prestasi_penulis = user.user_id');
-        $builder->join('departemen', 'prestasi.prestasi_departemen = departemen.departemen_id');
         if($limit) {
             $builder->limit($limit);
         }

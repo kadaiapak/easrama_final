@@ -32,7 +32,7 @@ class PenghuniKamar extends BaseController
         $semuaSiswaBelumAdaKamar = $this->siswaModel->getAllSiswaBelumAdaKamar();
         $semuaSiswaSudahAdaKamar = $this->siswaModel->getAllSiswaSudahAdaKamar($id_kamar);
         $data = [
-            'judul' => 'Kamar Siswa',
+            'judul' => 'Kamar Santri',
             'semuaKamar' => $semuaKamar,
             'semuaSiswaBelumAdaKamar' => $semuaSiswaBelumAdaKamar,
             'semuaSiswaSudahAdaKamar' => $semuaSiswaSudahAdaKamar
@@ -86,7 +86,7 @@ class PenghuniKamar extends BaseController
         }
         $semuaKamar = $this->kamarModel->getAllByAdmin();
         $data = [
-            'judul' => 'Edit Kamar Siswa',
+            'judul' => 'Edit Kamar Santri',
             'semuaKamar' => $semuaKamar,
             'detailSiswa' => $detailSiswa 
         ];

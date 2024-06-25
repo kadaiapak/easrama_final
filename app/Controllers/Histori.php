@@ -36,7 +36,7 @@ class Histori extends BaseController
         $semuaHistoriKelas = $this->historiKelasSiswaModel->getAllByAdmin($id_kelas);
         $semuaHistoriKamar = $this->historiKamarSiswaModel->getAllByAdmin($id_kamar);
         $data = [
-            'judul' => 'Histori Siswa',
+            'judul' => 'Histori Santri',
             'semuaKelas' => $semuaKelas,
             'semuaKamar' => $semuaKamar,
             'semuaHistoriKelas' => $semuaHistoriKelas,
@@ -58,7 +58,7 @@ class Histori extends BaseController
         $semuaHistoriKelasSiswa = $this->historiKelasSiswaModel->getAllByAdmin($id_kelas);
         $spreadsheet = new Spreadsheet();
         $activeWorksheet = $spreadsheet->getActiveSheet();
-        $activeWorksheet->setCellValue('A1', 'Laporan Histori Perpindahan Kelas Siswa '.date('Y'));
+        $activeWorksheet->setCellValue('A1', 'Laporan Histori Perpindahan Kelas Santri '.date('Y'));
         $activeWorksheet->mergeCells('A1:E1');
         $activeWorksheet->getStyle('A1')->getFont()->setBold(true);
         $activeWorksheet->setCellValue('A3', 'No');
@@ -142,7 +142,7 @@ class Histori extends BaseController
 
         $spreadsheet = new Spreadsheet();
         $activeWorksheet = $spreadsheet->getActiveSheet();
-        $activeWorksheet->setCellValue('A1', 'Laporan Histori Perpindahan Kamar Siswa '.date('Y'));
+        $activeWorksheet->setCellValue('A1', 'Laporan Histori Perpindahan Kamar Santri '.date('Y'));
         $activeWorksheet->mergeCells('A1:E1');
         $activeWorksheet->getStyle('A1')->getFont()->setBold(true);
         $activeWorksheet->setCellValue('A3', 'No');

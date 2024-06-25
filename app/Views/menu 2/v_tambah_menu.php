@@ -48,7 +48,7 @@
                             <div class="form-group row ">
                                 <label class="control-label col-md-3 col-sm-3" for="menu_url">Route Menu</label>
                                 <div class="col-md-9 col-sm-9 ">
-                                    <input type="text" name="menu_url" class="form-control <?= validation_show_error('menu_url') ? 'is-invalid' : null; ?>" id="menu_url" placeholder="contoh : /departemen">
+                                    <input type="text" name="menu_url" class="form-control <?= validation_show_error('menu_url') ? 'is-invalid' : null; ?>" id="menu_url" placeholder="contoh : /kelas">
                                     <div class="invalid-feedback" style="text-align: left;">
                                         <?= validation_show_error('menu_url'); ?>
                                     </div>

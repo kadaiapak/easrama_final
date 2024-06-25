@@ -2,13 +2,17 @@
 
 namespace App\Controllers;
 use App\Models\SiswaModel;
+use App\Models\UserModel;
+
 
 class UserDaftar extends BaseController
 {
     protected $siswaModel;
+    protected $userModel;
     public function __construct()
     {
         helper('form');
+        $this->userModel = new UserModel();
         $this->siswaModel = new SiswaModel();
     }
 
@@ -76,7 +80,29 @@ class UserDaftar extends BaseController
                 'errors' => [
                     'required' => 'Tulis provinsi tempat tinggal'
                 ]
-            ]
+            ],
+            'username' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Tulis username'
+                ]
+            ],
+            'password' => [
+                'rules' => 'required|min_length[6]|cek_spasi',
+                'errors' => [
+                    'required' => 'Tuliskan Password',
+                    'min_length' => 'Password tidak kuat',
+                    'cek_spasi' => 'Password tidak boleh ada spasi'
+                ]
+            ],
+            'password_conf' => [
+                'rules' => 'required|min_length[6]|matches[password]',
+                'errors' => [
+                    'required' => 'Tuliskan Konfirmasi Password',
+                    'min_length' => 'Password tidak kuat',
+                    'matches' => 'Password dan password konfirmasi tidak cocok',
+                ]
+            ],
         ])){
             return redirect()->back()->withInput();
         }
@@ -92,8 +118,10 @@ class UserDaftar extends BaseController
         $tanggalPendaftaran = date('d');
         $bulanPendaftaran = date('m');
         $tahunPendaftaran = date('Y');
+        $password = password_hash($this->request->getVar('password'), PASSWORD_BCRYPT);
         $data = array(
             'no_pendaftaran' => $noPendaftaran,
+            'username' => $this->request->getVar('username'),
             'nama' => $this->request->getVar('nama'),
             'jk' => $this->request->getVar('jk'),
             'no_hp' => $this->request->getVar('no_hp'),
@@ -108,7 +136,18 @@ class UserDaftar extends BaseController
             'tahun_pendaftaran' => $tahunPendaftaran,
             'status' => 1,
         );
+        $data_akun = array(
+            'nama_asli' => $this->request->getVar('nama'),
+            'username' => $this->request->getVar('username'),
+            'password' => $password,
+            'user_foto' => 'no-photo.jpg',
+            'level' => 4,
+            'is_aktif' => 0,
+            'is_login' => 0
+        );
+
         $this->siswaModel->insert($data);
+        $this->userModel->insert($data_akun);
         return redirect()->to('/daftar/sukses')->with('sukses','Data berhasil disimpan!');
     }
 
@@ -124,6 +163,20 @@ class UserDaftar extends BaseController
         }
     }
 
+        // callback function untuk validation rules
+        function cek_spasi($str)
+        {
+            $pattern = '/ /';
+            $result = preg_match($pattern, $str);
+    
+            if ($result){
+                $this->form_validation->set_message('username_check', 'The %s field can not have a " "');
+                return FALSE;
+            }
+            else{
+                return TRUE;
+            }
+        }
     // public function detail($id)
     // {
     //     if($id == '') {

@@ -33,7 +33,24 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group row  ">
+                            <div class="form-group row">
+                                <label for="hari" class="col-md-3 col-sm-3">Hari</label>
+                                <div class="col-md-9 col-sm-9">
+                                    <select required name="hari" id="hari" class="form-control <?= validation_show_error('hari') ? 'is-invalid' : null; ?>">
+                                        <option value="">-- Pilih Hari --</option>
+                                        <option value="1" <?= old('hari') == 1 ? "selected" : null ; ?>>Senin</option>
+                                        <option value="2" <?= old('hari') == 2 ? "selected" : null ; ?>>Selasa</option>
+                                        <option value="3" <?= old('hari') == 3 ? "selected" : null ; ?>>Rabu</option>
+                                        <option value="4" <?= old('hari') == 4 ? "selected" : null ; ?>>Kamis</option>
+                                        <option value="5" <?= old('hari') == 5 ? "selected" : null ; ?>>Jumat</option>
+                                        <option value="6" <?= old('hari') == 6 ? "selected" : null ; ?>>Sabtu</option>
+                                    </select>
+                                    <div class="invalid-feedback" style="text-align: left;">
+                                        <?= validation_show_error('hari'); ?>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
                                 <label class="control-label col-md-3 col-sm-3" for="jam_pelajaran">Jam Pelajaran</label>
                                 <div class="col-md-9 col-sm-9">
                                     <input type="text" value="<?= old('jam_pelajaran') ? old('jam_pelajaran') : $detailPelajaranKelas['jam_pelajaran']; ?>" name="jam_pelajaran"  class="form-control <?= validation_show_error('jam_pelajaran') ? 'is-invalid' : null; ?>" id="jam_pelajaran">
@@ -53,6 +70,20 @@
                                     </select>
                                     <div class="invalid-feedback" style="text-align: left;">
                                         <?= validation_show_error('id_pelajaran'); ?>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="guru" class="col-md-3 col-sm-3">Guru</label>
+                                <div class="col-md-9 col-sm-9">
+                                    <select required name="guru" id="guru" class="form-control <?= validation_show_error('guru') ? 'is-invalid' : null; ?>">
+                                        <option value="">-- Pilih Guru --</option>
+                                        <?php foreach ($semuaGuru as $sg) { ?>
+                                            <option value="<?= $sg['user_id']; ?>" <?= old('guru') == $sg['user_id'] ? "selected" : null ; ?>><?= $sg['nama_asli']; ?></option>
+                                        <?php } ?>
+                                    </select>
+                                    <div class="invalid-feedback" style="text-align: left;">
+                                        <?= validation_show_error('guru'); ?>
                                     </div>
                                 </div>
                             </div>

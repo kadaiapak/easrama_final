@@ -6,7 +6,7 @@
     <div class="">
 		<div class="page-title">
 			<div class="title_left">
-				<h3>Histori Siswa</h3>
+				<h3>Histori Santri</h3>
 			</div>
 		</div>
         <div class="clearfix"></div>
@@ -64,7 +64,7 @@
             <div class="col-md-6 col-sm-6">
                 <div class="x_panel">
                     <div class="x_title">
-                        <h2>Histori Pergantian Kelas Siswa</h2>
+                        <h2>Histori Pergantian Kelas Santri</h2>
                         <div class="clearfix"></div>
                     </div>
                     <div class="x_content">
@@ -89,7 +89,7 @@
 										<thead>
 											<tr class="headings">
 												<th class="column-title">No</th>
-												<th class="column-title">Siswa</th>
+												<th class="column-title">Santri</th>
 												<th class="column-title">Kelas</th>
 												<th class="column-title">Keterangan</th>
 												<th class="column-title">Tanggal</th>
@@ -119,7 +119,7 @@
 			<div class="col-md-6 col-sm-6">
                 <div class="x_panel">
                     <div class="x_title">
-                        <h2>Histori Pergantian Kamar Siswa</h2>
+                        <h2>Histori Pergantian Kamar Santri</h2>
                         <div class="clearfix"></div>
                     </div>
                     <div class="x_content">
@@ -130,7 +130,7 @@
 										<thead>
 											<tr class="headings">
 												<th class="column-title">No</th>
-												<th class="column-title">Nama Siswa</th>
+												<th class="column-title">Nama Santri</th>
 												<th class="column-title">Kamar</th>
 												<th class="column-title">Keterangan</th>
 												<th class="column-title">Tanggal</th>

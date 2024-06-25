@@ -6,7 +6,7 @@
                 <div class="col-md-10 col-md-offset-1">
                     <form action="<?= base_url('/daftar/simpan'); ?>" method="post" id="register-form" class="white-popup-block">
                     <?= csrf_field(); ?>
-                        <div class="col-md-8 login-custom">
+                        <div class="col-md-12 login-custom">
                             <h4>Formulir Pendaftaran Bintang Sekolah Al-Quran</h4>
                             <div class="col-md-12">
                                 <div class="row">
@@ -98,6 +98,37 @@
                                         <input class="form-control" placeholder="Provinsi*" type="text" name="provinsi">
                                         <div style="text-align: left; font-size: 12px; background-color: #FFB606; color: red;">
                                             <?= validation_show_error('provinsi'); ?>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4>Pembuatan Akun, Username dan Password Tidak Boleh Lupa</h4>
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="form-group">
+                                        <input class="form-control" placeholder="Username*" type="text" name="username">
+                                        <div style="text-align: left; font-size: 12px; background-color: #FFB606; color: red;">
+                                            <?= validation_show_error('username'); ?>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="form-group">
+                                        <input class="form-control" placeholder="Password*" type="password" name="password">
+                                        <div style="text-align: left; font-size: 12px; background-color: #FFB606; color: red;">
+                                            <?= validation_show_error('password'); ?>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="form-group">
+                                        <input class="form-control" placeholder="Konfirmasi Password*" type="password" name="password_conf">
+                                        <div style="text-align: left; font-size: 12px; background-color: #FFB606; color: red;">
+                                            <?= validation_show_error('password_conf'); ?>
                                         </div>
                                     </div>
                                 </div>

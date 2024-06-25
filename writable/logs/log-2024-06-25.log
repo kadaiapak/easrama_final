@@ -1,0 +1,697 @@
+INFO - 2024-06-25 06:18:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 06:18:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 06:18:39 --> CSRF token verified.
+INFO - 2024-06-25 06:18:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 06:18:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 06:26:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 06:26:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 06:41:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 06:41:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 06:41:55 --> CSRF token verified.
+INFO - 2024-06-25 06:41:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 06:41:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 06:41:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 06:42:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 06:42:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 06:42:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 06:42:23 --> CSRF token verified.
+INFO - 2024-06-25 06:42:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 06:42:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 06:42:31 --> CSRF token verified.
+INFO - 2024-06-25 06:42:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 06:42:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 06:43:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 06:43:39 --> CSRF token verified.
+INFO - 2024-06-25 06:43:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 06:43:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 06:43:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 06:43:55 --> CSRF token verified.
+INFO - 2024-06-25 06:43:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 06:43:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 06:46:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 06:46:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 06:49:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-25 06:49:52 --> Undefined variable $semuaPelajaran
+in APPPATH\Views\pelajaran\v_siswa_pelajaran.php on line 22.
+ 1 APPPATH\Views\pelajaran\v_siswa_pelajaran.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $semuaPelajaran', 'C:\\laragon\\www\\easrama_final\\app\\Views\\pelajaran\\v_siswa_pelajaran.php', 22)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\easrama_final\\app\\Views\\pelajaran\\v_siswa_pelajaran.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pelajaran/v_siswa_pelajaran', [], true)
+ 5 APPPATH\Controllers\Pelajaran.php(51): view('pelajaran/v_siswa_pelajaran', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelajaran->guru_index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelajaran))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-25 06:50:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 06:51:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 06:52:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 06:57:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 06:59:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 06:59:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 06:59:40 --> CSRF token verified.
+INFO - 2024-06-25 06:59:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 06:59:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 06:59:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 07:00:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 07:00:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 07:00:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 07:00:56 --> CSRF token verified.
+INFO - 2024-06-25 07:00:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 07:01:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 07:01:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 07:01:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 07:01:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 07:01:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 07:01:18 --> CSRF token verified.
+INFO - 2024-06-25 07:01:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 07:01:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 07:01:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 07:01:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 07:01:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 07:01:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 07:01:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 07:01:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 07:06:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 07:06:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-25 07:06:17 --> Undefined variable $semuaGuru
+in APPPATH\Views\pelajaran_kelas\v_edit_pelajaran_kelas.php on line 81.
+ 1 APPPATH\Views\pelajaran_kelas\v_edit_pelajaran_kelas.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $semuaGuru', 'C:\\laragon\\www\\easrama_final\\app\\Views\\pelajaran_kelas\\v_edit_pelajaran_kelas.php', 81)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\easrama_final\\app\\Views\\pelajaran_kelas\\v_edit_pelajaran_kelas.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pelajaran_kelas/v_edit_pelajaran_kelas', [], true)
+ 5 APPPATH\Controllers\PelajaranKelas.php(128): view('pelajaran_kelas/v_edit_pelajaran_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PelajaranKelas->edit('6')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PelajaranKelas))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-25 07:06:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 07:06:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 07:07:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 07:07:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 07:07:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 07:07:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 07:07:45 --> CSRF token verified.
+INFO - 2024-06-25 07:07:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 07:07:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 07:07:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 07:08:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 07:08:02 --> CSRF token verified.
+INFO - 2024-06-25 07:08:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 07:09:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 07:09:01 --> CSRF token verified.
+INFO - 2024-06-25 07:09:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:26:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:27:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:27:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:27:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:29:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:34:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:34:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:35:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-25 08:35:43 --> Undefined variable $jadwalMengajar
+in APPPATH\Views\pelajaran\v_guru_pelajaran.php on line 25.
+ 1 APPPATH\Views\pelajaran\v_guru_pelajaran.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jadwalMengajar', 'C:\\laragon\\www\\easrama_final\\app\\Views\\pelajaran\\v_guru_pelajaran.php', 25)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\easrama_final\\app\\Views\\pelajaran\\v_guru_pelajaran.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pelajaran/v_guru_pelajaran', [], true)
+ 5 APPPATH\Controllers\Pelajaran.php(54): view('pelajaran/v_guru_pelajaran', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelajaran->guru_index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelajaran))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-25 08:36:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-25 08:36:25 --> Unmatched '}'
+in APPPATH\Views\pelajaran\v_guru_pelajaran.php on line 60.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pelajaran/v_guru_pelajaran', [], true)
+ 3 APPPATH\Controllers\Pelajaran.php(54): view('pelajaran/v_guru_pelajaran', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelajaran->guru_index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelajaran))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-25 08:36:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-25 08:36:47 --> Unmatched '}'
+in APPPATH\Views\pelajaran\v_guru_pelajaran.php on line 58.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pelajaran/v_guru_pelajaran', [], true)
+ 3 APPPATH\Controllers\Pelajaran.php(54): view('pelajaran/v_guru_pelajaran', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelajaran->guru_index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelajaran))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-25 08:36:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-25 08:36:49 --> Unmatched '}'
+in APPPATH\Views\pelajaran\v_guru_pelajaran.php on line 58.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pelajaran/v_guru_pelajaran', [], true)
+ 3 APPPATH\Controllers\Pelajaran.php(54): view('pelajaran/v_guru_pelajaran', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelajaran->guru_index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelajaran))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-25 08:36:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-25 08:36:55 --> Undefined array key "nama_hari"
+in APPPATH\Views\pelajaran\v_guru_pelajaran.php on line 29.
+ 1 APPPATH\Views\pelajaran\v_guru_pelajaran.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_hari"', 'C:\\laragon\\www\\easrama_final\\app\\Views\\pelajaran\\v_guru_pelajaran.php', 29)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\easrama_final\\app\\Views\\pelajaran\\v_guru_pelajaran.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pelajaran/v_guru_pelajaran', [], true)
+ 5 APPPATH\Controllers\Pelajaran.php(54): view('pelajaran/v_guru_pelajaran', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelajaran->guru_index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelajaran))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-25 08:37:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:38:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:38:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-25 08:38:12 --> Array to string conversion
+in APPPATH\Views\pelajaran\v_guru_pelajaran.php on line 29.
+ 1 APPPATH\Views\pelajaran\v_guru_pelajaran.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\laragon\\www\\easrama_final\\app\\Views\\pelajaran\\v_guru_pelajaran.php', 29)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\easrama_final\\app\\Views\\pelajaran\\v_guru_pelajaran.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pelajaran/v_guru_pelajaran', [], true)
+ 5 APPPATH\Controllers\Pelajaran.php(54): view('pelajaran/v_guru_pelajaran', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelajaran->guru_index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelajaran))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-25 08:39:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-25 08:39:23 --> Undefined variable $jm
+in APPPATH\Views\pelajaran\v_guru_pelajaran.php on line 41.
+ 1 APPPATH\Views\pelajaran\v_guru_pelajaran.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jm', 'C:\\laragon\\www\\easrama_final\\app\\Views\\pelajaran\\v_guru_pelajaran.php', 41)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\easrama_final\\app\\Views\\pelajaran\\v_guru_pelajaran.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pelajaran/v_guru_pelajaran', [], true)
+ 5 APPPATH\Controllers\Pelajaran.php(54): view('pelajaran/v_guru_pelajaran', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelajaran->guru_index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelajaran))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-25 08:39:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:40:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:40:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:42:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:42:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:42:16 --> CSRF token verified.
+INFO - 2024-06-25 08:42:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:42:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:42:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:44:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:44:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:45:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:45:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-25 08:45:37 --> Undefined variable $detailJadwalPelajaran
+in APPPATH\Views\pelajaran\v_siswa_pelajaran.php on line 22.
+ 1 APPPATH\Views\pelajaran\v_siswa_pelajaran.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $detailJadwalPelajaran', 'C:\\laragon\\www\\easrama_final\\app\\Views\\pelajaran\\v_siswa_pelajaran.php', 22)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\easrama_final\\app\\Views\\pelajaran\\v_siswa_pelajaran.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pelajaran/v_siswa_pelajaran', [], true)
+ 5 APPPATH\Controllers\Pelajaran.php(43): view('pelajaran/v_siswa_pelajaran', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pelajaran->siswa_index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelajaran))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-25 08:45:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:46:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:50:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:50:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:51:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:51:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:51:09 --> CSRF token verified.
+INFO - 2024-06-25 08:51:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:51:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:51:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:52:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:54:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:54:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:54:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:55:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:55:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:55:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:55:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:55:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:55:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:55:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:56:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:56:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:57:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:57:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:57:55 --> CSRF token verified.
+INFO - 2024-06-25 08:57:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:57:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:57:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 09:04:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 09:04:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-25 09:04:49 --> Undefined variable $semuaSiswaBelumAdaKamar
+in APPPATH\Views\penghuni_kamar\v_penghuni_kamar.php on line 124.
+ 1 APPPATH\Views\penghuni_kamar\v_penghuni_kamar.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $semuaSiswaBelumAdaKamar', 'C:\\laragon\\www\\easrama_final\\app\\Views\\penghuni_kamar\\v_penghuni_kamar.php', 124)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\easrama_final\\app\\Views\\penghuni_kamar\\v_penghuni_kamar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('penghuni_kamar/v_penghuni_kamar', [], true)
+ 5 APPPATH\Controllers\PenghuniKamar.php(40): view('penghuni_kamar/v_penghuni_kamar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PenghuniKamar->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenghuniKamar))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-25 09:04:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 09:04:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 09:04:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-25 09:04:58 --> Undefined variable $semuaSiswaBelumAdaKamar
+in APPPATH\Views\penghuni_kamar\v_penghuni_kamar.php on line 124.
+ 1 APPPATH\Views\penghuni_kamar\v_penghuni_kamar.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $semuaSiswaBelumAdaKamar', 'C:\\laragon\\www\\easrama_final\\app\\Views\\penghuni_kamar\\v_penghuni_kamar.php', 124)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\easrama_final\\app\\Views\\penghuni_kamar\\v_penghuni_kamar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('penghuni_kamar/v_penghuni_kamar', [], true)
+ 5 APPPATH\Controllers\PenghuniKamar.php(40): view('penghuni_kamar/v_penghuni_kamar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PenghuniKamar->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenghuniKamar))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-25 09:14:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-25 09:14:03 --> Undefined variable $semuaSiswaBelumAdaKamar
+in APPPATH\Views\penghuni_kamar\v_penghuni_kamar.php on line 124.
+ 1 APPPATH\Views\penghuni_kamar\v_penghuni_kamar.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $semuaSiswaBelumAdaKamar', 'C:\\laragon\\www\\easrama_final\\app\\Views\\penghuni_kamar\\v_penghuni_kamar.php', 124)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\easrama_final\\app\\Views\\penghuni_kamar\\v_penghuni_kamar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('penghuni_kamar/v_penghuni_kamar', [], true)
+ 5 APPPATH\Controllers\PenghuniKamar.php(40): view('penghuni_kamar/v_penghuni_kamar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PenghuniKamar->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenghuniKamar))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-25 10:48:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-25 10:48:50 --> Undefined variable $semuaSiswaBelumAdaKamar
+in APPPATH\Views\penghuni_kamar\v_penghuni_kamar.php on line 124.
+ 1 APPPATH\Views\penghuni_kamar\v_penghuni_kamar.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $semuaSiswaBelumAdaKamar', 'C:\\laragon\\www\\easrama_final\\app\\Views\\penghuni_kamar\\v_penghuni_kamar.php', 124)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\easrama_final\\app\\Views\\penghuni_kamar\\v_penghuni_kamar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('penghuni_kamar/v_penghuni_kamar', [], true)
+ 5 APPPATH\Controllers\PenghuniKamar.php(40): view('penghuni_kamar/v_penghuni_kamar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PenghuniKamar->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenghuniKamar))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-25 10:55:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-25 10:55:52 --> Undefined variable $semuaSiswaBelumAdaKamar
+in APPPATH\Views\penghuni_kamar\v_penghuni_kamar.php on line 124.
+ 1 APPPATH\Views\penghuni_kamar\v_penghuni_kamar.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $semuaSiswaBelumAdaKamar', 'C:\\laragon\\www\\easrama_final\\app\\Views\\penghuni_kamar\\v_penghuni_kamar.php', 124)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\easrama_final\\app\\Views\\penghuni_kamar\\v_penghuni_kamar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('penghuni_kamar/v_penghuni_kamar', [], true)
+ 5 APPPATH\Controllers\PenghuniKamar.php(40): view('penghuni_kamar/v_penghuni_kamar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PenghuniKamar->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenghuniKamar))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-25 10:56:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 10:56:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 10:56:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:03:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:03:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:03:26 --> CSRF token verified.
+INFO - 2024-06-25 11:03:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:03:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:03:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:03:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:03:33 --> CSRF token verified.
+INFO - 2024-06-25 11:03:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:03:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:03:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:05:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:08:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:08:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:08:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:09:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:10:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:10:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:10:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:10:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:10:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:10:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:10:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:12:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:12:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:12:55 --> CSRF token verified.
+INFO - 2024-06-25 11:12:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:12:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:12:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:12:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:13:03 --> CSRF token verified.
+INFO - 2024-06-25 11:13:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:13:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:13:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:13:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:23:25 --> CSRF token verified.
+INFO - 2024-06-25 11:23:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:23:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:23:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:23:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:25:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:25:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:25:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:25:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:25:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:25:15 --> CSRF token verified.
+INFO - 2024-06-25 11:25:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:25:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:25:18 --> CSRF token verified.
+INFO - 2024-06-25 11:25:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:25:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:25:20 --> CSRF token verified.
+INFO - 2024-06-25 11:25:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:25:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:25:23 --> CSRF token verified.
+INFO - 2024-06-25 11:25:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:25:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:25:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:25:46 --> CSRF token verified.
+INFO - 2024-06-25 11:25:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:25:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:25:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:25:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:25:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:25:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:25:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:26:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:26:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:26:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:26:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:26:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:37:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:37:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:37:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:37:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:37:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:37:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:37:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:38:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:38:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 11:38:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-25 13:49:11 --> mysqli_sql_exception: Table 'easrama.departemen' doesn't exist in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `prestas...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `prestas...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `prestas...')
+#3 C:\laragon\www\easrama_final\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `prestas...', Array, false)
+#4 C:\laragon\www\easrama_final\app\Models\PrestasiModel.php(72): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\easrama_final\app\Controllers\Home.php(37): App\Models\PrestasiModel->getAll(4)
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Home->index()
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2024-06-25 13:49:11 --> Table 'easrama.departemen' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `prestasi`.*, `user`.`nama_asli` as `nama_user`, `departemen`.`departemen_nama` as `nama_departemen`
+FROM `prestasi`
+JOIN `user` ON `prestasi`.`prestasi_penulis` = `user`.`user_id`
+JOIN `departemen` ON `prestasi`.`prestasi_departemen` = `departemen`.`departemen_id`
+ LIMIT 4', [], false)
+ 2 APPPATH\Models\PrestasiModel.php(72): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(37): App\Models\PrestasiModel->getAll(4)
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+ERROR - 2024-06-25 13:49:11 --> mysqli_sql_exception: Table 'easrama.departemen' doesn't exist in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `prestas...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `prestas...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `prestas...')
+#3 C:\laragon\www\easrama_final\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `prestas...', Array, false)
+#4 C:\laragon\www\easrama_final\app\Models\PrestasiModel.php(72): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\easrama_final\app\Controllers\Home.php(37): App\Models\PrestasiModel->getAll(4)
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Home->index()
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2024-06-25 13:49:11 --> Table 'easrama.departemen' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `prestasi`.*, `user`.`nama_asli` as `nama_user`, `departemen`.`departemen_nama` as `nama_departemen`
+FROM `prestasi`
+JOIN `user` ON `prestasi`.`prestasi_penulis` = `user`.`user_id`
+JOIN `departemen` ON `prestasi`.`prestasi_departemen` = `departemen`.`departemen_id`
+ LIMIT 4', [], false)
+ 2 APPPATH\Models\PrestasiModel.php(72): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(37): App\Models\PrestasiModel->getAll(4)
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+ERROR - 2024-06-25 14:41:53 --> mysqli_sql_exception: Table 'easrama.departemen' doesn't exist in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `prestas...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `prestas...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `prestas...')
+#3 C:\laragon\www\easrama_final\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `prestas...', Array, false)
+#4 C:\laragon\www\easrama_final\app\Models\PrestasiModel.php(72): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\easrama_final\app\Controllers\Home.php(37): App\Models\PrestasiModel->getAll(4)
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Home->index()
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2024-06-25 14:41:53 --> Table 'easrama.departemen' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `prestasi`.*, `user`.`nama_asli` as `nama_user`, `departemen`.`departemen_nama` as `nama_departemen`
+FROM `prestasi`
+JOIN `user` ON `prestasi`.`prestasi_penulis` = `user`.`user_id`
+JOIN `departemen` ON `prestasi`.`prestasi_departemen` = `departemen`.`departemen_id`
+ LIMIT 4', [], false)
+ 2 APPPATH\Models\PrestasiModel.php(72): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(37): App\Models\PrestasiModel->getAll(4)
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+ERROR - 2024-06-25 14:42:42 --> mysqli_sql_exception: Table 'easrama.departemen' doesn't exist in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `prestas...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `prestas...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `prestas...')
+#3 C:\laragon\www\easrama_final\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `prestas...', Array, false)
+#4 C:\laragon\www\easrama_final\app\Models\PrestasiModel.php(72): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\easrama_final\app\Controllers\Home.php(37): App\Models\PrestasiModel->getAll(4)
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Home->index()
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2024-06-25 14:42:42 --> Table 'easrama.departemen' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `prestasi`.*, `user`.`nama_asli` as `nama_user`, `departemen`.`departemen_nama` as `nama_departemen`
+FROM `prestasi`
+JOIN `user` ON `prestasi`.`prestasi_penulis` = `user`.`user_id`
+JOIN `departemen` ON `prestasi`.`prestasi_departemen` = `departemen`.`departemen_id`
+ LIMIT 4', [], false)
+ 2 APPPATH\Models\PrestasiModel.php(72): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(37): App\Models\PrestasiModel->getAll(4)
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+ERROR - 2024-06-25 14:42:58 --> mysqli_sql_exception: Table 'easrama.departemen' doesn't exist in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `prestas...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `prestas...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `prestas...')
+#3 C:\laragon\www\easrama_final\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `prestas...', Array, false)
+#4 C:\laragon\www\easrama_final\app\Models\PrestasiModel.php(72): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\easrama_final\app\Controllers\Home.php(37): App\Models\PrestasiModel->getAll(4)
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Home->index()
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2024-06-25 14:42:58 --> Table 'easrama.departemen' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `prestasi`.*, `user`.`nama_asli` as `nama_user`, `departemen`.`departemen_nama` as `nama_departemen`
+FROM `prestasi`
+JOIN `user` ON `prestasi`.`prestasi_penulis` = `user`.`user_id`
+JOIN `departemen` ON `prestasi`.`prestasi_departemen` = `departemen`.`departemen_id`
+ LIMIT 4', [], false)
+ 2 APPPATH\Models\PrestasiModel.php(72): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(37): App\Models\PrestasiModel->getAll(4)
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+ERROR - 2024-06-25 14:43:39 --> mysqli_sql_exception: Table 'easrama.departemen' doesn't exist in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `prestas...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `prestas...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `prestas...')
+#3 C:\laragon\www\easrama_final\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `prestas...', Array, false)
+#4 C:\laragon\www\easrama_final\app\Models\PrestasiModel.php(72): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\easrama_final\app\Controllers\Home.php(37): App\Models\PrestasiModel->getAll(4)
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Home->index()
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2024-06-25 14:43:39 --> Table 'easrama.departemen' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `prestasi`.*, `user`.`nama_asli` as `nama_user`, `departemen`.`departemen_nama` as `nama_departemen`
+FROM `prestasi`
+JOIN `user` ON `prestasi`.`prestasi_penulis` = `user`.`user_id`
+JOIN `departemen` ON `prestasi`.`prestasi_departemen` = `departemen`.`departemen_id`
+ LIMIT 4', [], false)
+ 2 APPPATH\Models\PrestasiModel.php(72): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(37): App\Models\PrestasiModel->getAll(4)
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+ERROR - 2024-06-25 14:44:34 --> mysqli_sql_exception: Table 'easrama.departemen' doesn't exist in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `prestas...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `prestas...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `prestas...')
+#3 C:\laragon\www\easrama_final\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `prestas...', Array, false)
+#4 C:\laragon\www\easrama_final\app\Models\PrestasiModel.php(72): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\easrama_final\app\Controllers\Home.php(37): App\Models\PrestasiModel->getAll(4)
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Home->index()
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2024-06-25 14:44:34 --> Table 'easrama.departemen' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `prestasi`.*, `user`.`nama_asli` as `nama_user`, `departemen`.`departemen_nama` as `nama_departemen`
+FROM `prestasi`
+JOIN `user` ON `prestasi`.`prestasi_penulis` = `user`.`user_id`
+JOIN `departemen` ON `prestasi`.`prestasi_departemen` = `departemen`.`departemen_id`
+ LIMIT 4', [], false)
+ 2 APPPATH\Models\PrestasiModel.php(72): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(37): App\Models\PrestasiModel->getAll(4)
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+ERROR - 2024-06-25 14:46:36 --> mysqli_sql_exception: Table 'easrama.departemen' doesn't exist in C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\easrama_final\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `prestas...', 0)
+#1 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `prestas...')
+#2 C:\laragon\www\easrama_final\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `prestas...')
+#3 C:\laragon\www\easrama_final\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `prestas...', Array, false)
+#4 C:\laragon\www\easrama_final\app\Models\PrestasiModel.php(72): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\easrama_final\app\Controllers\Home.php(37): App\Models\PrestasiModel->getAll(4)
+#6 C:\laragon\www\easrama_final\system\CodeIgniter.php(919): App\Controllers\Home->index()
+#7 C:\laragon\www\easrama_final\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\laragon\www\easrama_final\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\easrama_final\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\easrama_final\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2024-06-25 14:46:36 --> Table 'easrama.departemen' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `prestasi`.*, `user`.`nama_asli` as `nama_user`, `departemen`.`departemen_nama` as `nama_departemen`
+FROM `prestasi`
+JOIN `user` ON `prestasi`.`prestasi_penulis` = `user`.`user_id`
+JOIN `departemen` ON `prestasi`.`prestasi_departemen` = `departemen`.`departemen_id`
+ LIMIT 4', [], false)
+ 2 APPPATH\Models\PrestasiModel.php(72): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(37): App\Models\PrestasiModel->getAll(4)
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\easrama_final\\public\\index.php')
+INFO - 2024-06-25 14:49:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 14:49:14 --> CSRF token verified.
+INFO - 2024-06-25 14:49:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 14:49:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 14:50:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 14:50:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 14:50:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 14:52:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:00:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:00:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:00:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:00:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:00:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:00:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:00:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:00:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:00:53 --> CSRF token verified.
+INFO - 2024-06-25 15:00:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:00:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:00:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:00:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:00:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:01:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:01:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:01:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:01:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:01:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:01:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:01:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:01:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:01:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:01:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:01:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:04:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:04:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:04:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:05:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:05:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:05:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:05:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:05:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:05:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:05:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:05:33 --> CSRF token verified.
+INFO - 2024-06-25 15:05:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:05:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:08:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:08:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:08:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:08:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:08:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:08:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:08:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:10:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:10:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:10:21 --> CSRF token verified.
+INFO - 2024-06-25 15:10:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:10:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:10:26 --> CSRF token verified.
+INFO - 2024-06-25 15:10:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:10:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:10:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:10:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:10:41 --> CSRF token verified.
+INFO - 2024-06-25 15:10:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:10:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:10:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:10:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 15:10:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

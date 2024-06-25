@@ -18,10 +18,10 @@
                 </ul>
             </li>
             <br />
-            <h3>Pengaturan Siswa</h3>
+            <h3>Pengaturan Santri</h3>
             <br />
-            <li><a href="<?= base_url('/admin/penghuni-kamar'); ?>"><i class="fa fa-building-o"></i> Kamar Siswa</a></li>
-            <li><a href="<?= base_url('/admin/penghuni-kelas'); ?>"><i class="fa fa-graduation-cap"></i> Kelas Siswa</a></li>
+            <li><a href="<?= base_url('/admin/penghuni-kamar'); ?>"><i class="fa fa-building-o"></i> Kamar Santri</a></li>
+            <li><a href="<?= base_url('/admin/penghuni-kelas'); ?>"><i class="fa fa-graduation-cap"></i> Kelas Santri</a></li>
             <li><a href="<?= base_url('/admin/pelajaran-kelas'); ?>"><i class="fa fa-book"></i> Pelajaran Kelas</a></li>
             <br />
             <h3>Halaman</h3>
@@ -33,21 +33,21 @@
                     </ul>
                 </li>
             <br />
-            <h3>Post</h3>
-            <br />
-            <li>
+            <!-- <h3>Post</h3> -->
+            <!-- <br /> -->
+            <!-- <li>
                 <a><i class="fa fa-book"></i>  Berita <span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
-                    <li><a href="<?= base_url('/admin/berita'); ?>"> Berita</a></li>
-                    <li><a href="<?= base_url('/admin/kategori'); ?>">Kategori Berita</a></li>
+                    <li><a href="< ?= base_url('/admin/berita'); ?>"> Berita</a></li>
+                    <li><a href="< ?= base_url('/admin/kategori'); ?>">Kategori Berita</a></li>
                 </ul>
-            </li>
-            <li><a href="<?= base_url('/admin/pengumuman'); ?>"><i class="fa fa-bullhorn"></i> Pengumuman</a></li> 
+            </li> -->
+            <!-- <li><a href="< ?= base_url('/admin/pengumuman'); ?>"><i class="fa fa-bullhorn"></i> Pengumuman</a></li>  -->
+            <!-- <br /> -->
+            <!-- <h3>Log Aktifitas</h3>
             <br />
-            <h3>Log Aktifitas</h3>
-            <br />
-            <li><a href="<?= base_url('/admin/histori'); ?>"><i class="fa fa-bullhorn"></i> Histori Siswa</a></li> 
-            <br />
+            <li><a href="< ?= base_url('/admin/histori'); ?>"><i class="fa fa-bullhorn"></i> Histori Santri</a></li> 
+            <br /> -->
         </ul>
         <!-- akhir dari super admin -->
         <?php } ?>
@@ -60,18 +60,18 @@
                 <br />
                 <h3>Pendaftaran</h3>
                 <br />
-                <li><a href="<?= base_url('/admin/siswa'); ?>"><i class="fa fa-group"></i> Siswa Belum Verifikasi</a></li>
-                <li><a href="<?= base_url('/admin/siswa/terdaftar'); ?>"><i class="fa fa-group"></i> Siswa Terdaftar</a></li>
+                <li><a href="<?= base_url('/admin/siswa'); ?>"><i class="fa fa-group"></i> Santri Belum Verifikasi</a></li>
+                <li><a href="<?= base_url('/admin/siswa/terdaftar'); ?>"><i class="fa fa-group"></i> Santri Terdaftar</a></li>
                 <br />
-                <h3>Pengaturan Siswa</h3>
+                <h3>Pengaturan Santri</h3>
                 <br />
-                <li><a href="<?= base_url('/admin/penghuni-kamar'); ?>"><i class="fa fa-building-o"></i> Kamar Siswa</a></li>
-                <li><a href="<?= base_url('/admin/penghuni-kelas'); ?>"><i class="fa fa-graduation-cap"></i> Kelas Siswa</a></li>
+                <li><a href="<?= base_url('/admin/penghuni-kamar'); ?>"><i class="fa fa-building-o"></i> Kamar Santri</a></li>
+                <li><a href="<?= base_url('/admin/penghuni-kelas'); ?>"><i class="fa fa-graduation-cap"></i> Kelas Santri</a></li>
                 <li><a href="<?= base_url('/admin/pelajaran-kelas'); ?>"><i class="fa fa-book"></i> Pelajaran Kelas</a></li>
                 <br />
                 <h3>Master Data</h3>
                 <br />
-                <li><a href="<?= base_url('/admin/master-siswa'); ?>"><i class="fa fa-graduation-cap"></i> Data Siswa</a></li>
+                <li><a href="<?= base_url('/admin/master-siswa'); ?>"><i class="fa fa-graduation-cap"></i> Data Santri</a></li>
                 <li><a href="<?= base_url('/admin/kamar'); ?>"><i class="fa fa-building "></i> Data Kamar</a></li>
                 <li><a href="<?= base_url('/admin/kelas'); ?>"><i class="fa fa-home"></i> Data Kelas</a></li>
                 <li><a href="<?= base_url('/admin/pelajaran'); ?>"><i class="fa fa-book"></i> Data Pelajaran</a></li>
@@ -85,23 +85,46 @@
                     </ul>
                 </li>
                 <br />
-                <h3>Post</h3>
+                <!-- <h3>Post</h3>
                 <br />
-                <li><a href="<?= base_url('/penyimpanan-gambar'); ?>"><i class="fa fa-photo"></i> Penyimpanan Gambar</a></li>
+                <li><a href="< ?= base_url('/penyimpanan-gambar'); ?>"><i class="fa fa-photo"></i> Penyimpanan Gambar</a></li>
                 <li><a><i class="fa fa-book"></i>  Berita <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                        <li><a href="<?= base_url('/admin/kategori'); ?>">Kategori Berita</a></li>
-                        <li><a href="<?= base_url('/admin/berita'); ?>"> Berita</a></li>
+                        <li><a href="< ?= base_url('/admin/kategori'); ?>">Kategori Berita</a></li>
+                        <li><a href="< ?= base_url('/admin/berita'); ?>"> Berita</a></li>
                     </ul>
                 </li>
-                <li><a href="<?= base_url('/admin/pengumuman'); ?>"><i class="fa fa-bullhorn"></i> Pengumuman</a></li> 
-                <li><a href="<?= base_url('/admin/prestasi'); ?>"><i class="fa fa-graduation-cap"></i> Prestasi</a></li> 
-                <br />
+                <li><a href="< ?= base_url('/admin/pengumuman'); ?>"><i class="fa fa-bullhorn"></i> Pengumuman</a></li> 
+                <li><a href="< ?= base_url('/admin/prestasi'); ?>"><i class="fa fa-graduation-cap"></i> Prestasi</a></li> 
+                <br /> -->
                 <h3>Pengaturan</h3>
                 <br />
                 <li><a href="<?= base_url('/admin/visi-misi'); ?>"><i class="fa fa-university"></i> Visi Misi</a></li> 
-                <li><a href="<?= base_url('/admin/grafik-mahasiswa'); ?>"><i class="fa fa-bar-chart"></i> Grafik Siswa</a></li> 
+                <li><a href="<?= base_url('/admin/grafik-mahasiswa'); ?>"><i class="fa fa-bar-chart"></i> Grafik Santri</a></li> 
                 <li><a href="<?= base_url('/admin/video-profil'); ?>"><i class="fa fa-youtube-play"></i> Video Profil</a></li> 
+                <br />
+            </ul>
+            <!-- akhir dari admin -->
+        <?php } ?>
+        <?php if(session()->get('level') == '3') { ?>
+            <!-- menu untuk guru -->
+            <ul class="nav side-menu">
+                <li><a href="<?= base_url('/dashboard'); ?>"><i class="fa fa-home"></i> Dashboard</a></li>
+                <h3>General</h3>
+                <br />
+                <li><a href="<?= base_url('/guru/pelajaran'); ?>"><i class="fa fa-book"></i> Jadwal Mengajar</a></li>
+                <br />
+            </ul>
+            <!-- akhir dari guru -->
+        <?php } ?>
+        <?php if(session()->get('level') == '4') { ?>
+            <!-- menu untuk admin -->
+            <ul class="nav side-menu">
+                <li><a href="<?= base_url('/dashboard'); ?>"><i class="fa fa-home"></i> Dashboard</a></li>
+                <h3>General</h3>
+                <br />
+                <li><a href="<?= base_url('/siswa/kamar'); ?>"><i class="fa fa-group"></i> Daftar Teman Sekamar</a></li>
+                <li><a href="<?= base_url('/siswa/pelajaran'); ?>"><i class="fa fa-book"></i> Jadwal Pelajaran</a></li>
                 <br />
             </ul>
             <!-- akhir dari admin -->

@@ -4,7 +4,7 @@
     <div class="">
         <div class="page-title">
             <div class="title_left">
-                <h3>Siswa</h3>
+                <h3>Santri</h3>
             </div>
         </div>
         <div class="clearfix"></div>
@@ -15,7 +15,7 @@
             <div class="col-lg-12 col-md-12 col-sm-12">
                 <div class="x_panel">
                     <div class="x_title">
-                        <h2>Edit Siswa</h2>
+                        <h2>Edit Santri</h2>
                         <div class="clearfix"></div>
                     </div>
                     <div class="x_content">
@@ -32,7 +32,7 @@
                             <img id="gambar_load" src="<?= $detailSiswa['foto'] != null ? base_url('upload/pas_foto/'.$detailSiswa['foto']) : base_url('/upload/no_photo.png'); ?>" alt="" style="width: 400px;" class="img-thumbnail img-preview">
                         </div>
                         <div class="form-group">
-                            <label for="nama">Nama Siswa * :</label>
+                            <label for="nama">Nama Santri * :</label>
                             <input type="text" id="nama" value="<?= old('nama') ? old('nama') : $detailSiswa['nama'] ; ?>" name="nama" class="form-control <?= validation_show_error('nama') ? 'is-invalid' : null; ?>" name="nama" placeholder="Tuliskan nama siswa"/>
                             <div class="invalid-feedback" style="text-align: left;">
                                 <?= validation_show_error('nama'); ?>
@@ -50,7 +50,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="no_pendaftaran">No Pendaftaran Siswa * :</label>
+                            <label for="no_pendaftaran">No Pendaftaran Santri * :</label>
                             <input type="text" id="no_pendaftaran" value="<?= old('no_pendaftaran') ? old('no_pendaftaran') : $detailSiswa['no_pendaftaran']; ?>" name="no_pendaftaran" class="form-control <?= validation_show_error('no_pendaftaran') ? 'is-invalid' : null; ?>" name="no_pendaftaran" placeholder="Tuliskan no pendaftaran siswa"/>
                             <div class="invalid-feedback" style="text-align: left;">
                                 <?= validation_show_error('no_pendaftaran'); ?>
